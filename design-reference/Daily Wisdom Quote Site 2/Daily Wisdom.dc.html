@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Daily Wisdom — a quote a day">
+  <meta property="og:description" content="One quote a day on life, wealth, health, and wellbeing.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F7F4ED;
+      --ink: #29261F;
+      --muted: #8C8474;
+      --faint: #B5AC99;
+      --accent: #A98B4F;
+      --card: #FFFDF7;
+      --line: #E6DFCF;
+    }
+    [data-theme="dark"] {
+      --bg: #191713;
+      --ink: #EAE4D6;
+      --muted: #97907F;
+      --faint: #6B6353;
+      --accent: #C2A05F;
+      --card: #211E19;
+      --line: #322E26;
+    }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); transition: background .4s ease, color .4s ease; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--ink); }
+    ::selection { background: var(--accent); color: var(--bg); }
+    @keyframes dw-pop { 0% { transform: scale(1); } 35% { transform: scale(1.35); } 65% { transform: scale(.92); } 100% { transform: scale(1); } }
+    @keyframes dw-rise { 0% { opacity: .9; transform: translate(-50%, 0); } 100% { opacity: 0; transform: translate(-50%, -30px); } }
+    @keyframes dw-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    button { -webkit-tap-highlight-color: transparent; }
+  </style>
+</helmet>
+
+<div style="min-height: 100dvh; display: flex; flex-direction: column; font-family: 'Newsreader', Georgia, serif; background: var(--bg); color: var(--ink);">
+
+  <!-- Header -->
+  <header style="display: flex; align-items: center; justify-content: space-between; padding: 22px 24px 0;">
+    <div style="font-size: 13px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; color: var(--ink);">Daily Wisdom</div>
+    <button onClick="{{ toggleTheme }}" aria-label="Toggle dark mode" style="background: none; border: 1px solid var(--line); border-radius: 999px; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; cursor: pointer; color: var(--muted); font-size: 14px; font-family: inherit; transition: border-color .3s;" style-hover="border-color: var(--accent); color: var(--accent);">{{ themeGlyph }}</button>
+  </header>
+
+  <!-- Nav -->
+  <nav style="display: flex; justify-content: center; gap: 30px; padding: 26px 24px 0;">
+    <button onClick="{{ navToday }}" style="background: none; border: none; padding: 4px 0; cursor: pointer; font-family: inherit; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: {{ navTodayColor }}; border-bottom: 1px solid {{ navTodayLine }}; transition: color .3s;" style-hover="color: var(--accent);">Today</button>
+    <button onClick="{{ navArchive }}" style="background: none; border: none; padding: 4px 0; cursor: pointer; font-family: inherit; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: {{ navArchiveColor }}; border-bottom: 1px solid {{ navArchiveLine }}; transition: color .3s;" style-hover="color: var(--accent);">Archive</button>
+    <button onClick="{{ navRandom }}" style="background: none; border: none; padding: 4px 0; cursor: pointer; font-family: inherit; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid transparent; transition: color .3s;" style-hover="color: var(--accent);">⤳ Random</button>
+  </nav>
+
+  <!-- Main -->
+  <main style="flex: 1; display: flex; flex-direction: column; align-items: center; width: 100%; box-sizing: border-box; opacity: {{ fadeOpacity }}; transition: opacity .3s ease;">
+
+    <sc-if value="{{ isQuoteView }}" hint-placeholder-val="{{ true }}">
+      <section data-screen-label="Quote view" style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 72px 28px 96px; max-width: 780px; width: 100%; box-sizing: border-box; animation: dw-in .5s ease both;">
+
+        <div style="font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); display: flex; gap: 10px; align-items: baseline;">
+          <span>{{ dateLabel }}</span>
+          <sc-if value="{{ showClock }}" hint-placeholder-val="{{ true }}">
+            <span style="color: var(--faint);">·</span>
+            <span style="font-variant-numeric: tabular-nums; color: var(--faint);">{{ timeLabel }}</span>
+          </sc-if>
+        </div>
+
+        <div style="margin-top: 16px; font-size: 11px; letter-spacing: .3em; text-transform: uppercase; color: var(--accent); font-weight: 500;">Quote №{{ quoteNum }}</div>
+
+        <blockquote style="margin: 64px 0 0; font-size: clamp(30px, 6.4vw, 48px); line-height: 1.35; font-weight: 400; font-style: normal; text-wrap: balance; letter-spacing: -0.005em; max-width: 620px;">“{{ quoteText }}”</blockquote>
+
+        <div style="margin-top: 44px; font-size: 13px; letter-spacing: .22em; text-transform: uppercase; color: var(--muted); font-weight: 500;">— {{ quoteAuthor }}</div>
+
+        <p style="margin: 22px 0 0; max-width: 420px; font-size: 15px; line-height: 1.7; color: var(--muted); text-wrap: pretty;">{{ quoteDesc }}</p>
+
+        <sc-if value="{{ showPhoto }}" hint-placeholder-val="{{ false }}">
+          <div style="margin-top: 28px; width: 132px; height: 132px;">
+            <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="{{ photoSlotId }}" shape="rounded" radius="18" placeholder="author photo" hint-size="132px,132px" style="width: 132px; height: 132px;"></x-import>
+          </div>
+        </sc-if>
+
+        <div style="margin-top: 56px; display: flex; align-items: center; gap: 14px;">
+          <button onClick="{{ toggleLike }}" aria-label="Like this quote" style="position: relative; display: flex; align-items: center; gap: 9px; background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 10px 18px; cursor: pointer; font-family: inherit; font-size: 15px; color: var(--ink); transition: border-color .3s;" style-hover="border-color: var(--accent);">
+            <span style="font-size: 17px; line-height: 1; color: {{ heartColor }}; display: inline-block; animation: {{ heartAnim }};">♥</span>
+            <span style="font-variant-numeric: tabular-nums; color: var(--muted);">{{ likeCount }}</span>
+            <sc-if value="{{ justLiked }}" hint-placeholder-val="{{ false }}">
+              <span style="position: absolute; left: 50%; top: -6px; transform: translate(-50%, 0); font-size: 13px; color: var(--accent); animation: dw-rise .7s ease forwards; pointer-events: none;">+1</span>
+            </sc-if>
+          </button>
+          <button onClick="{{ shareQuote }}" aria-label="Copy link to this quote" style="background: none; border: 1px solid var(--line); border-radius: 999px; padding: 10px 18px; cursor: pointer; font-family: inherit; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); transition: color .3s, border-color .3s;" style-hover="color: var(--accent); border-color: var(--accent);">Share</button>
+        </div>
+
+      </section>
+    </sc-if>
+
+    <sc-if value="{{ isArchiveView }}" hint-placeholder-val="{{ false }}">
+      <section data-screen-label="Archive" style="width: 100%; max-width: 880px; padding: 44px 24px 72px; box-sizing: border-box; animation: dw-in .5s ease both;">
+        <h2 style="margin: 0 0 26px; text-align: center; font-size: 13px; letter-spacing: .28em; text-transform: uppercase; font-weight: 600; color: var(--muted);">Archive</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px;">
+          <sc-for list="{{ archiveItems }}" as="item" hint-placeholder-count="6">
+            <button onClick="{{ item.open }}" style="text-align: left; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px 20px 16px; cursor: pointer; font-family: inherit; color: var(--ink); display: flex; flex-direction: column; gap: 12px; transition: border-color .3s, transform .2s;" style-hover="border-color: var(--accent); transform: translateY(-2px);">
+              <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px;">
+                <span style="font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted);">{{ item.dateLabel }}</span>
+                <span style="font-size: 11px; letter-spacing: .14em; color: var(--accent);">№{{ item.num }}</span>
+              </div>
+              <div style="font-size: 17px; line-height: 1.45; font-style: italic; font-weight: 500; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">“{{ item.preview }}”</div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
+                <span style="font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted);">{{ item.author }}</span>
+                <span style="font-size: 13px; color: {{ item.heartColor }};">♥ <span style="color: var(--muted); font-variant-numeric: tabular-nums;">{{ item.likes }}</span></span>
+              </div>
+            </button>
+          </sc-for>
+        </div>
+      </section>
+    </sc-if>
+
+  </main>
+
+  <footer style="text-align: center; padding: 0 24px 26px; font-size: 12px; letter-spacing: .14em; color: var(--faint);">One quote a day, since {{ sinceLabel }}</footer>
+
+  <!-- Toast -->
+  <div style="position: fixed; left: 50%; bottom: 34px; transform: translate(-50%, {{ toastShift }}); background: var(--ink); color: var(--bg); font-family: 'Newsreader', Georgia, serif; font-size: 13px; letter-spacing: .1em; padding: 10px 20px; border-radius: 999px; opacity: {{ toastOpacity }}; transition: opacity .35s ease, transform .35s ease; pointer-events: none;">{{ toastText }}</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;accent&quot;: { &quot;editor&quot;: &quot;color&quot;, &quot;default&quot;: &quot;#A98B4F&quot;, &quot;options&quot;: [&quot;#A98B4F&quot;, &quot;#7C8B6F&quot;, &quot;#9A6B52&quot;], &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Appearance&quot; },
+  &quot;theme&quot;: { &quot;editor&quot;: &quot;enum&quot;, &quot;default&quot;: &quot;auto&quot;, &quot;options&quot;: [&quot;auto&quot;, &quot;light&quot;, &quot;dark&quot;], &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Appearance&quot; },
+  &quot;showPhoto&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: false, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Content&quot; }
+}">
+const QUOTES = [
+  { text: "Wealth consists not in having great possessions, but in having few wants.", author: "Epictetus", desc: "A former slave turned Stoic teacher, Epictetus argued that freedom begins where craving ends. The fewer things you need, the richer you already are." },
+  { text: "It is health that is real wealth and not pieces of gold and silver.", author: "Mahatma Gandhi", desc: "Gandhi treated the body as the first estate a person owns. Every ambition rests on it; neglect it, and no fortune can buy it back." },
+  { text: "We suffer more often in imagination than in reality.", author: "Seneca", desc: "Seneca noticed that most of our pain is rehearsal — dread of things that never arrive. Naming that habit is the first step out of it." },
+  { text: "The best time to plant a tree was twenty years ago. The second best time is now.", author: "Chinese Proverb", desc: "Regret about a late start is itself a delay. Whatever the goal — savings, strength, a skill — the compounding begins the day you do." },
+  { text: "He who has a why to live can bear almost any how.", author: "Friedrich Nietzsche", desc: "Purpose is the deepest form of resilience. Difficulty becomes bearable, even meaningful, when it serves something you have chosen." },
+  { text: "The happiness of your life depends upon the quality of your thoughts.", author: "Marcus Aurelius", desc: "Written privately by a Roman emperor at war, this line is a reminder that the mind is the one province you fully govern." },
+  { text: "An investment in knowledge pays the best interest.", author: "Benjamin Franklin", desc: "Franklin, a printer who became a statesman, saw learning as the only asset that appreciates with use and can never be confiscated." },
+  { text: "Take care of your body. It's the only place you have to live.", author: "Jim Rohn", desc: "Rohn spent a career teaching personal discipline to entrepreneurs. His point is blunt: every plan you have is hosted in your body." },
+  { text: "Nature does not hurry, yet everything is accomplished.", author: "Lao Tzu", desc: "A counterweight to hustle: steady, unforced effort outlasts frantic sprints. Growth has its own tempo — your job is not to interrupt it." },
+  { text: "Discipline is choosing between what you want now and what you want most.", author: "Abraham Lincoln (attr.)", desc: "Every day is a quiet negotiation between two versions of you. The one who wins most often decides who you become." },
+  { text: "The real measure of your wealth is how much you'd be worth if you lost all your money.", author: "Anonymous", desc: "Character, health, skills, and relationships are the portfolio that survives any crash. Money is the interest they pay." },
+  { text: "Very little is needed to make a happy life; it is all within yourself, in your way of thinking.", author: "Marcus Aurelius", desc: "The emperor's private journal keeps returning to this: contentment is not acquired, it is uncovered — by subtracting, not adding." },
+  { text: "First say to yourself what you would be; and then do what you have to do.", author: "Epictetus", desc: "Identity first, actions second. Decide who you are becoming, and the daily choices begin to make themselves." },
+  { text: "It does not matter how slowly you go as long as you do not stop.", author: "Confucius", desc: "Consistency beats intensity. A small practice kept daily — a walk, a page, a saved dollar — quietly outruns every burst of motivation." }
+];
+
+const FIRST_NUM = 142 - (QUOTES.length - 1); // today's quote is №142
+
+class Component extends DCLogic {
+  state = {
+    view: "today",           // 'today' | 'archive'
+    idx: QUOTES.length - 1,  // current quote index
+    now: new Date(),
+    liked: {},               // quoteNum -> true
+    justLiked: false,
+    fade: 1,
+    toast: "",
+    themeDark: null          // null = follow prop/system
+  };
+
+  componentDidMount() {
+    try { this.setState({ liked: JSON.parse(localStorage.getItem("dw-likes") || "{}") }); } catch (e) {}
+    const savedTheme = localStorage.getItem("dw-theme");
+    if (savedTheme === "dark" || savedTheme === "light") this.setState({ themeDark: savedTheme === "dark" });
+    const q = new URLSearchParams(location.search).get("q");
+    if (q) {
+      const i = QUOTES.findIndex((_, ix) => FIRST_NUM + ix === parseInt(q, 10));
+      if (i >= 0) this.setState({ idx: i, view: "today" });
+    }
+    this._clock = setInterval(() => this.setState({ now: new Date() }), 1000);
+    this.applyTheme();
+  }
+
+  componentWillUnmount() { clearInterval(this._clock); clearTimeout(this._fadeT); clearTimeout(this._toastT); clearTimeout(this._likeT); }
+  componentDidUpdate() { this.applyTheme(); }
+
+  isDark() {
+    if (this.state.themeDark !== null) return this.state.themeDark;
+    const pref = this.props.theme ?? "auto";
+    if (pref === "dark") return true;
+    if (pref === "light") return false;
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+
+  applyTheme() {
+    document.documentElement.setAttribute("data-theme", this.isDark() ? "dark" : "light");
+    document.documentElement.style.setProperty("--accent", this.props.accent ?? "#A98B4F");
+  }
+
+  transitionTo(updates) {
+    this.setState({ fade: 0 });
+    clearTimeout(this._fadeT);
+    this._fadeT = setTimeout(() => this.setState({ ...updates, fade: 1, justLiked: false }), 300);
+  }
+
+  seedLikes(i) { return 38 + ((i * 47 + 13) % 190); }
+
+  quoteNum(i) { return FIRST_NUM + i; }
+
+  fmtDate(i) {
+    const d = new Date();
+    d.setDate(d.getDate() - (QUOTES.length - 1 - i));
+    return d.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric" });
+  }
+
+  showToast(msg) {
+    this.setState({ toast: msg });
+    clearTimeout(this._toastT);
+    this._toastT = setTimeout(() => this.setState({ toast: "" }), 2200);
+  }
+
+  renderVals() {
+    const { view, idx, now, liked, justLiked, fade, toast } = this.state;
+    const q = QUOTES[idx];
+    const num = this.quoteNum(idx);
+    const isLiked = !!liked[num];
+    const likeCount = this.seedLikes(idx) + (isLiked ? 1 : 0);
+    const isToday = idx === QUOTES.length - 1;
+
+    const toggleLike = () => {
+      const next = { ...this.state.liked, [num]: !isLiked };
+      try { localStorage.setItem("dw-likes", JSON.stringify(next)); } catch (e) {}
+      this.setState({ liked: next, justLiked: !isLiked });
+      clearTimeout(this._likeT);
+      if (!isLiked) this._likeT = setTimeout(() => this.setState({ justLiked: false }), 750);
+    };
+
+    const shareQuote = () => {
+      const url = location.origin + location.pathname + "?q=" + num;
+      const done = () => this.showToast("Link to Quote №" + num + " copied");
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done, done);
+      else done();
+    };
+
+    const archiveItems = QUOTES.map((qq, i) => ({
+      num: this.quoteNum(i),
+      dateLabel: this.fmtDate(i).replace(/^[A-Za-z]+, /, ""),
+      preview: qq.text,
+      author: qq.author,
+      likes: this.seedLikes(i) + (liked[this.quoteNum(i)] ? 1 : 0),
+      heartColor: liked[this.quoteNum(i)] ? "var(--accent)" : "var(--faint)",
+      open: () => this.transitionTo({ view: "today", idx: i })
+    })).reverse();
+
+    return {
+      isQuoteView: view === "today",
+      isArchiveView: view === "archive",
+      fadeOpacity: fade,
+
+      dateLabel: this.fmtDate(idx),
+      showClock: isToday,
+      timeLabel: now.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", second: "2-digit" }).toLowerCase(),
+      quoteNum: num,
+      quoteText: q.text,
+      quoteAuthor: q.author,
+      quoteDesc: q.desc,
+      photoSlotId: "dw-photo-" + num,
+      showPhoto: this.props.showPhoto ?? false,
+
+      likeCount,
+      heartColor: isLiked ? "var(--accent)" : "var(--faint)",
+      heartAnim: justLiked ? "dw-pop .5s ease" : "none",
+      justLiked,
+      toggleLike,
+      shareQuote,
+
+      navToday: () => { if (view !== "today" || !isToday) this.transitionTo({ view: "today", idx: QUOTES.length - 1 }); },
+      navArchive: () => { if (view !== "archive") this.transitionTo({ view: "archive" }); },
+      navRandom: () => {
+        let r = idx;
+        while (QUOTES.length > 1 && r === idx) r = Math.floor(Math.random() * QUOTES.length);
+        this.transitionTo({ view: "today", idx: r });
+      },
+      navTodayColor: view === "today" && isToday ? "var(--accent)" : "var(--muted)",
+      navTodayLine: view === "today" && isToday ? "var(--accent)" : "transparent",
+      navArchiveColor: view === "archive" ? "var(--accent)" : "var(--muted)",
+      navArchiveLine: view === "archive" ? "var(--accent)" : "transparent",
+
+      toggleTheme: () => {
+        const nextDark = !this.isDark();
+        try { localStorage.setItem("dw-theme", nextDark ? "dark" : "light"); } catch (e) {}
+        this.setState({ themeDark: nextDark });
+      },
+      themeGlyph: this.isDark() ? "☀" : "☾",
+
+      archiveItems,
+      sinceLabel: (() => { const d = new Date(); d.setDate(d.getDate() - 141); return d.toLocaleDateString("en-US", { month: "long", year: "numeric" }); })(),
+
+      toastText: toast || "Link copied",
+      toastOpacity: toast ? 1 : 0,
+      toastShift: toast ? "0" : "10px"
+    };
+  }
+}
+</script>
+</body>
+</html>
