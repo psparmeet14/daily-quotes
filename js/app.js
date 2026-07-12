@@ -2,10 +2,13 @@
  * Data-driven from data/quotes.json. Vanilla JS, zero dependencies.
  * Ported from the Claude Design reference (design-reference/).
  *
- * Phase 1 scope: today view + live clock, per-quote URLs, archive grid,
- * random, share (copy link), theme toggle, and a LOCAL like button.
- * NOTE: likes are localStorage-only for now — the global Supabase-backed
- * counter is Phase 3. See CLAUDE.md.
+ * Today view + live clock, per-quote URLs, archive grid, random, share
+ * (copy link), theme toggle, and a like button.
+ *
+ * Likes: if a Supabase config is present (window.DW_CONFIG in js/config.js),
+ * the count is GLOBAL — read from and incremented in Supabase, one like per
+ * browser (increment-only). Without a config it falls back to a local,
+ * per-browser toggle so the site works with zero backend. See CLAUDE.md.
  */
 (function () {
   "use strict";
@@ -13,12 +16,20 @@
   var LIKE_KEY = "dw-likes";
   var THEME_KEY = "dw-theme";
 
+  // Global-likes backend (optional). The anon key is public by design — it can
+  // only read counts and call increment_like, per the RLS in supabase/schema.sql.
+  var CFG = window.DW_CONFIG || {};
+  var LIKES_API = (CFG.supabaseUrl && CFG.supabaseAnonKey)
+    ? CFG.supabaseUrl.replace(/\/+$/, "") + "/rest/v1"
+    : null; // null => localStorage-only fallback
+
   var state = {
     quotes: [],       // chronological (oldest -> newest)
     view: "today",   // 'today' | 'archive'
     idx: 0,           // index into state.quotes of the displayed quote
     now: new Date(),
-    liked: {},        // id -> true
+    liked: {},        // id -> true (this browser has liked)
+    counts: {},       // id -> global like count (backend mode)
     justLiked: false
   };
 
@@ -36,6 +47,56 @@
   }
   function saveLiked(v) {
     try { localStorage.setItem(LIKE_KEY, JSON.stringify(v)); } catch (e) {}
+  }
+
+  /* ---------- likes backend (Supabase REST) ---------- */
+
+  function likeHeaders() {
+    return {
+      "apikey": CFG.supabaseAnonKey,
+      "Authorization": "Bearer " + CFG.supabaseAnonKey,
+      "Content-Type": "application/json"
+    };
+  }
+
+  // Load all global counts once at boot. Failures are non-fatal (show 0s).
+  function fetchCounts() {
+    if (!LIKES_API) return Promise.resolve();
+    return fetch(LIKES_API + "/likes?select=quote_id,count", { headers: likeHeaders() })
+      .then(function (r) { return r.ok ? r.json() : []; })
+      .then(function (rows) {
+        var map = {};
+        (rows || []).forEach(function (row) { map[row.quote_id] = row.count; });
+        state.counts = map;
+      })
+      .catch(function () {});
+  }
+
+  // Atomically increment one quote's count; resolves to the new total.
+  function sendLike(id) {
+    return fetch(LIKES_API + "/rpc/increment_like", {
+      method: "POST",
+      headers: likeHeaders(),
+      body: JSON.stringify({ qid: id })
+    }).then(function (r) {
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.json(); // scalar: the new count
+    });
+  }
+
+  // What the heart count should show for a quote.
+  function displayCount(id) {
+    if (LIKES_API) return state.counts[id] || 0;
+    return state.liked[id] ? 1 : 0; // local fallback
+  }
+
+  function schedulePopReset() {
+    clearTimeout(popTimer);
+    popTimer = setTimeout(function () {
+      state.justLiked = false;
+      if (els.likeBtn) els.likeBtn.classList.remove("pop");
+      if (els.plusOne) els.plusOne.hidden = true;
+    }, 750);
   }
 
   function prefersDark() {
@@ -190,7 +251,7 @@
     }
 
     els.likeBtn.classList.toggle("liked", liked);
-    els.likeCount.textContent = liked ? 1 : 0;
+    els.likeCount.textContent = displayCount(q.id);
     els.plusOne.hidden = !state.justLiked;
     els.likeBtn.classList.toggle("pop", state.justLiked);
   }
@@ -240,7 +301,7 @@
     var likes = document.createElement("span");
     likes.className = "likes" + (liked ? " liked" : "");
     likes.innerHTML = "♥ <span class=\"n\"></span>";
-    likes.querySelector(".n").textContent = liked ? 1 : 0;
+    likes.querySelector(".n").textContent = displayCount(q.id);
     foot.appendChild(author); foot.appendChild(likes);
 
     card.appendChild(row); card.appendChild(preview); card.appendChild(foot);
@@ -277,21 +338,50 @@
 
   function toggleLike() {
     var q = state.quotes[state.idx];
-    var nowLiked = !state.liked[q.id];
-    var next = Object.assign({}, state.liked);
-    if (nowLiked) next[q.id] = true; else delete next[q.id];
-    state.liked = next;
-    state.justLiked = nowLiked;
-    saveLiked(next);
-    renderQuote();
-    clearTimeout(popTimer);
-    if (nowLiked) {
-      popTimer = setTimeout(function () {
-        state.justLiked = false;
-        els.likeBtn.classList.remove("pop");
-        els.plusOne.hidden = true;
-      }, 750);
+    var id = q.id;
+
+    if (LIKES_API) {
+      // Global counter: increment-only, one like per browser.
+      if (state.liked[id]) return;
+      var next = Object.assign({}, state.liked);
+      next[id] = true;
+      state.liked = next;
+      saveLiked(next);
+      state.counts[id] = (state.counts[id] || 0) + 1; // optimistic
+      state.justLiked = true;
+      renderQuote();
+      schedulePopReset();
+
+      sendLike(id).then(function (serverCount) {
+        if (typeof serverCount === "number") {
+          state.counts[id] = serverCount;
+          if (state.view === "today" && state.quotes[state.idx] &&
+              state.quotes[state.idx].id === id) {
+            els.likeCount.textContent = serverCount;
+          }
+        }
+      }).catch(function () {
+        // Roll back the optimistic like so the user can retry.
+        state.counts[id] = Math.max(0, (state.counts[id] || 1) - 1);
+        var reverted = Object.assign({}, state.liked);
+        delete reverted[id];
+        state.liked = reverted;
+        saveLiked(reverted);
+        renderQuote();
+        showToast("Couldn't save your like — try again");
+      });
+      return;
     }
+
+    // Fallback: local per-browser toggle (no backend configured).
+    var nowLiked = !state.liked[id];
+    var local = Object.assign({}, state.liked);
+    if (nowLiked) local[id] = true; else delete local[id];
+    state.liked = local;
+    state.justLiked = nowLiked;
+    saveLiked(local);
+    renderQuote();
+    if (nowLiked) schedulePopReset();
   }
 
   function share() {
@@ -462,6 +552,8 @@
         render();
         syncUrl(true);
         startClock();
+        // Populate global like counts, then refresh what's on screen.
+        fetchCounts().then(function () { if (LIKES_API) render(); });
       })
       .catch(function (err) {
         var t = document.getElementById("quote-text");
