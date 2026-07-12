@@ -37,7 +37,9 @@ function page(q, num) {
     ? truncate(q.description, 200)
     : `Quote №${num} · Daily Wisdom — one quote a day on life, wealth, health, and wellbeing.`;
   const url = `${SITE_URL}/q/${q.id}.html`;
-  const image = q.image ? `${SITE_URL}/${String(q.image).replace(/^\/+/, "")}` : OG_IMAGE;
+  // Always use the branded "A quote a day." card for social unfurls, even when
+  // the quote has its own image — keeps every shared preview clean and on-brand.
+  const image = OG_IMAGE;
   const appUrl = `../index.html?date=${encodeURIComponent(q.id)}`;
 
   return `<!DOCTYPE html>
