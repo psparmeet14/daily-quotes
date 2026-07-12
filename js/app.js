@@ -343,6 +343,64 @@
     els.sinceLabel = document.getElementById("since-label");
   }
 
+  // Click/tap the quote image to enlarge it in a full-screen overlay.
+  function setupLightbox() {
+    if (!els.quoteImage) return;
+
+    var overlay = document.createElement("div");
+    overlay.className = "lightbox";
+    overlay.setAttribute("role", "dialog");
+    overlay.setAttribute("aria-modal", "true");
+    overlay.setAttribute("aria-label", "Enlarged image");
+
+    var big = document.createElement("img");
+    big.alt = "";
+    var closeBtn = document.createElement("button");
+    closeBtn.className = "lightbox-close";
+    closeBtn.type = "button";
+    closeBtn.setAttribute("aria-label", "Close enlarged image");
+    closeBtn.textContent = "✕";
+
+    overlay.appendChild(big);
+    overlay.appendChild(closeBtn);
+    document.body.appendChild(overlay);
+
+    var lastFocus = null;
+
+    function open() {
+      var src = els.quoteImage.getAttribute("src");
+      if (!src || els.quoteImage.hidden) return;
+      big.src = els.quoteImage.currentSrc || src;
+      big.alt = els.quoteImage.alt || "";
+      lastFocus = document.activeElement;
+      overlay.classList.add("open");
+      document.body.style.overflow = "hidden";
+      closeBtn.focus();
+    }
+    function close() {
+      if (!overlay.classList.contains("open")) return;
+      overlay.classList.remove("open");
+      document.body.style.overflow = "";
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+
+    // Clicking anywhere in the overlay (scrim, image, or ✕) closes it.
+    overlay.addEventListener("click", close);
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") close();
+    });
+
+    els.quoteImage.setAttribute("role", "button");
+    els.quoteImage.setAttribute("tabindex", "0");
+    els.quoteImage.setAttribute("aria-label", "Enlarge image");
+    els.quoteImage.addEventListener("click", open);
+    els.quoteImage.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); }
+    });
+
+    els.lightboxClose = close;
+  }
+
   function wire() {
     els.navToday.addEventListener("click", function () {
       transitionTo(function () { state.view = "today"; state.idx = defaultIdx(); }, false);
@@ -399,6 +457,7 @@
         if (state.view !== "archive") state.idx = defaultIdx();
         readUrl();
         wire();
+        setupLightbox();
         setSinceLabel();
         render();
         syncUrl(true);
