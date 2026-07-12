@@ -7,5 +7,14 @@
     "description": "The Stoic emperor's reminder that difficulty is not in the path — it is the path. What stands in the way of action becomes the action; the impediment to progress becomes progress itself.",
     "image": null,
     "tags": ["stoicism", "mindset"]
+  },
+  {
+    "id": "2026-07-12",
+    "date": "2026-07-12",
+    "quote": "The ability to do what you want, when you want, with who you want, for as long as you want, is priceless. It is the highest dividend money pays.",
+    "author": "Morgan Housel",
+    "description": "Money's best return isn't luxury, it's control. Someone earning 1L a month who owns their time often feels freer than someone at 25L stuck under constant pressure. Enough wealth removes constraints — after that, freedom comes down to discipline.",
+    "image": "images/2026-07-12.jpg",
+    "tags": ["wealth", "freedom", "finance"]
   }
 ]
