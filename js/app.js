@@ -13,7 +13,6 @@
 (function () {
   "use strict";
 
-  var LIKE_KEY = "dw-likes";
   var THEME_KEY = "dw-theme";
 
   // Global-likes backend (optional). The anon key is public by design — it can
@@ -22,6 +21,12 @@
   var LIKES_API = (CFG.supabaseUrl && CFG.supabaseAnonKey)
     ? CFG.supabaseUrl.replace(/\/+$/, "") + "/rest/v1"
     : null; // null => localStorage-only fallback
+
+  // "Already liked" flags live under a mode-specific key. Global mode must NOT
+  // reuse the old local-toggle key ("dw-likes"): likes recorded in local mode
+  // never reached the server, and a stale entry would silently block this
+  // browser's one global like (lit heart, count 0, clicks ignored).
+  var LIKE_KEY = LIKES_API ? "dw-likes-global" : "dw-likes";
 
   var state = {
     quotes: [],       // chronological (oldest -> newest)
