@@ -11,6 +11,6 @@
  * found in the Supabase dashboard under Project Settings → API.
  */
 window.DW_CONFIG = {
-  supabaseUrl: "",      // e.g. "https://abcdefgh.supabase.co"
-  supabaseAnonKey: ""   // the "anon" / "public" key (a long JWT string)
+  supabaseUrl: "https://serqzxcryabggngwdbjo.supabase.co",
+  supabaseAnonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNlcnF6eGNyeWFiZ2duZ3dkYmpvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM4MzM4NTUsImV4cCI6MjA5OTQwOTg1NX0.HzhaxsYr1EsZOYkmQqUQVQnbHRvTQ3CzyVvU3Jv3guo"
 };
