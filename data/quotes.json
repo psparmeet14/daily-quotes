@@ -16,5 +16,14 @@
     "description": "Money's best return isn't luxury, it's control. Someone earning 1L a month who owns their time often feels freer than someone at 25L stuck under constant pressure. Enough wealth removes constraints — after that, freedom comes down to discipline.",
     "image": "images/2026-07-12.jpg",
     "tags": ["wealth", "freedom", "finance"]
+  },
+  {
+    "id": "2026-07-13",
+    "date": "2026-07-13",
+    "quote": "You have power over your mind, not outside events. Realize this, and you will find strength.",
+    "author": "Marcus Aurelius",
+    "description": "People mistake Stoicism for indifference. It's actually about clarity: knowing what's yours to control and refusing to bleed energy on what isn't. Whatever you're building, your focus is the scarcest resource you have. Guard it.",
+    "image": null,
+    "tags": ["stoicism", "focus", "mindset"]
   }
 ]
