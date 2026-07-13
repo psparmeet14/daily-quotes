@@ -18,7 +18,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 
 // Canonical origin the pages advertise. Override with SITE_URL in CI if needed.
-const SITE_URL = (process.env.SITE_URL || "https://psparmeet14.github.io/daily-quotes")
+const SITE_URL = (process.env.SITE_URL || "https://www.dailywisdom365.com")
   .replace(/\/+$/, "");
 const OG_IMAGE = `${SITE_URL}/og-default.png`;
 

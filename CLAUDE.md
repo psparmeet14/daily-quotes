@@ -6,7 +6,7 @@ A daily-quote website focused on life improvement, happiness, success, wealth, f
 - **Owner GitHub account:** https://github.com/psparmeet14
 - **Repo name:** daily-quotes (create under psparmeet14)
 - **Hosting:** GitHub Pages, auto-deployed via GitHub Actions on every push to `main`
-- **Live URL (after setup):** https://psparmeet14.github.io/daily-quotes/
+- **Live URL (canonical):** https://www.dailywisdom365.com/ — custom domain, served at the root. The apex `dailywisdom365.com` and the old `psparmeet14.github.io/daily-quotes` URL both 301-redirect here. The domain is set in the repo's Pages settings AND in the `CNAME` file at the repo root; keep both, and always use the www domain in OG tags, canonical links, and generated share pages.
 
 ## Core product behavior
 1. **Default view = today's quote.** Large, elegant typography. Shows today's date and a live-updating time.
@@ -49,6 +49,7 @@ A daily-quote website focused on life improvement, happiness, success, wealth, f
 ```
 daily-quotes/
 ├── CLAUDE.md
+├── CNAME               # Custom domain (www.dailywisdom365.com) — do not delete
 ├── index.html          # Today's quote (default)
 ├── archive.html        # All quotes
 ├── css/style.css

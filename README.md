@@ -2,7 +2,7 @@
 
 One quote a day on life, happiness, success, wealth, health, and wellbeing.
 
-**Live:** https://psparmeet14.github.io/daily-quotes/
+**Live:** https://www.dailywisdom365.com/
 
 A calm, editorial, zero-dependency static site. Quotes live in
 [`data/quotes.json`](data/quotes.json) — no database, no CMS. Every push to
