@@ -25,5 +25,14 @@
     "description": "People mistake Stoicism for indifference. It's actually about clarity: knowing what's yours to control and refusing to bleed energy on what isn't. Whatever you're building, your focus is the scarcest resource you have. Guard it.",
     "image": null,
     "tags": ["stoicism", "focus", "mindset"]
+  },
+  {
+    "id": "2026-07-14",
+    "date": "2026-07-14",
+    "quote": "It is not the strongest or the most intelligent that survives, but the one most capable of adapting to change.",
+    "author": "Popular paraphrase of Charles Darwin's theory of evolution",
+    "description": "The world is constantly changing, and success belongs to those who learn, adapt, and keep moving forward. Strength and intelligence are valuable, but without the willingness to evolve, they eventually lose their advantage. Keep your values steady, but let your methods grow with the times.",
+    "image": null,
+    "tags": ["adaptability", "growth", "change"]
   }
 ]
