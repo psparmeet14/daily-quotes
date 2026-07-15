@@ -34,5 +34,14 @@
     "description": "The world is constantly changing, and success belongs to those who learn, adapt, and keep moving forward. Strength and intelligence are valuable, but without the willingness to evolve, they eventually lose their advantage. Keep your values steady, but let your methods grow with the times.",
     "image": null,
     "tags": ["adaptability", "growth", "change"]
+  },
+  {
+    "id": "2026-07-15",
+    "date": "2026-07-15",
+    "quote": "Do unto others as you would have them do unto you.",
+    "author": "The Golden Rule (Matthew 7:12)",
+    "description": "Nearly every ethical tradition landed on this same rule independently. The hard part was never understanding it — it's going first. Don't wait for people to earn your kindness. Set the tone yourself. It costs little and quietly changes how others treat you back.",
+    "image": "images/2026-07-15.jpg",
+    "tags": ["kindness", "ethics", "relationships"]
   }
 ]
