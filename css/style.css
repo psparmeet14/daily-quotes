@@ -345,7 +345,8 @@ button { -webkit-tap-highlight-color: transparent; font-family: inherit; }
 .archive-card .foot {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
+  gap: 12px;
   margin-top: auto;
 }
 .archive-card .author {
@@ -353,8 +354,14 @@ button { -webkit-tap-highlight-color: transparent; font-family: inherit; }
   letter-spacing: .12em;
   text-transform: uppercase;
   color: var(--muted);
+  min-width: 0;
 }
-.archive-card .likes { font-size: 13px; color: var(--faint); }
+.archive-card .likes {
+  font-size: 13px;
+  color: var(--faint);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
 .archive-card .likes.liked { color: var(--accent); }
 .archive-card .likes .n { color: var(--muted); font-variant-numeric: tabular-nums; }
 .archive-empty { text-align: center; color: var(--muted); font-size: 15px; }
