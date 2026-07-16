@@ -43,5 +43,14 @@
     "description": "Nearly every ethical tradition landed on this same rule independently. The hard part was never understanding it — it's going first. Don't wait for people to earn your kindness. Set the tone yourself. It costs little and quietly changes how others treat you back.",
     "image": "images/2026-07-15.jpg",
     "tags": ["kindness", "ethics", "relationships"]
+  },
+  {
+    "id": "2026-07-16",
+    "date": "2026-07-16",
+    "quote": "The great principle and foundation of all virtue and worth is placed in this: that a man is able to deny himself his own desires, cross his own inclinations, and purely follow what reason directs as best, though the appetite lean the other way.",
+    "author": "John Locke, Some Thoughts Concerning Education (1693), §33",
+    "description": "Locke isn't calling self-command one virtue among many. He calls it the foundation of all of them, the thing every other good quality is built on. Everything you're proud of building came from winning the argument between reason and appetite a few thousand times. (The popular one-liner \"the discipline of desire is the background of character\" is a modern paraphrase; this is what he actually wrote.)",
+    "image": null,
+    "tags": ["discipline", "self-control", "character"]
   }
 ]
