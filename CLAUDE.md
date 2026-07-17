@@ -75,6 +75,9 @@ Claude Code must then:
 
 Keep this workflow to a single message from the owner. Never require multiple back-and-forth steps for a routine daily add.
 
+### Scheduling ahead (batch adds)
+The owner may send several quotes at once to cover upcoming days. Append them all to `data/quotes.json` with their future dates (same validation as a daily add), commit once as `Queue quotes for <first-date> to <last-date>`, and push. The deployed site never reveals a quote early: `scripts/filter-released.mjs` drops future-dated entries at build time (so they're absent from the served JSON, the archive, Random, and `/q/` OG pages), and a daily cron in `deploy.yml` (18:30 UTC = midnight IST) redeploys so each quote goes live on its own day. Local preview shows the full queue — it reads the unfiltered repo file.
+
 ## Build phases
 - **Phase 1 (MVP):** Repo + Pages deployment, today-view with date/time, quotes.json, daily add workflow, per-quote URLs, OG meta tags (at minimum site-wide card; per-quote cards if feasible).
 - **Phase 2:** Archive page, random button, image support polish, share button (copy link).

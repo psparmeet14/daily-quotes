@@ -18,6 +18,11 @@ Claude appends the entry to `data/quotes.json`, copies/compresses any image into
 `images/`, commits as `Add quote for <date>`, and pushes. The deploy runs
 automatically.
 
+**Scheduling ahead:** send several quotes at once and they're queued as
+future-dated entries in `quotes.json`. A daily cron redeploys at midnight IST,
+and the build drops not-yet-released quotes, so each one goes live — archive,
+share page, and all — only on its own day.
+
 ## Structure
 
 ```
@@ -28,6 +33,7 @@ js/app.js             App logic — data-driven from quotes.json
 data/quotes.json      The quotes (source of truth)
 images/               Optional per-quote images (named by date)
 scripts/build-og.mjs  Pre-renders per-quote Open Graph pages into /q/ (CI)
+scripts/filter-released.mjs  Drops future-dated (queued) quotes at deploy time (CI)
 og-default.png        Site-wide social share card
 .github/workflows/    Pages deployment
 ```

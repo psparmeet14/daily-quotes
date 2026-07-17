@@ -3,6 +3,11 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  schedule:
+    # Daily at 18:30 UTC = 00:00 IST. Releases any quote queued for the new
+    # day (future-dated entries in quotes.json are dropped at build time by
+    # scripts/filter-released.mjs until their date arrives).
+    - cron: "30 18 * * *"
   workflow_dispatch:
 
 # Allow one concurrent deployment; let a new push cancel an in-flight run.
@@ -26,6 +31,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+
+      - name: Drop unreleased (future-dated) quotes
+        run: node scripts/filter-released.mjs
 
       - name: Pre-render per-quote Open Graph pages
         run: node scripts/build-og.mjs
