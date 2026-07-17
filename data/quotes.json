@@ -61,5 +61,14 @@
     "description": "Zhuangzi compares a calm mind to still water: only when the surface stops moving can it show what's actually there. The popular version of this idea, \"to the mind that is still, the whole universe surrenders,\" is a modern rewrite usually pinned on Lao Tzu, who never said it. The original claims less and delivers more. Nothing surrenders to a still mind; it simply sees clearly, and most bad decisions get made in the churn.",
     "image": null,
     "tags": ["taoism", "stillness", "clarity"]
+  },
+  {
+    "id": "2026-07-18",
+    "date": "2026-07-18",
+    "quote": "You have two lives, and the second begins when you realize you only have one.",
+    "author": "Unknown (commonly misattributed to Confucius)",
+    "description": "The first life runs on someday, later, eventually. At some point it sinks in that there's no second attempt, and the deferrals stop making sense. The Stoics built a daily practice around remembering exactly this, because the realization fades and needs renewing.",
+    "image": null,
+    "tags": ["mortality", "time", "urgency"]
   }
 ]
