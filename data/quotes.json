@@ -88,5 +88,41 @@
     "description": "Gregory Hays translates the original entry as \"To stop talking about what the good man is like, and just be one.\" Marcus wrote it as a note to himself, which is the detail worth keeping: the emperor of Rome caught himself using philosophy talk to postpone practice. Debating what goodness requires can absorb years. Doing the parts you already understand starts today.",
     "image": null,
     "tags": ["stoicism", "action", "virtue"]
+  },
+  {
+    "id": "2026-07-21",
+    "date": "2026-07-21",
+    "quote": "And those who were seen dancing were thought to be insane by those who could not hear the music.",
+    "author": "Unknown (commonly misattributed to Nietzsche)",
+    "description": "Conviction looks like madness from the outside when people can't see what's driving you. Anyone who has left a stable path to build something has felt the stares. Worth remembering the other edge of it though: not every dancer hears real music. Sometimes the onlookers see something you're missing. The skill is telling the two apart.",
+    "image": null,
+    "tags": ["conviction", "nonconformity", "discernment"]
+  },
+  {
+    "id": "2026-07-22",
+    "date": "2026-07-22",
+    "quote": "We have all eternity to celebrate the victories but only a few hours before sunset to win them.",
+    "author": "Amy Carmichael",
+    "description": "Carmichael spent 55 years in India rescuing children from exploitation and never went home, so the \"few hours before sunset\" wasn't a metaphor she took lightly. Her point sits on an asymmetry most people get backwards: the reward for meaningful work lasts a long time, but the window to actually do it is short and fixed. The praise can wait. The work cannot.",
+    "image": null,
+    "tags": ["purpose", "urgency", "work"]
+  },
+  {
+    "id": "2026-07-23",
+    "date": "2026-07-23",
+    "quote": "True happiness is... to enjoy the present, without anxious dependence upon the future.",
+    "author": "Seneca, Of a Happy Life (trans. Roger L'Estrange, 1678)",
+    "description": "This is easy to misread as \"live for today.\" Seneca meant something firmer. He planned and worked as much as anyone, but he refused to rent his contentment to outcomes he couldn't control. Work toward tomorrow. Just don't hand it the keys to how you feel today. The anxiety you spend on an uncertain future is paid from the one moment you actually own.",
+    "image": null,
+    "tags": ["stoicism", "presence", "contentment"]
+  },
+  {
+    "id": "2026-07-24",
+    "date": "2026-07-24",
+    "quote": "Wealth consists not in having great possessions, but in having few wants.",
+    "author": "Attributed to Epictetus",
+    "description": "Wealth is really the gap between what you have and what you want, and you can close it from either end. Earning more shrinks it. So does wanting less, and that side is fully in your control and can't be taxed, lost, or stolen. The catch is telling a real want from one you were sold. Cutting the manufactured ones is freedom. Cutting genuine ambition is just giving up.",
+    "image": null,
+    "tags": ["wealth", "contentment", "desire"]
   }
 ]
