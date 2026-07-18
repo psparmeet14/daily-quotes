@@ -70,5 +70,23 @@
     "description": "The first life runs on someday, later, eventually. At some point it sinks in that there's no second attempt, and the deferrals stop making sense. The Stoics built a daily practice around remembering exactly this, because the realization fades and needs renewing.",
     "image": null,
     "tags": ["mortality", "time", "urgency"]
+  },
+  {
+    "id": "2026-07-19",
+    "date": "2026-07-19",
+    "quote": "Faith is the strength by which a shattered world shall emerge into the light.",
+    "author": "Attributed to Helen Keller",
+    "description": "Quote collections pin this line to her 1940 book Let Us Have Faith, but the sentence doesn't appear there; it reads like a later condensation of the book's argument. The argument itself is hers. Writing while the world came apart for the second time in her life, she kept insisting that belief in repair has to arrive before the repair does. Faith, for her, meant starting to rebuild before the light is visible.",
+    "image": null,
+    "tags": ["faith", "hope", "resilience"]
+  },
+  {
+    "id": "2026-07-20",
+    "date": "2026-07-20",
+    "quote": "Waste no more time arguing about what a good man should be. Be one.",
+    "author": "Marcus Aurelius, Meditations 10.16 (modern rendering)",
+    "description": "Gregory Hays translates the original entry as \"To stop talking about what the good man is like, and just be one.\" Marcus wrote it as a note to himself, which is the detail worth keeping: the emperor of Rome caught himself using philosophy talk to postpone practice. Debating what goodness requires can absorb years. Doing the parts you already understand starts today.",
+    "image": null,
+    "tags": ["stoicism", "action", "virtue"]
   }
 ]
