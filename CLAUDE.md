@@ -56,8 +56,13 @@ daily-quotes/
 ├── js/app.js
 ├── data/quotes.json
 ├── images/
+├── package.json        # Build-time devDeps only (satori, resvg) — zero runtime deps
+├── scripts/            # Build scripts + fonts for OG pages and share cards
 └── .github/workflows/deploy.yml
 ```
+
+## Open Graph share cards
+Each per-quote page (`/q/<date>.html`, from `scripts/build-og.mjs`) points its `og:image` at a per-quote **share card** — a 1200×630 PNG rendered from the quote text by `scripts/build-og-image.mjs` (satori → resvg, Newsreader serif on the brand background, text only, no photo). Cards land in `/q/img/<date>.png` (gitignored, built in CI). These are build-time devDependencies; the deployed site has **no runtime dependencies**. CI runs `npm ci` before the build scripts. Card design/typography lives entirely in `build-og-image.mjs`.
 
 ## Design
 The visual design was produced with Claude Design and is available in the `/design-reference` folder (if present). Match it faithfully: calm, premium, editorial aesthetic — warm off-white background, deep charcoal text, one muted accent (gold or sage), large serif quote typography, dark mode support, mobile-first. The quote is the hero; no clutter.

@@ -9,7 +9,7 @@
  *
  * Zero dependencies. Run: `node scripts/build-og.mjs` (also runs in CI).
  */
-import { readFile, writeFile, mkdir, rm } from "node:fs/promises";
+import { readFile, writeFile, mkdir, rm, readdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -20,7 +20,6 @@ const ROOT = path.resolve(__dirname, "..");
 // Canonical origin the pages advertise. Override with SITE_URL in CI if needed.
 const SITE_URL = (process.env.SITE_URL || "https://www.dailywisdom365.com")
   .replace(/\/+$/, "");
-const OG_IMAGE = `${SITE_URL}/og-default.png`;
 
 const esc = (s) =>
   String(s == null ? "" : s)
@@ -37,9 +36,10 @@ function page(q, num) {
     ? truncate(q.description, 200)
     : `Quote №${num} · Daily Wisdom — one quote a day on life, wealth, health, and wellbeing.`;
   const url = `${SITE_URL}/q/${q.id}.html`;
-  // Always use the branded "A quote a day." card for social unfurls, even when
-  // the quote has its own image — keeps every shared preview clean and on-brand.
-  const image = OG_IMAGE;
+  // Per-quote share card carrying the actual quote text (built by
+  // build-og-image.mjs into q/img/<id>.png). Text only — no photo — even when
+  // the quote has its own image, so every unfurl stays clean and on-brand.
+  const image = `${SITE_URL}/q/img/${q.id}.png`;
   const appUrl = `../index.html?date=${encodeURIComponent(q.id)}`;
 
   return `<!DOCTYPE html>
@@ -92,8 +92,15 @@ async function main() {
   );
 
   const outDir = path.join(ROOT, "q");
-  if (existsSync(outDir)) await rm(outDir, { recursive: true, force: true });
   await mkdir(outDir, { recursive: true });
+  // Clear stale top-level pages but preserve q/img (the per-quote card PNGs,
+  // which build-og-image.mjs manages) so build order between the two doesn't
+  // matter.
+  if (existsSync(outDir)) {
+    for (const f of await readdir(outDir)) {
+      if (f.endsWith(".html")) await rm(path.join(outDir, f), { force: true });
+    }
+  }
 
   for (let i = 0; i < quotes.length; i++) {
     const q = quotes[i];

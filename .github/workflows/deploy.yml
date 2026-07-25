@@ -31,6 +31,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
+
+      - name: Install build dependencies
+        run: npm ci
 
       - name: Drop unreleased (future-dated) quotes
         run: node scripts/filter-released.mjs
@@ -38,8 +42,15 @@ jobs:
       - name: Pre-render per-quote Open Graph pages
         run: node scripts/build-og.mjs
 
+      - name: Render per-quote share cards
+        run: node scripts/build-og-image.mjs
+
       - name: Disable Jekyll processing
         run: touch .nojekyll
+
+      # Keep node_modules (and its native binaries) out of the published site.
+      - name: Prune build-only files from the artifact
+        run: rm -rf node_modules
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3

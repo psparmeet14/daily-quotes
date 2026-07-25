@@ -33,8 +33,10 @@ js/app.js             App logic — data-driven from quotes.json
 data/quotes.json      The quotes (source of truth)
 images/               Optional per-quote images (named by date)
 scripts/build-og.mjs  Pre-renders per-quote Open Graph pages into /q/ (CI)
+scripts/build-og-image.mjs  Renders a per-quote share card PNG into /q/img/ (CI)
 scripts/filter-released.mjs  Drops future-dated (queued) quotes at deploy time (CI)
-og-default.png        Site-wide social share card
+scripts/fonts/        Newsreader subset used to render the share cards
+og-default.png        Site-wide fallback share card
 .github/workflows/    Pages deployment
 ```
 
@@ -42,8 +44,15 @@ og-default.png        Site-wide social share card
 
 Static per-quote pages are generated at build time under `/q/<date>.html`, each
 carrying its own Open Graph / Twitter Card tags so shared links unfurl into a
-rich preview. The **Share** button copies that link. Human visitors are bounced
-to the SPA; crawlers read the meta tags.
+rich preview. Each page points at a per-quote **share card** — a 1200×630 PNG
+rendered from the quote text itself (into `/q/img/<date>.png`) in the site's
+serif on the brand background, so every shared link previews with the actual
+quote. The **Share** button copies that link. Human visitors are bounced to the
+SPA; crawlers read the meta tags.
+
+The card generator uses two build-time dev-dependencies (`satori` +
+`@resvg/resvg-js`); the deployed site itself has **no runtime dependencies**.
+CI runs `npm ci` then the build scripts — see `.github/workflows/deploy.yml`.
 
 ## Roadmap
 

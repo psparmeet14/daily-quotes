@@ -1,0 +1,15 @@
+{
+  "name": "daily-quotes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Build tooling for Daily Wisdom — per-quote Open Graph pages and share cards. No runtime dependencies; these are used only at deploy time.",
+  "license": "MIT",
+  "scripts": {
+    "build:og": "node scripts/build-og.mjs",
+    "build:cards": "node scripts/build-og-image.mjs"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "satori": "^0.18.4"
+  }
+}
