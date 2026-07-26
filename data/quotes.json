@@ -142,5 +142,50 @@
     "description": "Intelligence is largely fixed and largely out of your hands. Whether you apply it isn't. That's the honest core of this line. It doesn't mean ability is worthless, it means ability sitting unused loses to ability actually put to work, which is why people who show up and persist routinely pass more gifted people who don't. The belief matters because it drives the effort and the skill it takes to back the claim up. On its own, repeated at a mirror, it's just noise.",
     "image": null,
     "tags": ["mindset", "self-belief", "effort"]
+  },
+  {
+    "id": "2026-07-27",
+    "date": "2026-07-27",
+    "quote": "Stand up straight with your shoulders back.",
+    "author": "Jordan Peterson, 12 Rules for Life (2018)",
+    "description": "Posture is the one part of confidence you can adopt before you feel it. Carrying yourself like someone who takes himself seriously changes how people respond to you, and that response loops back into how you actually feel. It's the smallest available first move toward getting your life in order, which is why Peterson puts it first.",
+    "image": null,
+    "tags": ["confidence", "posture", "self-respect"]
+  },
+  {
+    "id": "2026-07-28",
+    "date": "2026-07-28",
+    "quote": "Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy.",
+    "author": "Thich Nhat Hanh",
+    "description": "Most people treat a smile as the readout of a good mood, an effect with no power of its own. Thich Nhat Hanh points at the loop running the other way too. The act can prime the feeling. On a flat day, the smile you don't quite feel is sometimes what starts the feeling arriving.",
+    "image": null,
+    "tags": ["joy", "mindfulness", "happiness"]
+  },
+  {
+    "id": "2026-07-29",
+    "date": "2026-07-29",
+    "quote": "The two most powerful warriors are patience and time.",
+    "author": "Leo Tolstoy, War and Peace (1869), popular rendering",
+    "description": "In the novel this is how the Russian general beats Napoleon: not by a bigger army, but by refusing to be rushed while time did the damage for him. The idea travels well beyond war. Most things you're trying to build are won the same way, by staying in position long enough for compounding and circumstance to turn in your favor. Patience here isn't passivity. It's knowing the clock is on your side and acting like it.",
+    "image": null,
+    "tags": ["patience", "time", "persistence"]
+  },
+  {
+    "id": "2026-07-30",
+    "date": "2026-07-30",
+    "quote": "Compound interest is the eighth wonder of the world.",
+    "author": "Unknown (falsely attributed to Einstein; traced to a 1925 bank advertisement)",
+    "description": "Whoever first said it, and it was not Einstein despite the internet's insistence, the math is the real point. Small gains that build on themselves quietly outrun large one-time wins, given enough time. It runs the same way on money, skills, and reputation, and it runs in both directions.",
+    "image": null,
+    "tags": ["compounding", "wealth", "finance"]
+  },
+  {
+    "id": "2026-07-31",
+    "date": "2026-07-31",
+    "quote": "I am the master of my fate, I am the captain of my soul.",
+    "author": "William Ernest Henley, \"Invictus\" (written 1875)",
+    "description": "Henley wrote this recovering from an amputation, which is the detail that saves it from bravado. He wasn't claiming control over what happened to him. He was claiming the one thing that stayed his: how he met it. That's what taking responsibility actually means. Not that everything is your fault, but that your response is always your own.",
+    "image": null,
+    "tags": ["resilience", "responsibility", "adversity"]
   }
 ]
