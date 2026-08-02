@@ -223,5 +223,32 @@
     "description": "Confucius said this to a student known for overclaiming, which is the tell. He isn't describing humility as a nice quality. He's calling accurate self-assessment a form of knowledge in itself. Most costly mistakes start with someone holding a confident opinion just past the edge of what they actually know. Saying \"I don't know\" is where the finding out begins.",
     "image": null,
     "tags": ["knowledge", "humility", "self-awareness"]
+  },
+  {
+    "id": "2026-08-05",
+    "date": "2026-08-05",
+    "quote": "Observing without evaluating is the highest form of human intelligence.",
+    "author": "J. Krishnamurti, as paraphrased by Marshall Rosenberg in Nonviolent Communication (1999)",
+    "description": "Rosenberg's first reaction to this line was \"what nonsense,\" and then he caught himself having just made an evaluation. That's the whole lesson in one move. Most of what passes for observation is already a verdict. \"He's careless\" is a judgment. \"He missed two deadlines\" is a fact. Swap one for the other and the conversation stops being a fight.",
+    "image": null,
+    "tags": ["communication", "observation", "judgment"]
+  },
+  {
+    "id": "2026-08-06",
+    "date": "2026-08-06",
+    "quote": "To know yourself you need not go to any book, to any priest, to any psychologist. The whole treasure is within yourself.",
+    "author": "J. Krishnamurti, public talk, London, 19 June 1962",
+    "description": "His target here is authority, the habit of accepting someone else's description of who you are and calling that self-knowledge. That part holds up. Worth keeping one thing alongside it though. Introspection on its own is unreliable, and blind spots are invisible by definition, which is why honest friends and good therapists remain some of the clearest mirrors available. Read it as don't outsource the verdict, not as don't ever ask for help.",
+    "image": null,
+    "tags": ["self-knowledge", "authority", "introspection"]
+  },
+  {
+    "id": "2026-08-07",
+    "date": "2026-08-07",
+    "quote": "Nothing great was ever achieved without enthusiasm.",
+    "author": "Ralph Waldo Emerson, \"Circles,\" Essays: First Series (1841)",
+    "description": "Emerson's next line explains what he meant: the way of life is by abandonment. He isn't describing cheerfulness or high energy. He means self-forgetting, being absorbed enough in the work that you stop watching yourself do it. Worth pairing with the obvious caveat, since most great work also gets finished on days when the enthusiasm has entirely gone. It supplies the reason to start and the reason to come back. Discipline handles the rest.",
+    "image": null,
+    "tags": ["enthusiasm", "work", "absorption"]
   }
 ]
