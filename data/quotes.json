@@ -205,5 +205,14 @@
     "description": "Einstein wrote this to his nineteen-year-old son, who was struggling badly with his mental health, so the original spirit was gentler than the poster version suggests. He wasn't talking about ambition. He meant that a bike stays upright through small continuous corrections, and stopping is what makes you fall. Some days the honest goal is just to keep pedaling slowly. Speed can wait. Direction matters more than either.",
     "image": null,
     "tags": ["momentum", "perseverance", "balance"]
+  },
+  {
+    "id": "2026-08-03",
+    "date": "2026-08-03",
+    "quote": "A great man is always willing to be little.",
+    "author": "Ralph Waldo Emerson, \"Compensation,\" Essays: First Series (1841)",
+    "description": "Emerson wasn't talking about modesty. Read in context, he means being willing to be a beginner, to be beaten, to be caught not knowing. His line for the alternative is sharp: sitting on the cushion of advantages, where you go to sleep. Comfort removes the feedback that made you good in the first place. The people who keep growing are the ones who keep putting themselves somewhere they can still be embarrassed.",
+    "image": null,
+    "tags": ["humility", "growth", "learning"]
   }
 ]
