@@ -268,5 +268,50 @@
     "description": "This appears on thousands of posters under Gandhi's name, but nobody has produced a source for it, so it goes up here unsigned. The thought holds anyway, with one honest edit. Today doesn't decide the future on its own. Luck, health and other people all get a vote. What today decides is your contribution to it, which happens to be the only part you're actually holding.",
     "image": null,
     "tags": ["action", "future", "agency"]
+  },
+  {
+    "id": "2026-08-10",
+    "date": "2026-08-10",
+    "quote": "Dream is not that which you see while sleeping, it is something that does not let you sleep.",
+    "author": "A.P.J. Abdul Kalam, Wings of Fire (1999)",
+    "description": "Kalam repeated this to students for decades, and the line he's drawing is between fantasy and ambition. Fantasy is comfortable and asks nothing of you. A real aim keeps returning when you would rather be resting. Read it as intensity of purpose though, not as permission to burn your sleep. Anxiety keeps people awake too, and it builds nothing.",
+    "image": null,
+    "tags": ["dreams", "ambition", "purpose"]
+  },
+  {
+    "id": "2026-08-11",
+    "date": "2026-08-11",
+    "quote": "There is only one good, knowledge, and one evil, ignorance.",
+    "author": "Socrates, as reported by Diogenes Laertius, Lives of Eminent Philosophers 2.31",
+    "description": "Socrates wrote nothing down, so this reaches us secondhand, recorded roughly six hundred years after his death. The claim behind it is that nobody does wrong on purpose, only out of not knowing better. Generous, and partly right. But anyone who has skipped a workout they had already planned knows the gap it misses. Knowing the right thing and doing it are two separate problems.",
+    "image": null,
+    "tags": ["knowledge", "ignorance", "virtue"]
+  },
+  {
+    "id": "2026-08-12",
+    "date": "2026-08-12",
+    "quote": "In each one of us there are two ruling and leading principles, which we follow whithersoever they lead; one is the innate desire for pleasures, the other an acquired opinion which strives for the best. These two sometimes agree within us and are sometimes in strife.",
+    "author": "Plato, Phaedrus 237d (trans. Harold N. Fowler)",
+    "description": "The popular line about behavior flowing from desire, emotion and knowledge is a modern summary that got pinned on Plato. What he actually wrote is sharper. One of these forces is innate and the other is acquired. Wanting arrives on its own. The judgment that argues back has to be built, and it stays built only if you keep working on it.",
+    "image": null,
+    "tags": ["desire", "reason", "self-control"]
+  },
+  {
+    "id": "2026-08-13",
+    "date": "2026-08-13",
+    "quote": "It is the mark of an educated mind to rest satisfied with the degree of precision which the nature of the subject admits, and not to seek exactness where only an approximation is possible.",
+    "author": "Aristotle, Nicomachean Ethics 1094b (popular translation)",
+    "description": "The famous version of this line, about entertaining a thought without accepting it, was never written by Aristotle. It first showed up in a 1959 book and has travelled under his name ever since. What he actually said is about precision, and it's more useful. Some questions allow exact answers and some only allow good estimates, and treating the second kind like the first is its own error. A great deal of false confidence is built on decimal places nobody earned.",
+    "image": null,
+    "tags": ["precision", "thinking", "judgment"]
+  },
+  {
+    "id": "2026-08-14",
+    "date": "2026-08-14",
+    "quote": "Our greatest glory is not in never falling, but in rising every time we fall.",
+    "author": "Oliver Goldsmith, The Citizen of the World (1760–62), commonly misattributed to Confucius",
+    "description": "The misattribution has a good explanation. Goldsmith wrote this inside a book of letters composed in the voice of a fictional Chinese philosopher living in London, and over two centuries readers swapped the invented sage for the famous one. The thought survives the correction. Add one condition though: getting up counts only if you get up differently. Falling the same way repeatedly is a loop with better branding.",
+    "image": null,
+    "tags": ["resilience", "failure", "persistence"]
   }
 ]
