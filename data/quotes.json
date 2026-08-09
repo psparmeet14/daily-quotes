@@ -313,5 +313,23 @@
     "description": "The misattribution has a good explanation. Goldsmith wrote this inside a book of letters composed in the voice of a fictional Chinese philosopher living in London, and over two centuries readers swapped the invented sage for the famous one. The thought survives the correction. Add one condition though: getting up counts only if you get up differently. Falling the same way repeatedly is a loop with better branding.",
     "image": null,
     "tags": ["resilience", "failure", "persistence"]
+  },
+  {
+    "id": "2026-08-15",
+    "date": "2026-08-15",
+    "quote": "Science is organized knowledge. Wisdom is organized life.",
+    "author": "Will Durant, The Story of Philosophy (1926), widely misattributed to Immanuel Kant",
+    "description": "Kant never wrote this. Durant did, while explaining Kant to general readers, and in that same chapter he admitted Kant was too dense to quote directly. So he wrote his own summary, and the summary got handed back to Kant. The first phrase wasn't even Durant's; Herbert Spencer coined it in 1854. The idea survives all of that. By Durant's measure wisdom is a question of arrangement rather than volume. Plenty of people know what they should be doing. Fewer have built a life where the knowing shows up.",
+    "image": null,
+    "tags": ["wisdom", "knowledge", "order"]
+  },
+  {
+    "id": "2026-08-16",
+    "date": "2026-08-16",
+    "quote": "He who has a why to live can bear almost any how.",
+    "author": "Friedrich Nietzsche, Twilight of the Idols (1888), \"Maxims and Arrows\" (rendering popularized by Viktor Frankl)",
+    "description": "Most people meet this line through Viktor Frankl, who used it to explain why some prisoners in the camps kept going. Purpose doesn't remove pain. It changes what the pain costs you, because suffering with a reason attached is a different thing from suffering that looks pointless. Note the word almost though. Nietzsche put it there on purpose, and Frankl knew better than anyone that plenty of people with strong reasons still didn't make it out.",
+    "image": null,
+    "tags": ["purpose", "meaning", "suffering"]
   }
 ]
