@@ -340,5 +340,14 @@
     "description": "Mandela wrote this at the close of his autobiography, after twenty-seven years in prison and after becoming president. It runs against the usual message about persistence. He doesn't promise the climbing ends. What he found at the top of the great hill was more hills, and he called that a secret rather than a disappointment.",
     "image": null,
     "tags": ["perseverance", "growth", "humility"]
+  },
+  {
+    "id": "2026-08-18",
+    "date": "2026-08-18",
+    "quote": "A person who never made a mistake never tried anything new.",
+    "author": "Proverb (falsely attributed to Albert Einstein; the earliest Einstein link dates to 1995, forty years after his death)",
+    "description": "The idea is nearly two centuries older than the name attached to it, and Theodore Roosevelt was using a version of it in 1901. It holds up anyway, because anything genuinely new produces errors when there's nobody to copy. The reverse doesn't follow though. Mistakes don't prove you were trying something new, and the question worth asking is which kind you made: the price of exploring, or the price of not paying attention.",
+    "image": null,
+    "tags": ["mistakes", "learning", "risk"]
   }
 ]
