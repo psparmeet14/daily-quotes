@@ -358,5 +358,14 @@
     "description": "The short version that circulates overstates the case. Plenty of worthwhile things cost nothing, like a good conversation or an hour with someone you love. The full passage is more careful: Roosevelt's admiration goes to people who were handed difficult lives and handled them well. The praise is for how they carried it, not for the weight itself.",
     "image": null,
     "tags": ["effort", "difficulty", "character"]
+  },
+  {
+    "id": "2026-08-20",
+    "date": "2026-08-20",
+    "quote": "Not having heard something is not as good as having heard it; having heard it is not as good as having seen it; having seen it is not as good as knowing it; knowing it is not as good as putting it into practice.",
+    "author": "Xunzi, Book 8 \"Ruxiao\" (3rd century BC)",
+    "description": "Confucius and Benjamin Franklin both get credited for the popular version of this, and neither said it. It comes from Xunzi, a Confucian philosopher born after Confucius died, and his original runs one rung further than the English paraphrase: hearing, then seeing, then knowing, then doing. Practice sits at the top. You can hold an idea perfectly and still not have it, because knowing and doing are separate skills.",
+    "image": null,
+    "tags": ["practice", "knowledge", "action"]
   }
 ]
