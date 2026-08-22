@@ -376,5 +376,14 @@
     "description": "The line is about direction rather than effort. You can work extremely hard and still be going nowhere in particular, because no wind helps a ship whose port hasn't been named. Notice the metaphor doesn't ask for certainty about the destination. It asks you to have chosen one, which is a lower bar and still the step most people skip.",
     "image": null,
     "tags": ["direction", "purpose", "stoicism"]
+  },
+  {
+    "id": "2026-08-22",
+    "date": "2026-08-22",
+    "quote": "Patience, persistence and perspiration make an unbeatable combination for success.",
+    "author": "Attributed to Napoleon Hill",
+    "description": "The word doing the damage is unbeatable. Plenty of patient, persistent, hard-working people never arrive, because effort without direction is just well-executed drift. Keep all three qualities, then add the one the list leaves out: knowing where you're actually trying to go.",
+    "image": null,
+    "tags": ["persistence", "patience", "success"]
   }
 ]
