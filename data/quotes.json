@@ -367,5 +367,14 @@
     "description": "Confucius and Benjamin Franklin both get credited for the popular version of this, and neither said it. It comes from Xunzi, a Confucian philosopher born after Confucius died, and his original runs one rung further than the English paraphrase: hearing, then seeing, then knowing, then doing. Practice sits at the top. You can hold an idea perfectly and still not have it, because knowing and doing are separate skills.",
     "image": null,
     "tags": ["practice", "knowledge", "action"]
+  },
+  {
+    "id": "2026-08-21",
+    "date": "2026-08-21",
+    "quote": "If a man knows not to which port he sails, no wind is favorable.",
+    "author": "Seneca, Letters to Lucilius",
+    "description": "The line is about direction rather than effort. You can work extremely hard and still be going nowhere in particular, because no wind helps a ship whose port hasn't been named. Notice the metaphor doesn't ask for certainty about the destination. It asks you to have chosen one, which is a lower bar and still the step most people skip.",
+    "image": null,
+    "tags": ["direction", "purpose", "stoicism"]
   }
 ]
