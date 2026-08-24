@@ -394,5 +394,14 @@
     "description": "Gyms print the short version on their walls, but that association was invented in 1861, when a Liverpool athletics club lifted five words out of context. Juvenal wasn't writing about exercise. Satire X lists the foolish things people pray for, money and power and fame and long life, and argues that a sound mind in a sound body is the only request worth making. A few lines later he adds the sharper half: this is the one thing on the list you can give yourself.",
     "image": null,
     "tags": ["health", "mind", "body"]
+  },
+  {
+    "id": "2026-08-24",
+    "date": "2026-08-24",
+    "quote": "To understand everything makes one very indulgent, and to feel deeply inspires great kindness.",
+    "author": "Germaine de Staël, Corinne, or Italy (1807), Book 18, ch. 5",
+    "description": "The famous English version, to understand all is to forgive all, entered through a translation and quietly changed the claim. De Staël wrote indulgent, not forgiving. Understanding someone's reasons earns them latitude, not absolution. And the half nobody quotes is the better one: feeling deeply inspires great kindness.",
+    "image": null,
+    "tags": ["understanding", "kindness", "empathy"]
   }
 ]
