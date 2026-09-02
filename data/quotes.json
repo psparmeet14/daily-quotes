@@ -439,5 +439,14 @@
     "description": "The key word is self-incurred. Kant blames unwillingness rather than ignorance, and his examples land uncomfortably well today: letting a book serve as your understanding, a clergyman as your conscience, a doctor decide your diet, so the effort never falls to you. Worth separating this from its modern imitation though. Kant accepted that we rely on people who know more than we do. What he objected to was handing your judgment over permanently, because thinking costs something and being told is free.",
     "image": null,
     "tags": ["independence", "courage", "thinking"]
+  },
+  {
+    "id": "2026-08-29",
+    "date": "2026-08-29",
+    "quote": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+    "author": "Will Durant, The Story of Philosophy (1926), widely misattributed to Aristotle",
+    "description": "This is the second famous line from the same 1926 book that people credit to the wrong man. Durant wrote it while summarizing Aristotle, slotting his own sentence between two real quotations. The idea is faithful enough, since Aristotle did argue that virtues form by doing the actions rather than intending them. Nobody becomes disciplined by deciding to be. You become it through the unremarkable repetition nobody watches.",
+    "image": null,
+    "tags": ["habit", "discipline", "excellence"]
   }
 ]
