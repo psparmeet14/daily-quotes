@@ -466,5 +466,14 @@
     "description": "This site has already run a famous Lao Tzu line that turned out to belong to Zhuangzi. This one is genuinely in the Tao Te Ching, with one honest caveat: scholars generally treat the text as a compilation rather than one man's work, so Laozi names a tradition as much as an author. The distinction it draws holds regardless. Power over other people is a different skill from power over yourself, and only one of the two compounds.",
     "image": null,
     "tags": ["taoism", "self-mastery", "wisdom"]
+  },
+  {
+    "id": "2026-09-01",
+    "date": "2026-09-01",
+    "quote": "It is not that we have a short time to live, but that we waste a lot of it.",
+    "author": "Seneca, On the Shortness of Life (c. 49 AD)",
+    "description": "The essay's central observation hasn't aged at all: people guard their money carefully and hand their time to whoever asks for it. Two thousand years later the only real change is that the interruptions arrive faster. His point is that we spend time as though the supply were unlimited, then call the result bad luck.",
+    "image": null,
+    "tags": ["time", "stoicism", "urgency"]
   }
 ]
