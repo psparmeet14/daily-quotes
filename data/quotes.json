@@ -448,5 +448,14 @@
     "description": "This is the second famous line from the same 1926 book that people credit to the wrong man. Durant wrote it while summarizing Aristotle, slotting his own sentence between two real quotations. The idea is faithful enough, since Aristotle did argue that virtues form by doing the actions rather than intending them. Nobody becomes disciplined by deciding to be. You become it through the unremarkable repetition nobody watches.",
     "image": null,
     "tags": ["habit", "discipline", "excellence"]
+  },
+  {
+    "id": "2026-08-30",
+    "date": "2026-08-30",
+    "quote": "Men are disturbed not by the things which happen, but by the opinions about the things.",
+    "author": "Epictetus, Enchiridion 5 (c. 125 AD)",
+    "description": "Epictetus is pointing at a gap most people never notice. Between something happening and your response to it, a judgment gets made, usually too fast to catch. Most of what feels like a reaction to circumstance is a reaction to your reading of it. Events stay outside your control. The reading doesn't.",
+    "image": null,
+    "tags": ["stoicism", "perception", "control"]
   }
 ]
