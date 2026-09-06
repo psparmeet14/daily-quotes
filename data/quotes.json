@@ -511,5 +511,14 @@
     "description": "This is easy to mistake for wishful thinking until you know who wrote it. Julian nearly died at thirty, lived through two waves of plague, and spent twenty years in a small cell working out what she had seen. Her own text rules out the soft reading. She records being told not that she would avoid storms or illness or hardship, but that she would not be overcome. The promise was never that nothing goes wrong.",
     "image": null,
     "tags": ["hope", "endurance", "faith"]
+  },
+  {
+    "id": "2026-09-06",
+    "date": "2026-09-06",
+    "quote": "When failure occurred, the leader of the organization owned that failure. When success came, he gave it to his team.",
+    "author": "A.P.J. Abdul Kalam, on Prof. Satish Dhawan (Wharton India Economic Forum, 2008)",
+    "description": "Kalam had overruled the computer himself. It flagged a fault, his experts said there was fuel in reserve, he went manual, and the rocket ended up in the Bay of Bengal. The failure was his, and Dhawan fronted the press conference anyway. A year later, after the successful launch, Dhawan sent Kalam out to face the cameras alone. Absorbing blame in public works only because the hard analysis happened in private, and the fault was fixed within twelve months.",
+    "image": null,
+    "tags": ["leadership", "accountability", "teams"]
   }
 ]
