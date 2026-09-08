@@ -529,5 +529,14 @@
     "description": "This gets quoted as Epictetus almost everywhere, but it belongs to Zeno, who founded Stoicism more than three centuries before him. The setting is the part that gets lost: he said it to a young man who was talking nonsense. It was a rebuke, not a communication tip. The anatomy is just a joke carrying the real point, which is that most people treat conversation as waiting for their turn.",
     "image": null,
     "tags": ["listening", "humility", "stoicism"]
+  },
+  {
+    "id": "2026-09-08",
+    "date": "2026-09-08",
+    "quote": "Wealth without work. Pleasure without conscience. Knowledge without character. Commerce without morality. Science without humanity. Worship without sacrifice. Politics without principle.",
+    "author": "The Seven Social Sins, published by Mahatma Gandhi in Young India, 22 October 1925 (originally preached by Frederick Lewis Donaldson at Westminster Abbey, March 1925)",
+    "description": "Gandhi never claimed to have written this. He printed it saying a friend had sent it, and his only comment was that the friend wanted readers to know these things through the heart rather than the intellect. Notice the shape of each line. Wealth, pleasure, knowledge and commerce are all good things. Each becomes a sin only when cut loose from the thing that was restraining it. The list reads best pointed inward.",
+    "image": null,
+    "tags": ["ethics", "character", "integrity"]
   }
 ]
