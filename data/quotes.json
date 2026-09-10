@@ -547,5 +547,14 @@
     "description": "This gets quoted from stages and in books as a private reflection. It was a shoe advertisement, narrated by Jordan over footage of himself walking into an arena, and the numbers are deliberately round. Worth knowing, because the last line claims more than the evidence carries. Plenty of players miss nine thousand shots and never become Jordan. What the figure really proves is that he kept being handed the ball, and you only reach that count by taking the shot on the nights you might miss.",
     "image": null,
     "tags": ["failure", "persistence", "success"]
+  },
+  {
+    "id": "2026-09-10",
+    "date": "2026-09-10",
+    "quote": "In the 1,526 singles matches I played in my career, I won almost 80% of those matches. Now, what percentage of the points do you think I won? Only 54%. Even top-ranked tennis players win barely more than half the points they play.",
+    "author": "Roger Federer, Dartmouth commencement address, June 2024",
+    "description": "The number holds up against the record books, and it holds for the others too. Nadal and Djokovic each won about 54% of their points. Jimmy Connors won under half of his and still took four matches in five. What separates the best in the world from everyone else is roughly four points in a hundred, spread across twenty years. The margin is thinner than it looks from the stands, and it only shows up if you keep playing the next point.",
+    "image": null,
+    "tags": ["persistence", "margins", "sport"]
   }
 ]
