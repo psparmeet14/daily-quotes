@@ -556,5 +556,14 @@
     "description": "The number holds up against the record books, and it holds for the others too. Nadal and Djokovic each won about 54% of their points. Jimmy Connors won under half of his and still took four matches in five. What separates the best in the world from everyone else is roughly four points in a hundred, spread across twenty years. The margin is thinner than it looks from the stands, and it only shows up if you keep playing the next point.",
     "image": null,
     "tags": ["persistence", "margins", "sport"]
+  },
+  {
+    "id": "2026-09-11",
+    "date": "2026-09-11",
+    "quote": "I learned that courage was not the absence of fear, but the triumph over it. I felt fear more times than I can remember, but I hid it behind a mask of boldness. The brave man is not he who does not feel afraid, but he who conquers that fear.",
+    "author": "Nelson Mandela, Long Walk to Freedom (1994)",
+    "description": "The version that circulates drops the middle sentence, and it's the one that matters. He felt fear more times than he could remember and hid it behind a mask of boldness. He wasn't fearless. He was frightened and went anyway, performing a steadiness he didn't feel because millions of people were watching him for a signal. That mask made sense for a man in his position. It's a costly habit to carry into an ordinary life.",
+    "image": null,
+    "tags": ["courage", "fear", "leadership"]
   }
 ]
