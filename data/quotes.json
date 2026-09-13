@@ -583,5 +583,23 @@
     "description": "The famous version comes from a John Lennon song in 1980, but he wasn't first. Allen Saunders, who wrote the Mary Worth comic strip, published this line in Reader's Digest in January 1957, when Lennon was sixteen. This isn't a case against planning. The warning is about attention, because the stretch between plans keeps getting treated as a waiting room, and that stretch turns out to have been the life.",
     "image": null,
     "tags": ["attention", "presence", "time"]
+  },
+  {
+    "id": "2026-09-14",
+    "date": "2026-09-14",
+    "quote": "The unexamined life is not worth living.",
+    "author": "Socrates, in Plato's Apology 38a (399 BC)",
+    "description": "The modern reading turns this into advice about journaling. Socrates meant something more public and more uncomfortable: elenchus, questioning people out loud until their beliefs contradicted themselves. He said it at his trial after conviction, when exile was still on the table if he agreed to go quiet. He refused, and drank hemlock, which tells you the line was not hyperbole.",
+    "image": null,
+    "tags": ["self-examination", "philosophy", "integrity"]
+  },
+  {
+    "id": "2026-09-15",
+    "date": "2026-09-15",
+    "quote": "All our dreams can come true if we have the courage to pursue them.",
+    "author": "Attributed to Walt Disney (no primary source identified)",
+    "description": "Disney is among the most quoted people online and among the least sourced. This line has no traceable origin, and the even more famous one about dreaming it and doing it was written for a theme park attraction that opened in 1983, seventeen years after his death. On the claim itself, courage isn't sufficient, and his own life is the evidence. He went bankrupt in 1923 and lost the rights to Oswald the Rabbit along with most of his animators in 1928. Courage got him back to the drawing board. It didn't guarantee what happened next.",
+    "image": null,
+    "tags": ["dreams", "courage", "persistence"]
   }
 ]
