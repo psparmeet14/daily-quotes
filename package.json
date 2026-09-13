@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "build:og": "node scripts/build-og.mjs",
-    "build:cards": "node scripts/build-og-image.mjs"
+    "build:cards": "node scripts/build-og-image.mjs",
+    "coverage": "node scripts/coverage.mjs"
   },
   "devDependencies": {
     "@resvg/resvg-js": "^2.6.2",
