@@ -42,7 +42,10 @@ A daily-quote website focused on life improvement, happiness, success, wealth, f
 ]
 ```
 - `id` = date (YYYY-MM-DD). Guarantees uniqueness and natural ordering.
-- `description`, `image`, `tags` are optional (omit or null).
+- `description` and `image` are optional (omit or null).
+- `tags` is a **controlled vocabulary** — exactly two per quote, drawn only from this set of 14:
+  `stoicism` `discipline` `persistence` `purpose` `time` `wealth` `health` `knowledge` `humility` `courage` `kindness` `action` `attention` `character`
+  These drive tag filtering on the site, so they must stay a small, shared vocabulary. Free-form tags were retired in Sept 2026: 118 one-off tags across 67 quotes meant 59% were used exactly once and filtering by them returned a single result. Do not invent a new tag to fit a quote — pick the two closest from the set. Adding a 15th theme is a deliberate decision, not a side effect of an add; `npm run check:dupes` fails on anything off-vocabulary.
 - Images live in `/images`, named by date, compressed to under ~200KB before commit.
 
 ## Repo structure

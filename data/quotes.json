@@ -6,7 +6,7 @@
     "author": "Marcus Aurelius",
     "description": "The Stoic emperor's reminder that difficulty is not in the path — it is the path. What stands in the way of action becomes the action; the impediment to progress becomes progress itself.",
     "image": null,
-    "tags": ["stoicism", "mindset"]
+    "tags": ["stoicism", "persistence"]
   },
   {
     "id": "2026-07-12",
@@ -15,7 +15,7 @@
     "author": "Morgan Housel",
     "description": "Money's best return isn't luxury, it's control. Someone earning 1L a month who owns their time often feels freer than someone at 25L stuck under constant pressure. Enough wealth removes constraints — after that, freedom comes down to discipline.",
     "image": "images/2026-07-12.jpg",
-    "tags": ["wealth", "freedom", "finance"]
+    "tags": ["wealth", "time"]
   },
   {
     "id": "2026-07-13",
@@ -24,7 +24,7 @@
     "author": "Marcus Aurelius",
     "description": "People mistake Stoicism for indifference. It's actually about clarity: knowing what's yours to control and refusing to bleed energy on what isn't. Whatever you're building, your focus is the scarcest resource you have. Guard it.",
     "image": null,
-    "tags": ["stoicism", "focus", "mindset"]
+    "tags": ["stoicism", "attention"]
   },
   {
     "id": "2026-07-14",
@@ -33,7 +33,7 @@
     "author": "Popular paraphrase of Charles Darwin's theory of evolution",
     "description": "The world is constantly changing, and success belongs to those who learn, adapt, and keep moving forward. Strength and intelligence are valuable, but without the willingness to evolve, they eventually lose their advantage. Keep your values steady, but let your methods grow with the times.",
     "image": null,
-    "tags": ["adaptability", "growth", "change"]
+    "tags": ["persistence", "action"]
   },
   {
     "id": "2026-07-15",
@@ -42,7 +42,7 @@
     "author": "The Golden Rule (Matthew 7:12)",
     "description": "Nearly every ethical tradition landed on this same rule independently. The hard part was never understanding it — it's going first. Don't wait for people to earn your kindness. Set the tone yourself. It costs little and quietly changes how others treat you back.",
     "image": "images/2026-07-15.jpg",
-    "tags": ["kindness", "ethics", "relationships"]
+    "tags": ["kindness", "character"]
   },
   {
     "id": "2026-07-16",
@@ -51,7 +51,7 @@
     "author": "John Locke, Some Thoughts Concerning Education (1693), §33",
     "description": "Locke isn't calling self-command one virtue among many. He calls it the foundation of all of them, the thing every other good quality is built on. Everything you're proud of building came from winning the argument between reason and appetite a few thousand times. (The popular one-liner \"the discipline of desire is the background of character\" is a modern paraphrase; this is what he actually wrote.)",
     "image": null,
-    "tags": ["discipline", "self-control", "character"]
+    "tags": ["discipline", "character"]
   },
   {
     "id": "2026-07-17",
@@ -60,7 +60,7 @@
     "author": "Zhuangzi, The Way of Heaven (trans. James Legge)",
     "description": "Zhuangzi compares a calm mind to still water: only when the surface stops moving can it show what's actually there. The popular version of this idea, \"to the mind that is still, the whole universe surrenders,\" is a modern rewrite usually pinned on Lao Tzu, who never said it. The original claims less and delivers more. Nothing surrenders to a still mind; it simply sees clearly, and most bad decisions get made in the churn.",
     "image": null,
-    "tags": ["taoism", "stillness", "clarity"]
+    "tags": ["attention", "knowledge"]
   },
   {
     "id": "2026-07-18",
@@ -69,7 +69,7 @@
     "author": "Unknown (commonly misattributed to Confucius)",
     "description": "The first life runs on someday, later, eventually. At some point it sinks in that there's no second attempt, and the deferrals stop making sense. The Stoics built a daily practice around remembering exactly this, because the realization fades and needs renewing.",
     "image": null,
-    "tags": ["mortality", "time", "urgency"]
+    "tags": ["time", "purpose"]
   },
   {
     "id": "2026-07-19",
@@ -78,7 +78,7 @@
     "author": "Attributed to Helen Keller",
     "description": "Quote collections pin this line to her 1940 book Let Us Have Faith, but the sentence doesn't appear there; it reads like a later condensation of the book's argument. The argument itself is hers. Writing while the world came apart for the second time in her life, she kept insisting that belief in repair has to arrive before the repair does. Faith, for her, meant starting to rebuild before the light is visible.",
     "image": null,
-    "tags": ["faith", "hope", "resilience"]
+    "tags": ["persistence", "courage"]
   },
   {
     "id": "2026-07-20",
@@ -87,7 +87,7 @@
     "author": "Marcus Aurelius, Meditations 10.16 (modern rendering)",
     "description": "Gregory Hays translates the original entry as \"To stop talking about what the good man is like, and just be one.\" Marcus wrote it as a note to himself, which is the detail worth keeping: the emperor of Rome caught himself using philosophy talk to postpone practice. Debating what goodness requires can absorb years. Doing the parts you already understand starts today.",
     "image": null,
-    "tags": ["stoicism", "action", "virtue"]
+    "tags": ["stoicism", "action"]
   },
   {
     "id": "2026-07-21",
@@ -96,7 +96,7 @@
     "author": "Unknown (commonly misattributed to Nietzsche)",
     "description": "Conviction looks like madness from the outside when people can't see what's driving you. Anyone who has left a stable path to build something has felt the stares. Worth remembering the other edge of it though: not every dancer hears real music. Sometimes the onlookers see something you're missing. The skill is telling the two apart.",
     "image": null,
-    "tags": ["conviction", "nonconformity", "discernment"]
+    "tags": ["courage", "knowledge"]
   },
   {
     "id": "2026-07-22",
@@ -105,7 +105,7 @@
     "author": "Amy Carmichael",
     "description": "Carmichael spent 55 years in India rescuing children from exploitation and never went home, so the \"few hours before sunset\" wasn't a metaphor she took lightly. Her point sits on an asymmetry most people get backwards: the reward for meaningful work lasts a long time, but the window to actually do it is short and fixed. The praise can wait. The work cannot.",
     "image": null,
-    "tags": ["purpose", "urgency", "work"]
+    "tags": ["time", "purpose"]
   },
   {
     "id": "2026-07-23",
@@ -114,7 +114,7 @@
     "author": "Seneca, Of a Happy Life (trans. Roger L'Estrange, 1678)",
     "description": "This is easy to misread as \"live for today.\" Seneca meant something firmer. He planned and worked as much as anyone, but he refused to rent his contentment to outcomes he couldn't control. Work toward tomorrow. Just don't hand it the keys to how you feel today. The anxiety you spend on an uncertain future is paid from the one moment you actually own.",
     "image": null,
-    "tags": ["stoicism", "presence", "contentment"]
+    "tags": ["stoicism", "attention"]
   },
   {
     "id": "2026-07-24",
@@ -123,7 +123,7 @@
     "author": "Attributed to Epictetus",
     "description": "Wealth is really the gap between what you have and what you want, and you can close it from either end. Earning more shrinks it. So does wanting less, and that side is fully in your control and can't be taxed, lost, or stolen. The catch is telling a real want from one you were sold. Cutting the manufactured ones is freedom. Cutting genuine ambition is just giving up.",
     "image": null,
-    "tags": ["wealth", "contentment", "desire"]
+    "tags": ["wealth", "discipline"]
   },
   {
     "id": "2026-07-25",
@@ -132,7 +132,7 @@
     "author": "Ralph Waldo Emerson, The Conduct of Life (1860), \"Power\"",
     "description": "The common version of this line is the proverb \"health is wealth,\" but Emerson's wording makes a claim the proverb misses. First. Not one asset among many, the one everything else rests on. His reasoning is the part worth keeping: sickness spends everything it has just to keep going, while health throws off a surplus, enough for your own work and enough left to help someone else. Every plan you're making assumes a body well enough to carry it out.",
     "image": null,
-    "tags": ["health", "wealth", "wellbeing"]
+    "tags": ["health", "wealth"]
   },
   {
     "id": "2026-07-26",
@@ -141,7 +141,7 @@
     "author": "Robin Sharma, The Monk Who Sold His Ferrari (1997)",
     "description": "Intelligence is largely fixed and largely out of your hands. Whether you apply it isn't. That's the honest core of this line. It doesn't mean ability is worthless, it means ability sitting unused loses to ability actually put to work, which is why people who show up and persist routinely pass more gifted people who don't. The belief matters because it drives the effort and the skill it takes to back the claim up. On its own, repeated at a mirror, it's just noise.",
     "image": null,
-    "tags": ["mindset", "self-belief", "effort"]
+    "tags": ["persistence", "action"]
   },
   {
     "id": "2026-07-27",
@@ -150,7 +150,7 @@
     "author": "Jordan Peterson, 12 Rules for Life (2018)",
     "description": "Posture is the one part of confidence you can adopt before you feel it. Carrying yourself like someone who takes himself seriously changes how people respond to you, and that response loops back into how you actually feel. It's the smallest available first move toward getting your life in order, which is why Peterson puts it first.",
     "image": null,
-    "tags": ["confidence", "posture", "self-respect"]
+    "tags": ["courage", "discipline"]
   },
   {
     "id": "2026-07-28",
@@ -159,7 +159,7 @@
     "author": "Thich Nhat Hanh",
     "description": "Most people treat a smile as the readout of a good mood, an effect with no power of its own. Thich Nhat Hanh points at the loop running the other way too. The act can prime the feeling. On a flat day, the smile you don't quite feel is sometimes what starts the feeling arriving.",
     "image": null,
-    "tags": ["joy", "mindfulness", "happiness"]
+    "tags": ["attention", "health"]
   },
   {
     "id": "2026-07-29",
@@ -168,7 +168,7 @@
     "author": "Leo Tolstoy, War and Peace (1869), popular rendering",
     "description": "In the novel this is how the Russian general beats Napoleon: not by a bigger army, but by refusing to be rushed while time did the damage for him. The idea travels well beyond war. Most things you're trying to build are won the same way, by staying in position long enough for compounding and circumstance to turn in your favor. Patience here isn't passivity. It's knowing the clock is on your side and acting like it.",
     "image": null,
-    "tags": ["patience", "time", "persistence"]
+    "tags": ["persistence", "time"]
   },
   {
     "id": "2026-07-30",
@@ -177,7 +177,7 @@
     "author": "Unknown (falsely attributed to Einstein; traced to a 1925 bank advertisement)",
     "description": "Whoever first said it, and it was not Einstein despite the internet's insistence, the math is the real point. Small gains that build on themselves quietly outrun large one-time wins, given enough time. It runs the same way on money, skills, and reputation, and it runs in both directions.",
     "image": null,
-    "tags": ["compounding", "wealth", "finance"]
+    "tags": ["wealth", "time"]
   },
   {
     "id": "2026-07-31",
@@ -186,7 +186,7 @@
     "author": "William Ernest Henley, \"Invictus\" (written 1875)",
     "description": "Henley wrote this recovering from an amputation, which is the detail that saves it from bravado. He wasn't claiming control over what happened to him. He was claiming the one thing that stayed his: how he met it. That's what taking responsibility actually means. Not that everything is your fault, but that your response is always your own.",
     "image": null,
-    "tags": ["resilience", "responsibility", "adversity"]
+    "tags": ["courage", "persistence"]
   },
   {
     "id": "2026-08-01",
@@ -195,7 +195,7 @@
     "author": "Jerzy Gregorek",
     "description": "Difficulty isn't optional, and that's what the tidy phrasing hides. What you're choosing is when to pay it: now, in the workout you didn't feel like doing, or later, when the bill arrives with interest at a time you don't pick. Gregorek adds a caveat worth keeping, that the hardship has to be sensible and constructive. Hard for its own sake is just a different way to waste yourself.",
     "image": null,
-    "tags": ["discipline", "choices", "trade-offs"]
+    "tags": ["discipline", "persistence"]
   },
   {
     "id": "2026-08-02",
@@ -204,7 +204,7 @@
     "author": "Albert Einstein, letter to his son Eduard, 5 February 1930 (popular translation)",
     "description": "Einstein wrote this to his nineteen-year-old son, who was struggling badly with his mental health, so the original spirit was gentler than the poster version suggests. He wasn't talking about ambition. He meant that a bike stays upright through small continuous corrections, and stopping is what makes you fall. Some days the honest goal is just to keep pedaling slowly. Speed can wait. Direction matters more than either.",
     "image": null,
-    "tags": ["momentum", "perseverance", "balance"]
+    "tags": ["persistence", "action"]
   },
   {
     "id": "2026-08-03",
@@ -213,7 +213,7 @@
     "author": "Ralph Waldo Emerson, \"Compensation,\" Essays: First Series (1841)",
     "description": "Emerson wasn't talking about modesty. Read in context, he means being willing to be a beginner, to be beaten, to be caught not knowing. His line for the alternative is sharp: sitting on the cushion of advantages, where you go to sleep. Comfort removes the feedback that made you good in the first place. The people who keep growing are the ones who keep putting themselves somewhere they can still be embarrassed.",
     "image": null,
-    "tags": ["humility", "growth", "learning"]
+    "tags": ["humility", "knowledge"]
   },
   {
     "id": "2026-08-04",
@@ -222,7 +222,7 @@
     "author": "Confucius, Analects 2:17 (trans. James Legge)",
     "description": "Confucius said this to a student known for overclaiming, which is the tell. He isn't describing humility as a nice quality. He's calling accurate self-assessment a form of knowledge in itself. Most costly mistakes start with someone holding a confident opinion just past the edge of what they actually know. Saying \"I don't know\" is where the finding out begins.",
     "image": null,
-    "tags": ["knowledge", "humility", "self-awareness"]
+    "tags": ["humility", "knowledge"]
   },
   {
     "id": "2026-08-05",
@@ -231,7 +231,7 @@
     "author": "J. Krishnamurti, as paraphrased by Marshall Rosenberg in Nonviolent Communication (1999)",
     "description": "Rosenberg's first reaction to this line was \"what nonsense,\" and then he caught himself having just made an evaluation. That's the whole lesson in one move. Most of what passes for observation is already a verdict. \"He's careless\" is a judgment. \"He missed two deadlines\" is a fact. Swap one for the other and the conversation stops being a fight.",
     "image": null,
-    "tags": ["communication", "observation", "judgment"]
+    "tags": ["attention", "kindness"]
   },
   {
     "id": "2026-08-06",
@@ -240,7 +240,7 @@
     "author": "J. Krishnamurti, public talk, London, 19 June 1962",
     "description": "His target here is authority, the habit of accepting someone else's description of who you are and calling that self-knowledge. That part holds up. Worth keeping one thing alongside it though. Introspection on its own is unreliable, and blind spots are invisible by definition, which is why honest friends and good therapists remain some of the clearest mirrors available. Read it as don't outsource the verdict, not as don't ever ask for help.",
     "image": null,
-    "tags": ["self-knowledge", "authority", "introspection"]
+    "tags": ["humility", "knowledge"]
   },
   {
     "id": "2026-08-07",
@@ -249,7 +249,7 @@
     "author": "Ralph Waldo Emerson, \"Circles,\" Essays: First Series (1841)",
     "description": "Emerson's next line explains what he meant: the way of life is by abandonment. He isn't describing cheerfulness or high energy. He means self-forgetting, being absorbed enough in the work that you stop watching yourself do it. Worth pairing with the obvious caveat, since most great work also gets finished on days when the enthusiasm has entirely gone. It supplies the reason to start and the reason to come back. Discipline handles the rest.",
     "image": null,
-    "tags": ["enthusiasm", "work", "absorption"]
+    "tags": ["action", "purpose"]
   },
   {
     "id": "2026-08-08",
@@ -258,7 +258,7 @@
     "author": "Confucius, Analects 9:19 (trans. Burton Watson)",
     "description": "The popular version of this idea, about moving mountains one small stone at a time, is not Confucius and is not in the Analects. What he actually said is better, because it's about ownership rather than patience. Stop one basket short and the stopping belongs to you. Carry one basket onto flat ground and the progress belongs to you too. Nobody else gets the credit or the blame for the basket you did or didn't move today.",
     "image": null,
-    "tags": ["ownership", "effort", "consistency"]
+    "tags": ["persistence", "discipline"]
   },
   {
     "id": "2026-08-09",
@@ -267,7 +267,7 @@
     "author": "Unknown (widely attributed to Mahatma Gandhi; no source identified in his collected writings)",
     "description": "This appears on thousands of posters under Gandhi's name, but nobody has produced a source for it, so it goes up here unsigned. The thought holds anyway, with one honest edit. Today doesn't decide the future on its own. Luck, health and other people all get a vote. What today decides is your contribution to it, which happens to be the only part you're actually holding.",
     "image": null,
-    "tags": ["action", "future", "agency"]
+    "tags": ["action", "time"]
   },
   {
     "id": "2026-08-10",
@@ -276,7 +276,7 @@
     "author": "A.P.J. Abdul Kalam, Wings of Fire (1999)",
     "description": "Kalam repeated this to students for decades, and the line he's drawing is between fantasy and ambition. Fantasy is comfortable and asks nothing of you. A real aim keeps returning when you would rather be resting. Read it as intensity of purpose though, not as permission to burn your sleep. Anxiety keeps people awake too, and it builds nothing.",
     "image": null,
-    "tags": ["dreams", "ambition", "purpose"]
+    "tags": ["purpose", "action"]
   },
   {
     "id": "2026-08-11",
@@ -285,7 +285,7 @@
     "author": "Socrates, as reported by Diogenes Laertius, Lives of Eminent Philosophers 2.31",
     "description": "Socrates wrote nothing down, so this reaches us secondhand, recorded roughly six hundred years after his death. The claim behind it is that nobody does wrong on purpose, only out of not knowing better. Generous, and partly right. But anyone who has skipped a workout they had already planned knows the gap it misses. Knowing the right thing and doing it are two separate problems.",
     "image": null,
-    "tags": ["knowledge", "ignorance", "virtue"]
+    "tags": ["knowledge", "character"]
   },
   {
     "id": "2026-08-12",
@@ -294,7 +294,7 @@
     "author": "Plato, Phaedrus 237d (trans. Harold N. Fowler)",
     "description": "The popular line about behavior flowing from desire, emotion and knowledge is a modern summary that got pinned on Plato. What he actually wrote is sharper. One of these forces is innate and the other is acquired. Wanting arrives on its own. The judgment that argues back has to be built, and it stays built only if you keep working on it.",
     "image": null,
-    "tags": ["desire", "reason", "self-control"]
+    "tags": ["discipline", "knowledge"]
   },
   {
     "id": "2026-08-13",
@@ -303,7 +303,7 @@
     "author": "Aristotle, Nicomachean Ethics 1094b (popular translation)",
     "description": "The famous version of this line, about entertaining a thought without accepting it, was never written by Aristotle. It first showed up in a 1959 book and has travelled under his name ever since. What he actually said is about precision, and it's more useful. Some questions allow exact answers and some only allow good estimates, and treating the second kind like the first is its own error. A great deal of false confidence is built on decimal places nobody earned.",
     "image": null,
-    "tags": ["precision", "thinking", "judgment"]
+    "tags": ["knowledge", "humility"]
   },
   {
     "id": "2026-08-14",
@@ -312,7 +312,7 @@
     "author": "Oliver Goldsmith, The Citizen of the World (1760–62), commonly misattributed to Confucius",
     "description": "The misattribution has a good explanation. Goldsmith wrote this inside a book of letters composed in the voice of a fictional Chinese philosopher living in London, and over two centuries readers swapped the invented sage for the famous one. The thought survives the correction. Add one condition though: getting up counts only if you get up differently. Falling the same way repeatedly is a loop with better branding.",
     "image": null,
-    "tags": ["resilience", "failure", "persistence"]
+    "tags": ["persistence", "courage"]
   },
   {
     "id": "2026-08-15",
@@ -321,7 +321,7 @@
     "author": "Will Durant, The Story of Philosophy (1926), widely misattributed to Immanuel Kant",
     "description": "Kant never wrote this. Durant did, while explaining Kant to general readers, and in that same chapter he admitted Kant was too dense to quote directly. So he wrote his own summary, and the summary got handed back to Kant. The first phrase wasn't even Durant's; Herbert Spencer coined it in 1854. The idea survives all of that. By Durant's measure wisdom is a question of arrangement rather than volume. Plenty of people know what they should be doing. Fewer have built a life where the knowing shows up.",
     "image": null,
-    "tags": ["wisdom", "knowledge", "order"]
+    "tags": ["knowledge", "discipline"]
   },
   {
     "id": "2026-08-16",
@@ -330,7 +330,7 @@
     "author": "Friedrich Nietzsche, Twilight of the Idols (1888), \"Maxims and Arrows\" (rendering popularized by Viktor Frankl)",
     "description": "Most people meet this line through Viktor Frankl, who used it to explain why some prisoners in the camps kept going. Purpose doesn't remove pain. It changes what the pain costs you, because suffering with a reason attached is a different thing from suffering that looks pointless. Note the word almost though. Nietzsche put it there on purpose, and Frankl knew better than anyone that plenty of people with strong reasons still didn't make it out.",
     "image": null,
-    "tags": ["purpose", "meaning", "suffering"]
+    "tags": ["purpose", "persistence"]
   },
   {
     "id": "2026-08-17",
@@ -339,7 +339,7 @@
     "author": "Nelson Mandela, Long Walk to Freedom (1994)",
     "description": "Mandela wrote this at the close of his autobiography, after twenty-seven years in prison and after becoming president. It runs against the usual message about persistence. He doesn't promise the climbing ends. What he found at the top of the great hill was more hills, and he called that a secret rather than a disappointment.",
     "image": null,
-    "tags": ["perseverance", "growth", "humility"]
+    "tags": ["persistence", "humility"]
   },
   {
     "id": "2026-08-18",
@@ -348,7 +348,7 @@
     "author": "Proverb (falsely attributed to Albert Einstein; the earliest Einstein link dates to 1995, forty years after his death)",
     "description": "The idea is nearly two centuries older than the name attached to it, and Theodore Roosevelt was using a version of it in 1901. It holds up anyway, because anything genuinely new produces errors when there's nobody to copy. The reverse doesn't follow though. Mistakes don't prove you were trying something new, and the question worth asking is which kind you made: the price of exploring, or the price of not paying attention.",
     "image": null,
-    "tags": ["mistakes", "learning", "risk"]
+    "tags": ["knowledge", "courage"]
   },
   {
     "id": "2026-08-19",
@@ -357,7 +357,7 @@
     "author": "Theodore Roosevelt",
     "description": "The short version that circulates overstates the case. Plenty of worthwhile things cost nothing, like a good conversation or an hour with someone you love. The full passage is more careful: Roosevelt's admiration goes to people who were handed difficult lives and handled them well. The praise is for how they carried it, not for the weight itself.",
     "image": null,
-    "tags": ["effort", "difficulty", "character"]
+    "tags": ["character", "persistence"]
   },
   {
     "id": "2026-08-20",
@@ -366,7 +366,7 @@
     "author": "Xunzi, Book 8 \"Ruxiao\" (3rd century BC)",
     "description": "Confucius and Benjamin Franklin both get credited for the popular version of this, and neither said it. It comes from Xunzi, a Confucian philosopher born after Confucius died, and his original runs one rung further than the English paraphrase: hearing, then seeing, then knowing, then doing. Practice sits at the top. You can hold an idea perfectly and still not have it, because knowing and doing are separate skills.",
     "image": null,
-    "tags": ["practice", "knowledge", "action"]
+    "tags": ["action", "knowledge"]
   },
   {
     "id": "2026-08-21",
@@ -375,7 +375,7 @@
     "author": "Seneca, Letters to Lucilius",
     "description": "The line is about direction rather than effort. You can work extremely hard and still be going nowhere in particular, because no wind helps a ship whose port hasn't been named. Notice the metaphor doesn't ask for certainty about the destination. It asks you to have chosen one, which is a lower bar and still the step most people skip.",
     "image": null,
-    "tags": ["direction", "purpose", "stoicism"]
+    "tags": ["purpose", "stoicism"]
   },
   {
     "id": "2026-08-22",
@@ -384,7 +384,7 @@
     "author": "Attributed to Napoleon Hill",
     "description": "The word doing the damage is unbeatable. Plenty of patient, persistent, hard-working people never arrive, because effort without direction is just well-executed drift. Keep all three qualities, then add the one the list leaves out: knowing where you're actually trying to go.",
     "image": null,
-    "tags": ["persistence", "patience", "success"]
+    "tags": ["persistence", "purpose"]
   },
   {
     "id": "2026-08-23",
@@ -393,7 +393,7 @@
     "author": "Juvenal, Satire X, line 356 (c. 100–127 AD)",
     "description": "Gyms print the short version on their walls, but that association was invented in 1861, when a Liverpool athletics club lifted five words out of context. Juvenal wasn't writing about exercise. Satire X lists the foolish things people pray for, money and power and fame and long life, and argues that a sound mind in a sound body is the only request worth making. A few lines later he adds the sharper half: this is the one thing on the list you can give yourself.",
     "image": null,
-    "tags": ["health", "mind", "body"]
+    "tags": ["health", "discipline"]
   },
   {
     "id": "2026-08-24",
@@ -402,7 +402,7 @@
     "author": "Germaine de Staël, Corinne, or Italy (1807), Book 18, ch. 5",
     "description": "The famous English version, to understand all is to forgive all, entered through a translation and quietly changed the claim. De Staël wrote indulgent, not forgiving. Understanding someone's reasons earns them latitude, not absolution. And the half nobody quotes is the better one: feeling deeply inspires great kindness.",
     "image": null,
-    "tags": ["understanding", "kindness", "empathy"]
+    "tags": ["kindness", "humility"]
   },
   {
     "id": "2026-08-25",
@@ -411,7 +411,7 @@
     "author": "Mahatma Gandhi, Indian Opinion, 9 August 1913 (Collected Works, vol. 13, p. 241)",
     "description": "The most famous Gandhi line in the world, be the change you wish to see, isn't his. It traces to an American teacher writing in the 1970s. What Gandhi actually wrote is more modest, and it appeared in a health column about treating snakebite: the world mirrors what is in us, so changing yourself changes how the world meets you. He doesn't claim that's enough to fix anything. He claims you can start without waiting for anyone.",
     "image": null,
-    "tags": ["self-change", "responsibility", "agency"]
+    "tags": ["action", "character"]
   },
   {
     "id": "2026-08-26",
@@ -420,7 +420,7 @@
     "author": "Epicurus, Principal Doctrines 27 (c. 300 BC)",
     "description": "The word Epicurean now suggests someone chasing fine food and wine, which is close to the reverse of what he taught. He lived on simple fare in a shared garden outside Athens and held that the best thing wisdom can secure you is friends. He also advised against eating alone, on the grounds that feeding without a friend is the life of a lion or a wolf. The longest-running study on adult happiness has since landed in the same place.",
     "image": null,
-    "tags": ["friendship", "happiness", "wisdom"]
+    "tags": ["kindness", "health"]
   },
   {
     "id": "2026-08-27",
@@ -429,7 +429,7 @@
     "author": "Swami Vivekananda, \"Practical Vedanta: Part I,\" Complete Works, Volume 2",
     "description": "In the same lecture Vivekananda says Vedanta recognises no sin, only error, and that the greatest error is calling yourself weak. Real limits exist and he isn't denying them. What he's pointing at is the layer we add on top, the verdict reached before the attempt. Most people never find the edge of what they could actually do, because they stop at the edge of what they assume.",
     "image": null,
-    "tags": ["potential", "self-belief", "vedanta"]
+    "tags": ["courage", "purpose"]
   },
   {
     "id": "2026-08-28",
@@ -438,7 +438,7 @@
     "author": "Immanuel Kant, \"An Answer to the Question: What Is Enlightenment?\" (Königsberg, 30 September 1784)",
     "description": "The key word is self-incurred. Kant blames unwillingness rather than ignorance, and his examples land uncomfortably well today: letting a book serve as your understanding, a clergyman as your conscience, a doctor decide your diet, so the effort never falls to you. Worth separating this from its modern imitation though. Kant accepted that we rely on people who know more than we do. What he objected to was handing your judgment over permanently, because thinking costs something and being told is free.",
     "image": null,
-    "tags": ["independence", "courage", "thinking"]
+    "tags": ["courage", "knowledge"]
   },
   {
     "id": "2026-08-29",
@@ -447,7 +447,7 @@
     "author": "Will Durant, The Story of Philosophy (1926), widely misattributed to Aristotle",
     "description": "This is the second famous line from the same 1926 book that people credit to the wrong man. Durant wrote it while summarizing Aristotle, slotting his own sentence between two real quotations. The idea is faithful enough, since Aristotle did argue that virtues form by doing the actions rather than intending them. Nobody becomes disciplined by deciding to be. You become it through the unremarkable repetition nobody watches.",
     "image": null,
-    "tags": ["habit", "discipline", "excellence"]
+    "tags": ["discipline", "character"]
   },
   {
     "id": "2026-08-30",
@@ -456,7 +456,7 @@
     "author": "Epictetus, Enchiridion 5 (c. 125 AD)",
     "description": "Epictetus is pointing at a gap most people never notice. Between something happening and your response to it, a judgment gets made, usually too fast to catch. Most of what feels like a reaction to circumstance is a reaction to your reading of it. Events stay outside your control. The reading doesn't.",
     "image": null,
-    "tags": ["stoicism", "perception", "control"]
+    "tags": ["stoicism", "attention"]
   },
   {
     "id": "2026-08-31",
@@ -465,7 +465,7 @@
     "author": "Laozi, Tao Te Ching, ch. 33",
     "description": "This site has already run a famous Lao Tzu line that turned out to belong to Zhuangzi. This one is genuinely in the Tao Te Ching, with one honest caveat: scholars generally treat the text as a compilation rather than one man's work, so Laozi names a tradition as much as an author. The distinction it draws holds regardless. Power over other people is a different skill from power over yourself, and only one of the two compounds.",
     "image": null,
-    "tags": ["taoism", "self-mastery", "wisdom"]
+    "tags": ["discipline", "humility"]
   },
   {
     "id": "2026-09-01",
@@ -474,7 +474,7 @@
     "author": "Seneca, On the Shortness of Life (c. 49 AD)",
     "description": "The essay's central observation hasn't aged at all: people guard their money carefully and hand their time to whoever asks for it. Two thousand years later the only real change is that the interruptions arrive faster. His point is that we spend time as though the supply were unlimited, then call the result bad luck.",
     "image": null,
-    "tags": ["time", "stoicism", "urgency"]
+    "tags": ["time", "stoicism"]
   },
   {
     "id": "2026-09-02",
@@ -483,7 +483,7 @@
     "author": "Aristotle, Nicomachean Ethics 2.9 (trans. H. Rackham)",
     "description": "The famous version of this stops at anger. Aristotle's actual sentence also covers giving and spending money, which changes the argument: the hard thing is proportion, not anger in particular. Anyone can feel the feeling or write the cheque. Getting the target, the amount, the timing and the reason right at once is what he calls rare, praiseworthy and noble.",
     "image": null,
-    "tags": ["virtue", "balance", "self-control"]
+    "tags": ["discipline", "character"]
   },
   {
     "id": "2026-09-03",
@@ -492,7 +492,7 @@
     "author": "Swami Vivekananda, \"My Plan of Campaign\", Lectures from Colombo to Almora (1904)",
     "description": "As a filter for habits and inputs this works well. As a filter for ideas it turns into a trap, because a hard diagnosis makes you feel weak, and so does honest criticism, and neither one is poison. Vivekananda meant it as an idea-filter too. He calls it the test of truth in the same breath, and his target was the occultism and mysticism he thought were draining a nation already told it could do nothing. Read against that, the line lands. Read as a rule for dodging whatever stings, it just protects you from information.",
     "image": null,
-    "tags": ["strength", "discernment", "vedanta"]
+    "tags": ["discipline", "knowledge"]
   },
   {
     "id": "2026-09-04",
@@ -501,7 +501,7 @@
     "author": "Winston Churchill, address at Harrow School, 29 October 1941",
     "description": "The poster version is \"never, never, never give up,\" which drops the most important six words. Churchill built an exception into the sentence: give in when honour and good sense demand it. What he ruled out was yielding to force and to intimidation, not changing your mind when the evidence changes. That single clause is the difference between persistence and stubbornness, and it is the part almost nobody quotes.",
     "image": null,
-    "tags": ["perseverance", "resolve", "conviction"]
+    "tags": ["persistence", "courage"]
   },
   {
     "id": "2026-09-05",
@@ -510,7 +510,7 @@
     "author": "Julian of Norwich, Revelations of Divine Love (visions of 1373)",
     "description": "This is easy to mistake for wishful thinking until you know who wrote it. Julian nearly died at thirty, lived through two waves of plague, and spent twenty years in a small cell working out what she had seen. Her own text rules out the soft reading. She records being told not that she would avoid storms or illness or hardship, but that she would not be overcome. The promise was never that nothing goes wrong.",
     "image": null,
-    "tags": ["hope", "endurance", "faith"]
+    "tags": ["persistence", "courage"]
   },
   {
     "id": "2026-09-06",
@@ -519,7 +519,7 @@
     "author": "A.P.J. Abdul Kalam, on Prof. Satish Dhawan (Wharton India Economic Forum, 2008)",
     "description": "Kalam had overruled the computer himself. It flagged a fault, his experts said there was fuel in reserve, he went manual, and the rocket ended up in the Bay of Bengal. The failure was his, and Dhawan fronted the press conference anyway. A year later, after the successful launch, Dhawan sent Kalam out to face the cameras alone. Absorbing blame in public works only because the hard analysis happened in private, and the fault was fixed within twelve months.",
     "image": null,
-    "tags": ["leadership", "accountability", "teams"]
+    "tags": ["character", "humility"]
   },
   {
     "id": "2026-09-07",
@@ -528,7 +528,7 @@
     "author": "Zeno of Citium, recorded in Diogenes Laertius, Lives of Eminent Philosophers, Book VII",
     "description": "This gets quoted as Epictetus almost everywhere, but it belongs to Zeno, who founded Stoicism more than three centuries before him. The setting is the part that gets lost: he said it to a young man who was talking nonsense. It was a rebuke, not a communication tip. The anatomy is just a joke carrying the real point, which is that most people treat conversation as waiting for their turn.",
     "image": null,
-    "tags": ["listening", "humility", "stoicism"]
+    "tags": ["humility", "attention"]
   },
   {
     "id": "2026-09-08",
@@ -537,7 +537,7 @@
     "author": "The Seven Social Sins, published by Mahatma Gandhi in Young India, 22 October 1925 (originally preached by Frederick Lewis Donaldson at Westminster Abbey, March 1925)",
     "description": "Gandhi never claimed to have written this. He printed it saying a friend had sent it, and his only comment was that the friend wanted readers to know these things through the heart rather than the intellect. Notice the shape of each line. Wealth, pleasure, knowledge and commerce are all good things. Each becomes a sin only when cut loose from the thing that was restraining it. The list reads best pointed inward.",
     "image": null,
-    "tags": ["ethics", "character", "integrity"]
+    "tags": ["character", "kindness"]
   },
   {
     "id": "2026-09-09",
@@ -546,7 +546,7 @@
     "author": "Michael Jordan, Nike \"Failure\" commercial (1997)",
     "description": "This gets quoted from stages and in books as a private reflection. It was a shoe advertisement, narrated by Jordan over footage of himself walking into an arena, and the numbers are deliberately round. Worth knowing, because the last line claims more than the evidence carries. Plenty of players miss nine thousand shots and never become Jordan. What the figure really proves is that he kept being handed the ball, and you only reach that count by taking the shot on the nights you might miss.",
     "image": null,
-    "tags": ["failure", "persistence", "success"]
+    "tags": ["persistence", "courage"]
   },
   {
     "id": "2026-09-10",
@@ -555,7 +555,7 @@
     "author": "Roger Federer, Dartmouth commencement address, June 2024",
     "description": "The number holds up against the record books, and it holds for the others too. Nadal and Djokovic each won about 54% of their points. Jimmy Connors won under half of his and still took four matches in five. What separates the best in the world from everyone else is roughly four points in a hundred, spread across twenty years. The margin is thinner than it looks from the stands, and it only shows up if you keep playing the next point.",
     "image": null,
-    "tags": ["persistence", "margins", "sport"]
+    "tags": ["persistence", "attention"]
   },
   {
     "id": "2026-09-11",
@@ -564,7 +564,7 @@
     "author": "Nelson Mandela, Long Walk to Freedom (1994)",
     "description": "The version that circulates drops the middle sentence, and it's the one that matters. He felt fear more times than he could remember and hid it behind a mask of boldness. He wasn't fearless. He was frightened and went anyway, performing a steadiness he didn't feel because millions of people were watching him for a signal. That mask made sense for a man in his position. It's a costly habit to carry into an ordinary life.",
     "image": null,
-    "tags": ["courage", "fear", "leadership"]
+    "tags": ["courage", "character"]
   },
   {
     "id": "2026-09-12",
@@ -573,7 +573,7 @@
     "author": "Rahul Dravid, Bradman Oration, Canberra, December 2011",
     "description": "Dravid batted at No. 3 for most of his career, which means walking in when an early wicket falls and taking the bowling at its freshest so the stroke-makers who follow can score freely. They called him The Wall. The job is essential and systematically under-credited, which is probably why he had to say this from a podium rather than have someone say it for him. Every team has one, and they are usually the last person thanked.",
     "image": null,
-    "tags": ["teamwork", "humility", "recognition"]
+    "tags": ["humility", "character"]
   },
   {
     "id": "2026-09-13",
@@ -582,7 +582,7 @@
     "author": "Allen Saunders, Reader's Digest, January 1957",
     "description": "The famous version comes from a John Lennon song in 1980, but he wasn't first. Allen Saunders, who wrote the Mary Worth comic strip, published this line in Reader's Digest in January 1957, when Lennon was sixteen. This isn't a case against planning. The warning is about attention, because the stretch between plans keeps getting treated as a waiting room, and that stretch turns out to have been the life.",
     "image": null,
-    "tags": ["attention", "presence", "time"]
+    "tags": ["attention", "time"]
   },
   {
     "id": "2026-09-14",
@@ -591,7 +591,7 @@
     "author": "Socrates, in Plato's Apology 38a (399 BC)",
     "description": "The modern reading turns this into advice about journaling. Socrates meant something more public and more uncomfortable: elenchus, questioning people out loud until their beliefs contradicted themselves. He said it at his trial after conviction, when exile was still on the table if he agreed to go quiet. He refused, and drank hemlock, which tells you the line was not hyperbole.",
     "image": null,
-    "tags": ["self-examination", "philosophy", "integrity"]
+    "tags": ["humility", "character"]
   },
   {
     "id": "2026-09-15",
@@ -600,6 +600,6 @@
     "author": "Attributed to Walt Disney (no primary source identified)",
     "description": "Disney is among the most quoted people online and among the least sourced. This line has no traceable origin, and the even more famous one about dreaming it and doing it was written for a theme park attraction that opened in 1983, seventeen years after his death. On the claim itself, courage isn't sufficient, and his own life is the evidence. He went bankrupt in 1923 and lost the rights to Oswald the Rabbit along with most of his animators in 1928. Courage got him back to the drawing board. It didn't guarantee what happened next.",
     "image": null,
-    "tags": ["dreams", "courage", "persistence"]
+    "tags": ["courage", "purpose"]
   }
 ]

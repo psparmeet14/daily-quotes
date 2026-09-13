@@ -89,6 +89,27 @@ const rows = quotes.map((q) => {
   return { id: q.id, quote: q.quote, author: q.author, n, w, bg: bigrams(w) };
 });
 
+// Theme vocabulary guard. Tags drive filtering on the site, so they have to
+// stay a small shared set — the moment a one-off tag slips in, that quote
+// becomes unfilterable and the vocabulary starts fragmenting again.
+const THEMES = [
+  "stoicism", "discipline", "persistence", "purpose", "time", "wealth",
+  "health", "knowledge", "humility", "courage", "kindness", "action",
+  "attention", "character",
+];
+const tagProblems = [];
+for (const q of quotes) {
+  const t = Array.isArray(q.tags) ? q.tags : [];
+  const off = t.filter((x) => !THEMES.includes(x));
+  if (off.length) tagProblems.push(`${q.id}  off-vocabulary: ${off.join(", ")}`);
+  else if (t.length !== 2) tagProblems.push(`${q.id}  has ${t.length} theme(s), expected 2`);
+}
+if (tagProblems.length) {
+  console.log(`\nTHEME VOCABULARY — ${tagProblems.length} problem(s)\n`);
+  tagProblems.forEach((p) => console.log(`   ${p}`));
+  console.log(`\n   Allowed: ${THEMES.join(", ")}\n`);
+}
+
 const duplicates = [];
 const similar = [];
 
@@ -174,4 +195,4 @@ if (repeats.length) {
 
 if (!duplicates.length && !similar.length) console.log("No duplicates or near-duplicates found.\n");
 
-process.exit(duplicates.length ? 1 : 0);
+process.exit(duplicates.length || tagProblems.length ? 1 : 0);
