@@ -8,5 +8,6 @@
 # Node
 node_modules/
 
-# Build output (per-quote OG pages are generated in CI)
+# Build output (per-quote OG pages and per-theme tag pages are generated in CI)
 /q/
+/t/

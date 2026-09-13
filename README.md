@@ -34,6 +34,7 @@ data/quotes.json      The quotes (source of truth)
 images/               Optional per-quote images (named by date)
 scripts/build-og.mjs  Pre-renders per-quote Open Graph pages into /q/ (CI)
 scripts/build-og-image.mjs  Renders a per-quote share card PNG into /q/img/ (CI)
+scripts/build-tags.mjs  Builds a page + card per theme into /t/ (CI)
 scripts/filter-released.mjs  Drops future-dated (queued) quotes at deploy time (CI)
 scripts/coverage.mjs  Reports which calendar days still need a quote (local only)
 scripts/check-duplicates.mjs  Flags a quote that has already been used (local only)
@@ -55,6 +56,18 @@ SPA; crawlers read the meta tags.
 The card generator uses two build-time dev-dependencies (`satori` +
 `@resvg/resvg-js`); the deployed site itself has **no runtime dependencies**.
 CI runs `npm ci` then the build scripts — see `.github/workflows/deploy.yml`.
+
+## Themes
+
+Each quote carries exactly two themes from a controlled set of 14 (see
+CLAUDE.md). They drive two things:
+
+- **In-page filtering** — chips above the archive grid, and the themes under
+  each quote link through to `?tag=<theme>`.
+- **Static theme pages** at `/t/<theme>.html`, built in CI, each with its own
+  Open Graph card and a crawlable list of that theme's quotes. The in-page
+  filter is invisible to search engines; these pages are the indexable
+  surface, and they bounce human visitors into the filtered archive.
 
 ## Roadmap
 

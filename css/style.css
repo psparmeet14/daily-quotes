@@ -299,6 +299,62 @@ button { -webkit-tap-highlight-color: transparent; font-family: inherit; }
   font-weight: 600;
   color: var(--muted);
 }
+/* Theme filter bar above the archive grid. */
+.tag-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 0 26px;
+}
+.tag-chip {
+  font: inherit;
+  font-size: 13px;
+  letter-spacing: .04em;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 13px;
+  cursor: pointer;
+  transition: color .2s, border-color .2s, background-color .2s;
+}
+.tag-chip:hover { color: var(--ink); border-color: var(--faint); }
+.tag-chip .n {
+  margin-left: 7px;
+  font-size: 11px;
+  color: var(--faint);
+  font-variant-numeric: tabular-nums;
+}
+.tag-chip.active {
+  color: var(--bg);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.tag-chip.active .n { color: var(--bg); opacity: .7; }
+
+/* Themes shown under a quote, linking into the filtered archive. */
+.quote-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 26px 0 0;
+}
+.quote-tag {
+  font: inherit;
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  padding: 2px 0;
+  cursor: pointer;
+  transition: color .2s, border-color .2s;
+}
+.quote-tag:hover { color: var(--accent); border-color: var(--accent); }
+
 .archive-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));

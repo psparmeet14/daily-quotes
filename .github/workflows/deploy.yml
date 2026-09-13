@@ -45,6 +45,9 @@ jobs:
       - name: Render per-quote share cards
         run: node scripts/build-og-image.mjs
 
+      - name: Build per-theme tag pages
+        run: node scripts/build-tags.mjs
+
       - name: Disable Jekyll processing
         run: touch .nojekyll
 

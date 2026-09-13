@@ -31,6 +31,7 @@
   var state = {
     quotes: [],       // chronological (oldest -> newest)
     view: "today",   // 'today' | 'archive'
+    tag: null,        // active theme filter in the archive, or null for all
     idx: 0,           // index into state.quotes of the displayed quote
     now: new Date(),
     liked: {},        // id -> true (this browser has liked)
@@ -181,6 +182,11 @@
   function readUrl() {
     var params = new URLSearchParams(location.search);
     var id = params.get("date") || (location.hash ? location.hash.slice(1) : "");
+    // ?tag=<theme> opens the archive filtered. The static /t/ pages land here.
+    var tag = params.get("tag");
+    if (tag && allTags().indexOf(tag) >= 0) {
+      state.tag = tag; state.view = "archive"; return;
+    }
     if (params.get("view") === "archive") { state.view = "archive"; return; }
     if (id) {
       var i = idxById(id);
@@ -191,7 +197,8 @@
   function syncUrl(replace) {
     var url;
     if (state.view === "archive") {
-      url = baseHref().replace(location.origin, "") + "?view=archive";
+      url = baseHref().replace(location.origin, "") +
+        (state.tag ? "?tag=" + encodeURIComponent(state.tag) : "?view=archive");
     } else {
       url = baseHref().replace(location.origin, "") + "?date=" + state.quotes[state.idx].id;
     }
@@ -202,11 +209,45 @@
 
   function updateDocTitle() {
     if (state.view === "archive") {
-      document.title = "Archive — Daily Wisdom";
+      document.title = (state.tag ? cap(state.tag) + " — Archive" : "Archive") + " — Daily Wisdom";
     } else {
       var q = state.quotes[state.idx];
       document.title = "“" + q.quote + "” — " + q.author + " · Daily Wisdom";
     }
+  }
+
+  /* ---------- tags ---------- */
+
+  function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+
+  // Every theme present in the data, ordered by how many quotes carry it.
+  function allTags() {
+    var counts = tagCounts();
+    return Object.keys(counts).sort(function (a, b) {
+      return counts[b] - counts[a] || (a < b ? -1 : 1);
+    });
+  }
+
+  function tagCounts() {
+    var counts = {};
+    state.quotes.forEach(function (q) {
+      (q.tags || []).forEach(function (t) { counts[t] = (counts[t] || 0) + 1; });
+    });
+    return counts;
+  }
+
+  function quotesForTag(tag) {
+    if (!tag) return state.quotes.slice();
+    return state.quotes.filter(function (q) {
+      return (q.tags || []).indexOf(tag) >= 0;
+    });
+  }
+
+  function setTag(tag) {
+    transitionTo(function () {
+      state.view = "archive";
+      state.tag = tag || null;
+    }, false);
   }
 
   /* ---------- rendering ---------- */
@@ -255,6 +296,22 @@
       els.quoteImage.removeAttribute("src");
     }
 
+    // Themes, clickable through to the filtered archive — the main way a
+    // reader discovers that filtering exists at all.
+    if (els.quoteTags) {
+      els.quoteTags.innerHTML = "";
+      (q.tags || []).forEach(function (t) {
+        var b = document.createElement("button");
+        b.type = "button";
+        b.className = "quote-tag";
+        b.textContent = t;
+        b.setAttribute("aria-label", "See all " + t + " quotes");
+        b.addEventListener("click", function () { setTag(t); });
+        els.quoteTags.appendChild(b);
+      });
+      els.quoteTags.hidden = !(q.tags || []).length;
+    }
+
     els.likeBtn.classList.toggle("liked", liked);
     els.likeCount.textContent = displayCount(q.id);
     els.plusOne.hidden = !state.justLiked;
@@ -264,6 +321,7 @@
   function renderArchive() {
     var grid = els.archiveGrid;
     grid.innerHTML = "";
+    renderTagBar();
     if (!state.quotes.length) {
       var empty = document.createElement("p");
       empty.className = "archive-empty";
@@ -271,10 +329,49 @@
       grid.appendChild(empty);
       return;
     }
-    // Newest first.
+    // Newest first, filtered to the active theme when one is set.
+    var shown = 0;
     for (var i = state.quotes.length - 1; i >= 0; i--) {
+      if (state.tag && (state.quotes[i].tags || []).indexOf(state.tag) < 0) continue;
       grid.appendChild(archiveCard(i));
+      shown++;
     }
+    if (!shown) {
+      var none = document.createElement("p");
+      none.className = "archive-empty";
+      none.textContent = "No quotes tagged “" + state.tag + "” yet.";
+      grid.appendChild(none);
+    }
+  }
+
+  // Filter chips above the grid: one per theme, with counts.
+  function renderTagBar() {
+    var bar = els.tagBar;
+    if (!bar) return;
+    bar.innerHTML = "";
+    var counts = tagCounts();
+    var tags = allTags();
+    if (!tags.length) return;
+
+    bar.appendChild(tagChip("All", state.quotes.length, !state.tag, null));
+    tags.forEach(function (t) {
+      bar.appendChild(tagChip(cap(t), counts[t], state.tag === t, t));
+    });
+  }
+
+  function tagChip(label, count, active, tag) {
+    var b = document.createElement("button");
+    b.type = "button";
+    b.className = "tag-chip" + (active ? " active" : "");
+    b.setAttribute("aria-pressed", active ? "true" : "false");
+    b.innerHTML = "";
+    b.appendChild(document.createTextNode(label));
+    var n = document.createElement("span");
+    n.className = "n";
+    n.textContent = count;
+    b.appendChild(n);
+    b.addEventListener("click", function () { setTag(tag); });
+    return b;
   }
 
   function archiveCard(i) {
@@ -433,6 +530,8 @@
     els.likeCount = document.getElementById("like-count");
     els.plusOne = document.getElementById("plus-one");
     els.shareBtn = document.getElementById("share-btn");
+    els.quoteTags = document.getElementById("quote-tags");
+    els.tagBar = document.getElementById("tag-bar");
     els.archiveGrid = document.getElementById("archive-grid");
     els.toast = document.getElementById("toast");
     els.sinceLabel = document.getElementById("since-label");
@@ -501,7 +600,7 @@
       transitionTo(function () { state.view = "today"; state.idx = defaultIdx(); }, false);
     });
     els.navArchive.addEventListener("click", function () {
-      transitionTo(function () { state.view = "archive"; }, false);
+      transitionTo(function () { state.view = "archive"; state.tag = null; }, false);
     });
     els.navRandom.addEventListener("click", navRandom);
     els.themeToggle.addEventListener("click", toggleTheme);
@@ -510,6 +609,7 @@
     window.addEventListener("popstate", function () {
       var prevView = state.view;
       state.view = "today";
+      state.tag = null;
       readUrl();
       render();
       if (state.view !== prevView) updateDocTitle();
