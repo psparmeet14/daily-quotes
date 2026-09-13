@@ -36,6 +36,7 @@ scripts/build-og.mjs  Pre-renders per-quote Open Graph pages into /q/ (CI)
 scripts/build-og-image.mjs  Renders a per-quote share card PNG into /q/img/ (CI)
 scripts/filter-released.mjs  Drops future-dated (queued) quotes at deploy time (CI)
 scripts/coverage.mjs  Reports which calendar days still need a quote (local only)
+scripts/check-duplicates.mjs  Flags a quote that has already been used (local only)
 scripts/fonts/        Newsreader subset used to render the share cards
 og-default.png        Site-wide fallback share card
 .github/workflows/    Pages deployment

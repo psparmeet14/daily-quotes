@@ -72,7 +72,7 @@ The owner adds a quote by telling Claude Code something like:
 > "Add today's quote: '<quote>' — <author>. Description: <text>. Image: <path or none>."
 
 Claude Code must then:
-1. Append the entry to `data/quotes.json` (validate JSON, ensure no duplicate date).
+1. Append the entry to `data/quotes.json` (validate JSON, ensure no duplicate date), then run `npm run check:dupes` to be sure the quote itself has not already been used. It catches punctuation and case variants, one quote contained in another, variant translations, and the same passage cited twice — none of which a date check would see. Treat DUPLICATE as blocking and SIMILAR as worth a look.
 2. If an image is provided, copy it to `/images/<date>.<ext>` and compress/resize if large.
 3. Regenerate any per-quote OG pages if that build step exists.
 4. Commit with message `Add quote for <date>` and push to `main`.
