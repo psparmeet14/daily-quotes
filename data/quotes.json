@@ -601,5 +601,14 @@
     "description": "Disney is among the most quoted people online and among the least sourced. This line has no traceable origin, and the even more famous one about dreaming it and doing it was written for a theme park attraction that opened in 1983, seventeen years after his death. On the claim itself, courage isn't sufficient, and his own life is the evidence. He went bankrupt in 1923 and lost the rights to Oswald the Rabbit along with most of his animators in 1928. Courage got him back to the drawing board. It didn't guarantee what happened next.",
     "image": null,
     "tags": ["courage", "purpose"]
+  },
+  {
+    "id": "2026-09-16",
+    "date": "2026-09-16",
+    "quote": "The world breaks every one and afterward many are strong at the broken places. But those that will not break it kills.",
+    "author": "Ernest Hemingway, A Farewell to Arms (1929), ch. 34",
+    "description": "Everyone stops the quote at the broken places. Hemingway doesn't. The next lines say those who refuse to break get killed instead, and that the world kills impartially, with no preference for the good or the brave. So this was never a promise that pain makes you stronger. Many are strong afterward. Many, not all, and the word is his.",
+    "image": null,
+    "tags": ["persistence", "character"]
   }
 ]
