@@ -628,5 +628,68 @@
     "description": "The famous short version, about the arc of the moral universe bending toward justice, is a later condensation. Martin Luther King quoted it rather than wrote it, and put it in quotation marks when he did. Parker's original is the better sentence because it admits what it doesn't know first. He says plainly that he cannot see far enough to calculate the curve, and only then says what he believes and why. Faith stated with its limits attached is sturdier than a slogan.",
     "image": null,
     "tags": ["humility", "character"]
+  },
+  {
+    "id": "2026-09-19",
+    "date": "2026-09-19",
+    "quote": "We suffer more often in imagination than in reality.",
+    "author": "Seneca, Letters to Lucilius 13.4",
+    "description": "The ledger is lopsided. Fewer things crush you than frighten you, and you paid full price for both. Seneca isn't denying that bad things arrive, only pointing out how much of the suffering happened in advance, on scenarios that never came. Most of what you have already survived, you survived twice.",
+    "image": null,
+    "tags": ["stoicism", "courage"]
+  },
+  {
+    "id": "2026-09-20",
+    "date": "2026-09-20",
+    "quote": "Trust thyself: every heart vibrates to that iron string.",
+    "author": "Ralph Waldo Emerson, \"Self-Reliance,\" Essays: First Series (1841)",
+    "description": "The essay it comes from is one long argument against living on borrowed opinions. Emerson isn't promising you're always right. His point is narrower: imitation guarantees you'll be wrong in someone else's style, with none of the learning that comes from being wrong in your own. The iron string is his image for the note only you can sound.",
+    "image": null,
+    "tags": ["courage", "character"]
+  },
+  {
+    "id": "2026-09-21",
+    "date": "2026-09-21",
+    "quote": "When I walk along with two others, they may serve me as my teachers. I will select their good qualities and follow them, their bad qualities and avoid them.",
+    "author": "Confucius, Analects 7.21 (trans. James Legge)",
+    "description": "The famous half is the first line. The useful half is what follows: take what is good in them and copy it, notice what is bad and correct that in yourself. Both directions count as instruction. The person irritating you today is teaching you something, just not the lesson they intended.",
+    "image": null,
+    "tags": ["humility", "knowledge"]
+  },
+  {
+    "id": "2026-09-22",
+    "date": "2026-09-22",
+    "quote": "I maintain that Truth is a pathless land, and you cannot approach it by any path whatsoever, by any religion, by any sect.",
+    "author": "J. Krishnamurti, dissolution of the Order of the Star, Ommen, 3 August 1929",
+    "description": "He said this while dissolving the organisation that had declared him a world teacher, standing in front of three thousand of its members. The speech opens with a joke about the devil watching a man pick up a piece of truth and saying, let him organise it. Then Krishnamurti returned the money and the property and spent the rest of his life refusing to be anyone's authority.",
+    "image": null,
+    "tags": ["knowledge", "courage"]
+  },
+  {
+    "id": "2026-09-23",
+    "date": "2026-09-23",
+    "quote": "Associate with those who will make a better man of you. Welcome those whom you yourself can improve.",
+    "author": "Seneca, Letters to Lucilius 7",
+    "description": "The letter is about crowds, and Seneca's complaint is that company works on you whether you agree to it or not. Spend an evening among people and you leave carrying some of what they carried in. The instruction has two halves and people quote only the first. Seek out those who improve you, and make yourself available to the ones you can improve.",
+    "image": null,
+    "tags": ["character", "kindness"]
+  },
+  {
+    "id": "2026-09-24",
+    "date": "2026-09-24",
+    "quote": "A foolish consistency is the hobgoblin of little minds.",
+    "author": "Ralph Waldo Emerson, \"Self-Reliance,\" Essays: First Series (1841)",
+    "description": "The line usually gets quoted with its first word missing, which turns it into a licence to abandon anything you committed to. Emerson wrote foolish consistency. His target is the person who holds a position only because they held it yesterday, in front of people who remember them holding it. Being seen to be steady is not the same as being right.",
+    "image": null,
+    "tags": ["humility", "knowledge"]
+  },
+  {
+    "id": "2026-09-25",
+    "date": "2026-09-25",
+    "quote": "To have faults and not to reform them — this, indeed, should be pronounced having faults.",
+    "author": "Confucius, Analects 15.29 (trans. James Legge)",
+    "description": "The sentence turns on a distinction most people skip past. Having faults is the ordinary condition and carries no verdict. What Confucius calls a fault in the real sense is knowing about one and leaving it where it is. By that measure the question was never whether you have them. It's how long each one has been sitting on the list.",
+    "image": null,
+    "tags": ["character", "action"]
   }
 ]
