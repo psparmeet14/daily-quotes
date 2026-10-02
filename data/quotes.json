@@ -700,5 +700,59 @@
     "description": "Most arguments for compassion ask you to set your own interests aside. This one doesn't. He accepts self-interest as the starting point and argues that the narrow version simply miscalculates, because a life arranged around only yourself produces exactly the isolation that makes people miserable. Read that way it stops being a moral instruction and becomes an arithmetic correction.",
     "image": null,
     "tags": ["kindness", "knowledge"]
+  },
+  {
+    "id": "2026-09-27",
+    "date": "2026-09-27",
+    "quote": "With malice toward none, with charity for all, with firmness in the right as God gives us to see the right, let us strive on to finish the work we are in, to bind up the nation's wounds.",
+    "author": "Abraham Lincoln, Second Inaugural Address, 4 March 1865",
+    "description": "He gave this with the war effectively won, which is the moment victors usually spend gloating. He spent it proposing to bind up the wounds instead. The clause people skip is the sharpest one: firmness in the right as God gives us to see the right. He committed to acting on his convictions while admitting his view of them might be partial. Holding both at once is the difficult part. He was killed six weeks later.",
+    "image": null,
+    "tags": ["kindness", "humility"]
+  },
+  {
+    "id": "2026-09-28",
+    "date": "2026-09-28",
+    "quote": "The greatest thing in the world is to know how to belong to oneself.",
+    "author": "Michel de Montaigne, \"Of Solitude,\" Essays (1580, trans. Donald M. Frame)",
+    "description": "Montaigne left public office at thirty-eight, shut himself in a tower with a thousand books, and invented the essay by writing down what he actually thought rather than what was expected. He isn't recommending everyone find a tower. The argument is for keeping one room in yourself that other people's opinions haven't furnished, available whether you are alone or in a crowd. Most people rent out the whole house.",
+    "image": null,
+    "tags": ["character", "attention"]
+  },
+  {
+    "id": "2026-09-29",
+    "date": "2026-09-29",
+    "quote": "You gain strength, courage and confidence by every experience in which you really stop to look fear in the face… You must do the thing you think you cannot do.",
+    "author": "Eleanor Roosevelt, You Learn by Living (1960)",
+    "description": "Her most famous line, about nobody making you feel inferior without your consent, isn't quite hers. It's a condensation that settled into its current form around 1940, built from a remark she made about snubs in 1935. This one is hers, from a chapter called Fear, the Great Enemy. The order is the useful part. You face the thing, you come through it, and the confidence shows up afterwards. It arrives last, which is why waiting for it first never works.",
+    "image": null,
+    "tags": ["courage", "action"]
+  },
+  {
+    "id": "2026-09-30",
+    "date": "2026-09-30",
+    "quote": "If there is no struggle, there is no progress. Those who profess to favor freedom, and yet depreciate agitation, are men who want crops without plowing up the ground.",
+    "author": "Frederick Douglass, West India Emancipation address, 3 August 1857",
+    "description": "Douglass escaped slavery at twenty, having taught himself to read in secret when teaching him would have been a crime. He gave this four years before the Civil War. The farming image is the part that travels. Wanting the outcome while objecting to the disruption that produces it is asking for a harvest without a season, and it is the most common way people avoid the thing they say they want.",
+    "image": null,
+    "tags": ["persistence", "courage"]
+  },
+  {
+    "id": "2026-10-01",
+    "date": "2026-10-01",
+    "quote": "Life can only be understood backwards; but it must be lived forwards.",
+    "author": "Søren Kierkegaard, Journals (1843), popular rendering",
+    "description": "Kierkegaard wrote this in a private notebook. The two halves are designed to pull against each other. Understanding only turns up afterwards, once the sequence is visible, but the decisions all have to be made before that. Every important choice gets made with less information than you will eventually have, and no amount of additional thinking closes the gap. The clarity you are waiting for belongs to the version of you who already acted.",
+    "image": null,
+    "tags": ["knowledge", "action"]
+  },
+  {
+    "id": "2026-10-02",
+    "date": "2026-10-02",
+    "quote": "Attention is the rarest and purest form of generosity.",
+    "author": "Simone Weil, letter to Joë Bousquet, 13 April 1942",
+    "description": "Weil wrote this to a poet left paralysed by a war wound, who had read some pages she sent him. The surrounding lines make it concrete. She doesn't claim the pages deserved his attention; she treats the attention itself as something he chose to give her. Money and advice cost less than people think. Undivided attention is the thing almost nobody has left to spare. She died the following year, at thirty-four.",
+    "image": null,
+    "tags": ["attention", "kindness"]
   }
 ]
