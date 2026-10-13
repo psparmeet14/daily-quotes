@@ -763,5 +763,50 @@
     "description": "Keith was nineteen when he wrote this, in a booklet for student council leaders. A version hung on the wall of her children's home in Calcutta, a 1995 book reprinted it with no author listed, and the world assigned it to her. Keith only found out weeks after she died, when a man at his Rotary Club stood up to read a poem she had supposedly written and Keith recognised his own sentences. The instruction holds either way. Anyway is the whole argument: you do the thing because it is right, not because the response will justify it.",
     "image": null,
     "tags": ["kindness", "character"]
+  },
+  {
+    "id": "2026-10-04",
+    "date": "2026-10-04",
+    "quote": "He who knows only his own side of the case knows little of that. His reasons may be good, and no one may have been able to refute them. But if he is equally unable to refute the reasons on the opposite side, if he does not so much as know what they are, he has no ground for preferring either opinion.",
+    "author": "John Stuart Mill, On Liberty (1859), ch. 2",
+    "description": "Mill sets a test you can actually fail. Not whether you disagree with the other side, but whether you could state its case well enough that someone who holds it would recognise their own view. He adds a condition most people skip: you have to hear those arguments from people who genuinely believe them, not summarised by your own side on the way to refuting them. Measured that way, most strong opinions are held on credit.",
+    "image": null,
+    "tags": ["knowledge", "humility"]
+  },
+  {
+    "id": "2026-10-05",
+    "date": "2026-10-05",
+    "quote": "You are young. Decide, what do you want to be remembered for?",
+    "author": "A.P.J. Abdul Kalam, as recounted by his aide Srijan Pal Singh",
+    "description": "Kalam asked his young aide this over and over, until the aide ran out of impressive answers and turned the question back on him. Kalam's own answer was teacher. Not Missile Man, not President of India. He was guest faculty at IIM Shillong, and on 27 July 2015 he collapsed five minutes into a lecture there and died at eighty-three. The question is sharper than most advice about legacy, partly because it demands something specific, and partly because his own answer was so small.",
+    "image": null,
+    "tags": ["purpose", "humility"]
+  },
+  {
+    "id": "2026-10-06",
+    "date": "2026-10-06",
+    "quote": "For a practitioner of love and compassion, an enemy is one of the most important teachers. Without an enemy you cannot practice tolerance, and without tolerance you cannot build a sound basis of compassion. So in order to practice compassion, you should have an enemy.",
+    "author": "14th Dalai Lama, How to Practice: The Way to a Meaningful Life (2002)",
+    "description": "The claim here is about capacity, not courtesy. Patience is a skill, and skills need resistance to develop, so the person who provokes you is supplying something you cannot manufacture alone. The argument predates him. He is transmitting Shantideva, an eighth-century Indian monk whose treatise on patience he has taught for decades. And it does not mean tolerating harm. He has resisted the occupation of Tibet his entire life while holding this view.",
+    "image": null,
+    "tags": ["kindness", "discipline"]
+  },
+  {
+    "id": "2026-10-07",
+    "date": "2026-10-07",
+    "quote": "I don't believe in taking right decisions. I take decisions and then make them right.",
+    "author": "Not Ratan Tata (he denied it on camera in 2022)",
+    "description": "This is the most circulated Ratan Tata quote in India, and he spent years telling people it wasn't his. He denied it at an event in Paris in 2015 and again in a filmed interview in 2022. It still appears on quote sites, in tribute posts, in business case studies, and in school comprehension exercises asking students what he meant by it. No one has found an origin. Worth sitting with: a man can publicly disown a sentence and the internet will keep handing it back to him.",
+    "image": null,
+    "tags": ["action", "persistence"]
+  },
+  {
+    "id": "2026-10-08",
+    "date": "2026-10-08",
+    "quote": "Apart from values and ethics which I have tried to live by, the legacy I would like to leave behind is a very simple one — that I have always stood up for what I consider to be the right thing, and I have tried to be as fair and equitable as I could be.",
+    "author": "Ratan Tata, interview, December 2012",
+    "description": "He said this as he was stepping down after twenty-one years running the Tata Group. Notice what he does not pick. No revenue figure, no acquisition, no car. He chooses a standard of conduct, which is the only part of a career anyone actually controls. Notice also how carefully it's worded: what I consider to be the right thing. He is claiming he acted on his judgment, not that his judgment was always correct.",
+    "image": null,
+    "tags": ["character", "humility"]
   }
 ]
