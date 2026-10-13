@@ -835,5 +835,23 @@
     "description": "Before the books, Rowling worked at Amnesty International reading first-hand accounts from people who had been imprisoned and tortured, which is where this comes from. She is describing a capacity rather than a feeling. You do not have to have lived something to understand it, and that is unusual enough to be worth noticing. In the same speech she adds the part that rarely gets quoted: the identical ability can be used to manipulate, and most people simply decline to use it at all.",
     "image": null,
     "tags": ["kindness", "knowledge"]
+  },
+  {
+    "id": "2026-10-12",
+    "date": "2026-10-12",
+    "quote": "At the Melbourne World Cup in 2003 I stepped on his goggles — deliberately.",
+    "author": "Bob Bowman, coach of Michael Phelps, speaking the day after Phelps won his eighth gold in Beijing, 2008",
+    "description": "Phelps swam the Beijing 200 butterfly blind. His goggles filled on the dive and he could not pull them off under two swim caps, so he counted strokes to find each wall, won gold and set a world record. Five years earlier Bowman had stepped on his goggles at a meet in Melbourne and made him swim anyway. That is the entire method. When the thing finally went wrong at the Olympics, it was not the first time.",
+    "image": null,
+    "tags": ["discipline", "persistence"]
+  },
+  {
+    "id": "2026-10-13",
+    "date": "2026-10-13",
+    "quote": "I claim not to have controlled events, but confess plainly that events have controlled me.",
+    "author": "Abraham Lincoln, letter to Albert G. Hodges, 4 April 1864",
+    "description": "A wartime president with more power than almost anyone alive, writing three years into the war, says he did not steer it. Note that he added this line to the letter afterwards. It was not in the conversation it records, and he prefaces it by saying he intends no compliment to his own sagacity. He also notes that the state of the nation was what nobody on either side had planned or predicted. You choose what you do. You do not choose what arrives for you to do it about.",
+    "image": null,
+    "tags": ["humility", "action"]
   }
 ]
