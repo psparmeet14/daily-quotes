@@ -4,6 +4,7 @@
     "date": "2026-07-11",
     "quote": "The obstacle is the way.",
     "author": "Marcus Aurelius",
+    "person": "Marcus Aurelius",
     "description": "The Stoic emperor's reminder that difficulty is not in the path — it is the path. What stands in the way of action becomes the action; the impediment to progress becomes progress itself.",
     "image": null,
     "tags": ["stoicism", "persistence"]
@@ -13,6 +14,7 @@
     "date": "2026-07-12",
     "quote": "The ability to do what you want, when you want, with who you want, for as long as you want, is priceless. It is the highest dividend money pays.",
     "author": "Morgan Housel",
+    "person": "Morgan Housel",
     "description": "Money's best return isn't luxury, it's control. Someone earning 1L a month who owns their time often feels freer than someone at 25L stuck under constant pressure. Enough wealth removes constraints — after that, freedom comes down to discipline.",
     "image": "images/2026-07-12.jpg",
     "tags": ["wealth", "time"]
@@ -22,6 +24,7 @@
     "date": "2026-07-13",
     "quote": "You have power over your mind, not outside events. Realize this, and you will find strength.",
     "author": "Marcus Aurelius",
+    "person": "Marcus Aurelius",
     "description": "People mistake Stoicism for indifference. It's actually about clarity: knowing what's yours to control and refusing to bleed energy on what isn't. Whatever you're building, your focus is the scarcest resource you have. Guard it.",
     "image": null,
     "tags": ["stoicism", "attention"]
@@ -31,6 +34,7 @@
     "date": "2026-07-14",
     "quote": "It is not the strongest or the most intelligent that survives, but the one most capable of adapting to change.",
     "author": "Popular paraphrase of Charles Darwin's theory of evolution",
+    "person": null,
     "description": "The world is constantly changing, and success belongs to those who learn, adapt, and keep moving forward. Strength and intelligence are valuable, but without the willingness to evolve, they eventually lose their advantage. Keep your values steady, but let your methods grow with the times.",
     "image": null,
     "tags": ["persistence", "action"]
@@ -40,6 +44,7 @@
     "date": "2026-07-15",
     "quote": "Do unto others as you would have them do unto you.",
     "author": "The Golden Rule (Matthew 7:12)",
+    "person": "Jesus",
     "description": "Nearly every ethical tradition landed on this same rule independently. The hard part was never understanding it — it's going first. Don't wait for people to earn your kindness. Set the tone yourself. It costs little and quietly changes how others treat you back.",
     "image": "images/2026-07-15.jpg",
     "tags": ["kindness", "character"]
@@ -49,6 +54,7 @@
     "date": "2026-07-16",
     "quote": "The great principle and foundation of all virtue and worth is placed in this: that a man is able to deny himself his own desires, cross his own inclinations, and purely follow what reason directs as best, though the appetite lean the other way.",
     "author": "John Locke, Some Thoughts Concerning Education (1693), §33",
+    "person": "John Locke",
     "description": "Locke isn't calling self-command one virtue among many. He calls it the foundation of all of them, the thing every other good quality is built on. Everything you're proud of building came from winning the argument between reason and appetite a few thousand times. (The popular one-liner \"the discipline of desire is the background of character\" is a modern paraphrase; this is what he actually wrote.)",
     "image": null,
     "tags": ["discipline", "character"]
@@ -58,6 +64,7 @@
     "date": "2026-07-17",
     "quote": "The still mind of the sage is the mirror of heaven and earth, the glass of all things.",
     "author": "Zhuangzi, The Way of Heaven (trans. James Legge)",
+    "person": "Zhuangzi",
     "description": "Zhuangzi compares a calm mind to still water: only when the surface stops moving can it show what's actually there. The popular version of this idea, \"to the mind that is still, the whole universe surrenders,\" is a modern rewrite usually pinned on Lao Tzu, who never said it. The original claims less and delivers more. Nothing surrenders to a still mind; it simply sees clearly, and most bad decisions get made in the churn.",
     "image": null,
     "tags": ["attention", "knowledge"]
@@ -67,6 +74,7 @@
     "date": "2026-07-18",
     "quote": "You have two lives, and the second begins when you realize you only have one.",
     "author": "Unknown (commonly misattributed to Confucius)",
+    "person": null,
     "description": "The first life runs on someday, later, eventually. At some point it sinks in that there's no second attempt, and the deferrals stop making sense. The Stoics built a daily practice around remembering exactly this, because the realization fades and needs renewing.",
     "image": null,
     "tags": ["time", "purpose"]
@@ -76,6 +84,7 @@
     "date": "2026-07-19",
     "quote": "Faith is the strength by which a shattered world shall emerge into the light.",
     "author": "Attributed to Helen Keller",
+    "person": "Helen Keller",
     "description": "Quote collections pin this line to her 1940 book Let Us Have Faith, but the sentence doesn't appear there; it reads like a later condensation of the book's argument. The argument itself is hers. Writing while the world came apart for the second time in her life, she kept insisting that belief in repair has to arrive before the repair does. Faith, for her, meant starting to rebuild before the light is visible.",
     "image": null,
     "tags": ["persistence", "courage"]
@@ -85,6 +94,7 @@
     "date": "2026-07-20",
     "quote": "Waste no more time arguing about what a good man should be. Be one.",
     "author": "Marcus Aurelius, Meditations 10.16 (modern rendering)",
+    "person": "Marcus Aurelius",
     "description": "Gregory Hays translates the original entry as \"To stop talking about what the good man is like, and just be one.\" Marcus wrote it as a note to himself, which is the detail worth keeping: the emperor of Rome caught himself using philosophy talk to postpone practice. Debating what goodness requires can absorb years. Doing the parts you already understand starts today.",
     "image": null,
     "tags": ["stoicism", "action"]
@@ -94,6 +104,7 @@
     "date": "2026-07-21",
     "quote": "And those who were seen dancing were thought to be insane by those who could not hear the music.",
     "author": "Unknown (commonly misattributed to Nietzsche)",
+    "person": null,
     "description": "Conviction looks like madness from the outside when people can't see what's driving you. Anyone who has left a stable path to build something has felt the stares. Worth remembering the other edge of it though: not every dancer hears real music. Sometimes the onlookers see something you're missing. The skill is telling the two apart.",
     "image": null,
     "tags": ["courage", "knowledge"]
@@ -103,6 +114,7 @@
     "date": "2026-07-22",
     "quote": "We have all eternity to celebrate the victories but only a few hours before sunset to win them.",
     "author": "Amy Carmichael",
+    "person": "Amy Carmichael",
     "description": "Carmichael spent 55 years in India rescuing children from exploitation and never went home, so the \"few hours before sunset\" wasn't a metaphor she took lightly. Her point sits on an asymmetry most people get backwards: the reward for meaningful work lasts a long time, but the window to actually do it is short and fixed. The praise can wait. The work cannot.",
     "image": null,
     "tags": ["time", "purpose"]
@@ -112,6 +124,7 @@
     "date": "2026-07-23",
     "quote": "True happiness is... to enjoy the present, without anxious dependence upon the future.",
     "author": "Seneca, Of a Happy Life (trans. Roger L'Estrange, 1678)",
+    "person": "Seneca",
     "description": "This is easy to misread as \"live for today.\" Seneca meant something firmer. He planned and worked as much as anyone, but he refused to rent his contentment to outcomes he couldn't control. Work toward tomorrow. Just don't hand it the keys to how you feel today. The anxiety you spend on an uncertain future is paid from the one moment you actually own.",
     "image": null,
     "tags": ["stoicism", "attention"]
@@ -121,6 +134,7 @@
     "date": "2026-07-24",
     "quote": "Wealth consists not in having great possessions, but in having few wants.",
     "author": "Attributed to Epictetus",
+    "person": "Epictetus",
     "description": "Wealth is really the gap between what you have and what you want, and you can close it from either end. Earning more shrinks it. So does wanting less, and that side is fully in your control and can't be taxed, lost, or stolen. The catch is telling a real want from one you were sold. Cutting the manufactured ones is freedom. Cutting genuine ambition is just giving up.",
     "image": null,
     "tags": ["wealth", "discipline"]
@@ -130,6 +144,7 @@
     "date": "2026-07-25",
     "quote": "The first wealth is health.",
     "author": "Ralph Waldo Emerson, The Conduct of Life (1860), \"Power\"",
+    "person": "Ralph Waldo Emerson",
     "description": "The common version of this line is the proverb \"health is wealth,\" but Emerson's wording makes a claim the proverb misses. First. Not one asset among many, the one everything else rests on. His reasoning is the part worth keeping: sickness spends everything it has just to keep going, while health throws off a surplus, enough for your own work and enough left to help someone else. Every plan you're making assumes a body well enough to carry it out.",
     "image": null,
     "tags": ["health", "wealth"]
@@ -139,6 +154,7 @@
     "date": "2026-07-26",
     "quote": "Your I CAN is more important than your IQ.",
     "author": "Robin Sharma, The Monk Who Sold His Ferrari (1997)",
+    "person": "Robin Sharma",
     "description": "Intelligence is largely fixed and largely out of your hands. Whether you apply it isn't. That's the honest core of this line. It doesn't mean ability is worthless, it means ability sitting unused loses to ability actually put to work, which is why people who show up and persist routinely pass more gifted people who don't. The belief matters because it drives the effort and the skill it takes to back the claim up. On its own, repeated at a mirror, it's just noise.",
     "image": null,
     "tags": ["persistence", "action"]
@@ -148,6 +164,7 @@
     "date": "2026-07-27",
     "quote": "Stand up straight with your shoulders back.",
     "author": "Jordan Peterson, 12 Rules for Life (2018)",
+    "person": "Jordan Peterson",
     "description": "Posture is the one part of confidence you can adopt before you feel it. Carrying yourself like someone who takes himself seriously changes how people respond to you, and that response loops back into how you actually feel. It's the smallest available first move toward getting your life in order, which is why Peterson puts it first.",
     "image": null,
     "tags": ["courage", "discipline"]
@@ -157,6 +174,7 @@
     "date": "2026-07-28",
     "quote": "Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy.",
     "author": "Thich Nhat Hanh",
+    "person": "Thich Nhat Hanh",
     "description": "Most people treat a smile as the readout of a good mood, an effect with no power of its own. Thich Nhat Hanh points at the loop running the other way too. The act can prime the feeling. On a flat day, the smile you don't quite feel is sometimes what starts the feeling arriving.",
     "image": null,
     "tags": ["attention", "health"]
@@ -166,6 +184,7 @@
     "date": "2026-07-29",
     "quote": "The two most powerful warriors are patience and time.",
     "author": "Leo Tolstoy, War and Peace (1869), popular rendering",
+    "person": "Leo Tolstoy",
     "description": "In the novel this is how the Russian general beats Napoleon: not by a bigger army, but by refusing to be rushed while time did the damage for him. The idea travels well beyond war. Most things you're trying to build are won the same way, by staying in position long enough for compounding and circumstance to turn in your favor. Patience here isn't passivity. It's knowing the clock is on your side and acting like it.",
     "image": null,
     "tags": ["persistence", "time"]
@@ -175,6 +194,7 @@
     "date": "2026-07-30",
     "quote": "Compound interest is the eighth wonder of the world.",
     "author": "Unknown (falsely attributed to Einstein; traced to a 1925 bank advertisement)",
+    "person": null,
     "description": "Whoever first said it, and it was not Einstein despite the internet's insistence, the math is the real point. Small gains that build on themselves quietly outrun large one-time wins, given enough time. It runs the same way on money, skills, and reputation, and it runs in both directions.",
     "image": null,
     "tags": ["wealth", "time"]
@@ -184,6 +204,7 @@
     "date": "2026-07-31",
     "quote": "I am the master of my fate, I am the captain of my soul.",
     "author": "William Ernest Henley, \"Invictus\" (written 1875)",
+    "person": "William Ernest Henley",
     "description": "Henley wrote this recovering from an amputation, which is the detail that saves it from bravado. He wasn't claiming control over what happened to him. He was claiming the one thing that stayed his: how he met it. That's what taking responsibility actually means. Not that everything is your fault, but that your response is always your own.",
     "image": null,
     "tags": ["courage", "persistence"]
@@ -193,6 +214,7 @@
     "date": "2026-08-01",
     "quote": "Hard choices, easy life. Easy choices, hard life.",
     "author": "Jerzy Gregorek",
+    "person": "Jerzy Gregorek",
     "description": "Difficulty isn't optional, and that's what the tidy phrasing hides. What you're choosing is when to pay it: now, in the workout you didn't feel like doing, or later, when the bill arrives with interest at a time you don't pick. Gregorek adds a caveat worth keeping, that the hardship has to be sensible and constructive. Hard for its own sake is just a different way to waste yourself.",
     "image": null,
     "tags": ["discipline", "persistence"]
@@ -202,6 +224,7 @@
     "date": "2026-08-02",
     "quote": "Life is like riding a bicycle. To keep your balance, you must keep moving.",
     "author": "Albert Einstein, letter to his son Eduard, 5 February 1930 (popular translation)",
+    "person": "Albert Einstein",
     "description": "Einstein wrote this to his nineteen-year-old son, who was struggling badly with his mental health, so the original spirit was gentler than the poster version suggests. He wasn't talking about ambition. He meant that a bike stays upright through small continuous corrections, and stopping is what makes you fall. Some days the honest goal is just to keep pedaling slowly. Speed can wait. Direction matters more than either.",
     "image": null,
     "tags": ["persistence", "action"]
@@ -211,6 +234,7 @@
     "date": "2026-08-03",
     "quote": "A great man is always willing to be little.",
     "author": "Ralph Waldo Emerson, \"Compensation,\" Essays: First Series (1841)",
+    "person": "Ralph Waldo Emerson",
     "description": "Emerson wasn't talking about modesty. Read in context, he means being willing to be a beginner, to be beaten, to be caught not knowing. His line for the alternative is sharp: sitting on the cushion of advantages, where you go to sleep. Comfort removes the feedback that made you good in the first place. The people who keep growing are the ones who keep putting themselves somewhere they can still be embarrassed.",
     "image": null,
     "tags": ["humility", "knowledge"]
@@ -220,6 +244,7 @@
     "date": "2026-08-04",
     "quote": "When you know a thing, to hold that you know it; and when you do not know a thing, to allow that you do not know it — this is knowledge.",
     "author": "Confucius, Analects 2:17 (trans. James Legge)",
+    "person": "Confucius",
     "description": "Confucius said this to a student known for overclaiming, which is the tell. He isn't describing humility as a nice quality. He's calling accurate self-assessment a form of knowledge in itself. Most costly mistakes start with someone holding a confident opinion just past the edge of what they actually know. Saying \"I don't know\" is where the finding out begins.",
     "image": null,
     "tags": ["humility", "knowledge"]
@@ -229,6 +254,7 @@
     "date": "2026-08-05",
     "quote": "Observing without evaluating is the highest form of human intelligence.",
     "author": "J. Krishnamurti, as paraphrased by Marshall Rosenberg in Nonviolent Communication (1999)",
+    "person": "J. Krishnamurti",
     "description": "Rosenberg's first reaction to this line was \"what nonsense,\" and then he caught himself having just made an evaluation. That's the whole lesson in one move. Most of what passes for observation is already a verdict. \"He's careless\" is a judgment. \"He missed two deadlines\" is a fact. Swap one for the other and the conversation stops being a fight.",
     "image": null,
     "tags": ["attention", "kindness"]
@@ -238,6 +264,7 @@
     "date": "2026-08-06",
     "quote": "To know yourself you need not go to any book, to any priest, to any psychologist. The whole treasure is within yourself.",
     "author": "J. Krishnamurti, public talk, London, 19 June 1962",
+    "person": "J. Krishnamurti",
     "description": "His target here is authority, the habit of accepting someone else's description of who you are and calling that self-knowledge. That part holds up. Worth keeping one thing alongside it though. Introspection on its own is unreliable, and blind spots are invisible by definition, which is why honest friends and good therapists remain some of the clearest mirrors available. Read it as don't outsource the verdict, not as don't ever ask for help.",
     "image": null,
     "tags": ["humility", "knowledge"]
@@ -247,6 +274,7 @@
     "date": "2026-08-07",
     "quote": "Nothing great was ever achieved without enthusiasm.",
     "author": "Ralph Waldo Emerson, \"Circles,\" Essays: First Series (1841)",
+    "person": "Ralph Waldo Emerson",
     "description": "Emerson's next line explains what he meant: the way of life is by abandonment. He isn't describing cheerfulness or high energy. He means self-forgetting, being absorbed enough in the work that you stop watching yourself do it. Worth pairing with the obvious caveat, since most great work also gets finished on days when the enthusiasm has entirely gone. It supplies the reason to start and the reason to come back. Discipline handles the rest.",
     "image": null,
     "tags": ["action", "purpose"]
@@ -256,6 +284,7 @@
     "date": "2026-08-08",
     "quote": "It's like building a mound. If the mound needs one more basketful of dirt for completion and I stop work, then the stopping is mine. Although it may be only one basketful of dirt, if I heap it up, then the progress is mine.",
     "author": "Confucius, Analects 9:19 (trans. Burton Watson)",
+    "person": "Confucius",
     "description": "The popular version of this idea, about moving mountains one small stone at a time, is not Confucius and is not in the Analects. What he actually said is better, because it's about ownership rather than patience. Stop one basket short and the stopping belongs to you. Carry one basket onto flat ground and the progress belongs to you too. Nobody else gets the credit or the blame for the basket you did or didn't move today.",
     "image": null,
     "tags": ["persistence", "discipline"]
@@ -265,6 +294,7 @@
     "date": "2026-08-09",
     "quote": "The future depends on what you do today.",
     "author": "Unknown (widely attributed to Mahatma Gandhi; no source identified in his collected writings)",
+    "person": null,
     "description": "This appears on thousands of posters under Gandhi's name, but nobody has produced a source for it, so it goes up here unsigned. The thought holds anyway, with one honest edit. Today doesn't decide the future on its own. Luck, health and other people all get a vote. What today decides is your contribution to it, which happens to be the only part you're actually holding.",
     "image": null,
     "tags": ["action", "time"]
@@ -274,6 +304,7 @@
     "date": "2026-08-10",
     "quote": "Dream is not that which you see while sleeping, it is something that does not let you sleep.",
     "author": "A.P.J. Abdul Kalam, Wings of Fire (1999)",
+    "person": "A.P.J. Abdul Kalam",
     "description": "Kalam repeated this to students for decades, and the line he's drawing is between fantasy and ambition. Fantasy is comfortable and asks nothing of you. A real aim keeps returning when you would rather be resting. Read it as intensity of purpose though, not as permission to burn your sleep. Anxiety keeps people awake too, and it builds nothing.",
     "image": null,
     "tags": ["purpose", "action"]
@@ -283,6 +314,7 @@
     "date": "2026-08-11",
     "quote": "There is only one good, knowledge, and one evil, ignorance.",
     "author": "Socrates, as reported by Diogenes Laertius, Lives of Eminent Philosophers 2.31",
+    "person": "Socrates",
     "description": "Socrates wrote nothing down, so this reaches us secondhand, recorded roughly six hundred years after his death. The claim behind it is that nobody does wrong on purpose, only out of not knowing better. Generous, and partly right. But anyone who has skipped a workout they had already planned knows the gap it misses. Knowing the right thing and doing it are two separate problems.",
     "image": null,
     "tags": ["knowledge", "character"]
@@ -292,6 +324,7 @@
     "date": "2026-08-12",
     "quote": "In each one of us there are two ruling and leading principles, which we follow whithersoever they lead; one is the innate desire for pleasures, the other an acquired opinion which strives for the best. These two sometimes agree within us and are sometimes in strife.",
     "author": "Plato, Phaedrus 237d (trans. Harold N. Fowler)",
+    "person": "Plato",
     "description": "The popular line about behavior flowing from desire, emotion and knowledge is a modern summary that got pinned on Plato. What he actually wrote is sharper. One of these forces is innate and the other is acquired. Wanting arrives on its own. The judgment that argues back has to be built, and it stays built only if you keep working on it.",
     "image": null,
     "tags": ["discipline", "knowledge"]
@@ -301,6 +334,7 @@
     "date": "2026-08-13",
     "quote": "It is the mark of an educated mind to rest satisfied with the degree of precision which the nature of the subject admits, and not to seek exactness where only an approximation is possible.",
     "author": "Aristotle, Nicomachean Ethics 1094b (popular translation)",
+    "person": "Aristotle",
     "description": "The famous version of this line, about entertaining a thought without accepting it, was never written by Aristotle. It first showed up in a 1959 book and has travelled under his name ever since. What he actually said is about precision, and it's more useful. Some questions allow exact answers and some only allow good estimates, and treating the second kind like the first is its own error. A great deal of false confidence is built on decimal places nobody earned.",
     "image": null,
     "tags": ["knowledge", "humility"]
@@ -310,6 +344,7 @@
     "date": "2026-08-14",
     "quote": "Our greatest glory is not in never falling, but in rising every time we fall.",
     "author": "Oliver Goldsmith, The Citizen of the World (1760–62), commonly misattributed to Confucius",
+    "person": "Oliver Goldsmith",
     "description": "The misattribution has a good explanation. Goldsmith wrote this inside a book of letters composed in the voice of a fictional Chinese philosopher living in London, and over two centuries readers swapped the invented sage for the famous one. The thought survives the correction. Add one condition though: getting up counts only if you get up differently. Falling the same way repeatedly is a loop with better branding.",
     "image": null,
     "tags": ["persistence", "courage"]
@@ -319,6 +354,7 @@
     "date": "2026-08-15",
     "quote": "Science is organized knowledge. Wisdom is organized life.",
     "author": "Will Durant, The Story of Philosophy (1926), widely misattributed to Immanuel Kant",
+    "person": "Will Durant",
     "description": "Kant never wrote this. Durant did, while explaining Kant to general readers, and in that same chapter he admitted Kant was too dense to quote directly. So he wrote his own summary, and the summary got handed back to Kant. The first phrase wasn't even Durant's; Herbert Spencer coined it in 1854. The idea survives all of that. By Durant's measure wisdom is a question of arrangement rather than volume. Plenty of people know what they should be doing. Fewer have built a life where the knowing shows up.",
     "image": null,
     "tags": ["knowledge", "discipline"]
@@ -328,6 +364,7 @@
     "date": "2026-08-16",
     "quote": "He who has a why to live can bear almost any how.",
     "author": "Friedrich Nietzsche, Twilight of the Idols (1888), \"Maxims and Arrows\" (rendering popularized by Viktor Frankl)",
+    "person": "Friedrich Nietzsche",
     "description": "Most people meet this line through Viktor Frankl, who used it to explain why some prisoners in the camps kept going. Purpose doesn't remove pain. It changes what the pain costs you, because suffering with a reason attached is a different thing from suffering that looks pointless. Note the word almost though. Nietzsche put it there on purpose, and Frankl knew better than anyone that plenty of people with strong reasons still didn't make it out.",
     "image": null,
     "tags": ["purpose", "persistence"]
@@ -337,6 +374,7 @@
     "date": "2026-08-17",
     "quote": "I have discovered the secret that after climbing a great hill, one only finds that there are many more hills to climb.",
     "author": "Nelson Mandela, Long Walk to Freedom (1994)",
+    "person": "Nelson Mandela",
     "description": "Mandela wrote this at the close of his autobiography, after twenty-seven years in prison and after becoming president. It runs against the usual message about persistence. He doesn't promise the climbing ends. What he found at the top of the great hill was more hills, and he called that a secret rather than a disappointment.",
     "image": null,
     "tags": ["persistence", "humility"]
@@ -346,6 +384,7 @@
     "date": "2026-08-18",
     "quote": "A person who never made a mistake never tried anything new.",
     "author": "Proverb (falsely attributed to Albert Einstein; the earliest Einstein link dates to 1995, forty years after his death)",
+    "person": null,
     "description": "The idea is nearly two centuries older than the name attached to it, and Theodore Roosevelt was using a version of it in 1901. It holds up anyway, because anything genuinely new produces errors when there's nobody to copy. The reverse doesn't follow though. Mistakes don't prove you were trying something new, and the question worth asking is which kind you made: the price of exploring, or the price of not paying attention.",
     "image": null,
     "tags": ["knowledge", "courage"]
@@ -355,6 +394,7 @@
     "date": "2026-08-19",
     "quote": "Nothing in the world is worth having or worth doing unless it means effort, pain, difficulty… I have never in my life envied a human being who led an easy life. I have envied a great many people who led difficult lives and led them well.",
     "author": "Theodore Roosevelt",
+    "person": "Theodore Roosevelt",
     "description": "The short version that circulates overstates the case. Plenty of worthwhile things cost nothing, like a good conversation or an hour with someone you love. The full passage is more careful: Roosevelt's admiration goes to people who were handed difficult lives and handled them well. The praise is for how they carried it, not for the weight itself.",
     "image": null,
     "tags": ["character", "persistence"]
@@ -364,6 +404,7 @@
     "date": "2026-08-20",
     "quote": "Not having heard something is not as good as having heard it; having heard it is not as good as having seen it; having seen it is not as good as knowing it; knowing it is not as good as putting it into practice.",
     "author": "Xunzi, Book 8 \"Ruxiao\" (3rd century BC)",
+    "person": "Xunzi",
     "description": "Confucius and Benjamin Franklin both get credited for the popular version of this, and neither said it. It comes from Xunzi, a Confucian philosopher born after Confucius died, and his original runs one rung further than the English paraphrase: hearing, then seeing, then knowing, then doing. Practice sits at the top. You can hold an idea perfectly and still not have it, because knowing and doing are separate skills.",
     "image": null,
     "tags": ["action", "knowledge"]
@@ -373,6 +414,7 @@
     "date": "2026-08-21",
     "quote": "If a man knows not to which port he sails, no wind is favorable.",
     "author": "Seneca, Letters to Lucilius",
+    "person": "Seneca",
     "description": "The line is about direction rather than effort. You can work extremely hard and still be going nowhere in particular, because no wind helps a ship whose port hasn't been named. Notice the metaphor doesn't ask for certainty about the destination. It asks you to have chosen one, which is a lower bar and still the step most people skip.",
     "image": null,
     "tags": ["purpose", "stoicism"]
@@ -382,6 +424,7 @@
     "date": "2026-08-22",
     "quote": "Patience, persistence and perspiration make an unbeatable combination for success.",
     "author": "Attributed to Napoleon Hill",
+    "person": "Napoleon Hill",
     "description": "The word doing the damage is unbeatable. Plenty of patient, persistent, hard-working people never arrive, because effort without direction is just well-executed drift. Keep all three qualities, then add the one the list leaves out: knowing where you're actually trying to go.",
     "image": null,
     "tags": ["persistence", "purpose"]
@@ -391,6 +434,7 @@
     "date": "2026-08-23",
     "quote": "One should pray for a sound mind in a sound body.",
     "author": "Juvenal, Satire X, line 356 (c. 100–127 AD)",
+    "person": "Juvenal",
     "description": "Gyms print the short version on their walls, but that association was invented in 1861, when a Liverpool athletics club lifted five words out of context. Juvenal wasn't writing about exercise. Satire X lists the foolish things people pray for, money and power and fame and long life, and argues that a sound mind in a sound body is the only request worth making. A few lines later he adds the sharper half: this is the one thing on the list you can give yourself.",
     "image": null,
     "tags": ["health", "discipline"]
@@ -400,6 +444,7 @@
     "date": "2026-08-24",
     "quote": "To understand everything makes one very indulgent, and to feel deeply inspires great kindness.",
     "author": "Germaine de Staël, Corinne, or Italy (1807), Book 18, ch. 5",
+    "person": "Germaine de Staël",
     "description": "The famous English version, to understand all is to forgive all, entered through a translation and quietly changed the claim. De Staël wrote indulgent, not forgiving. Understanding someone's reasons earns them latitude, not absolution. And the half nobody quotes is the better one: feeling deeply inspires great kindness.",
     "image": null,
     "tags": ["kindness", "humility"]
@@ -409,6 +454,7 @@
     "date": "2026-08-25",
     "quote": "We but mirror the world... If we could change ourselves, the tendencies in the world would also change. As a man changes his own nature, so does the attitude of the world change towards him... We need not wait to see what others do.",
     "author": "Mahatma Gandhi, Indian Opinion, 9 August 1913 (Collected Works, vol. 13, p. 241)",
+    "person": "Mahatma Gandhi",
     "description": "The most famous Gandhi line in the world, be the change you wish to see, isn't his. It traces to an American teacher writing in the 1970s. What Gandhi actually wrote is more modest, and it appeared in a health column about treating snakebite: the world mirrors what is in us, so changing yourself changes how the world meets you. He doesn't claim that's enough to fix anything. He claims you can start without waiting for anyone.",
     "image": null,
     "tags": ["action", "character"]
@@ -418,6 +464,7 @@
     "date": "2026-08-26",
     "quote": "Of all the things which wisdom provides to make us entirely happy, much the greatest is the possession of friendship.",
     "author": "Epicurus, Principal Doctrines 27 (c. 300 BC)",
+    "person": "Epicurus",
     "description": "The word Epicurean now suggests someone chasing fine food and wine, which is close to the reverse of what he taught. He lived on simple fare in a shared garden outside Athens and held that the best thing wisdom can secure you is friends. He also advised against eating alone, on the grounds that feeding without a friend is the life of a lion or a wolf. The longest-running study on adult happiness has since landed in the same place.",
     "image": null,
     "tags": ["kindness", "health"]
@@ -427,6 +474,7 @@
     "date": "2026-08-27",
     "quote": "All the powers in the universe are already ours. It is we who have put our hands before our eyes and cry that it is dark. Know that there is no darkness around us. Take the hands away and there is the light which was from the beginning.",
     "author": "Swami Vivekananda, \"Practical Vedanta: Part I,\" Complete Works, Volume 2",
+    "person": "Swami Vivekananda",
     "description": "In the same lecture Vivekananda says Vedanta recognises no sin, only error, and that the greatest error is calling yourself weak. Real limits exist and he isn't denying them. What he's pointing at is the layer we add on top, the verdict reached before the attempt. Most people never find the edge of what they could actually do, because they stop at the edge of what they assume.",
     "image": null,
     "tags": ["courage", "purpose"]
@@ -436,6 +484,7 @@
     "date": "2026-08-28",
     "quote": "Enlightenment is man's emergence from his self-incurred immaturity… This immaturity is self-incurred if its cause is not lack of understanding, but lack of resolution and courage to use it without the guidance of another. Sapere aude! Have courage to use your own understanding!",
     "author": "Immanuel Kant, \"An Answer to the Question: What Is Enlightenment?\" (Königsberg, 30 September 1784)",
+    "person": "Immanuel Kant",
     "description": "The key word is self-incurred. Kant blames unwillingness rather than ignorance, and his examples land uncomfortably well today: letting a book serve as your understanding, a clergyman as your conscience, a doctor decide your diet, so the effort never falls to you. Worth separating this from its modern imitation though. Kant accepted that we rely on people who know more than we do. What he objected to was handing your judgment over permanently, because thinking costs something and being told is free.",
     "image": null,
     "tags": ["courage", "knowledge"]
@@ -445,6 +494,7 @@
     "date": "2026-08-29",
     "quote": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
     "author": "Will Durant, The Story of Philosophy (1926), widely misattributed to Aristotle",
+    "person": "Will Durant",
     "description": "This is the second famous line from the same 1926 book that people credit to the wrong man. Durant wrote it while summarizing Aristotle, slotting his own sentence between two real quotations. The idea is faithful enough, since Aristotle did argue that virtues form by doing the actions rather than intending them. Nobody becomes disciplined by deciding to be. You become it through the unremarkable repetition nobody watches.",
     "image": null,
     "tags": ["discipline", "character"]
@@ -454,6 +504,7 @@
     "date": "2026-08-30",
     "quote": "Men are disturbed not by the things which happen, but by the opinions about the things.",
     "author": "Epictetus, Enchiridion 5 (c. 125 AD)",
+    "person": "Epictetus",
     "description": "Epictetus is pointing at a gap most people never notice. Between something happening and your response to it, a judgment gets made, usually too fast to catch. Most of what feels like a reaction to circumstance is a reaction to your reading of it. Events stay outside your control. The reading doesn't.",
     "image": null,
     "tags": ["stoicism", "attention"]
@@ -463,6 +514,7 @@
     "date": "2026-08-31",
     "quote": "Knowing others is wisdom; knowing yourself is enlightenment. Mastering others requires force; mastering yourself is true strength.",
     "author": "Laozi, Tao Te Ching, ch. 33",
+    "person": "Laozi",
     "description": "This site has already run a famous Lao Tzu line that turned out to belong to Zhuangzi. This one is genuinely in the Tao Te Ching, with one honest caveat: scholars generally treat the text as a compilation rather than one man's work, so Laozi names a tradition as much as an author. The distinction it draws holds regardless. Power over other people is a different skill from power over yourself, and only one of the two compounds.",
     "image": null,
     "tags": ["discipline", "humility"]
@@ -472,6 +524,7 @@
     "date": "2026-09-01",
     "quote": "It is not that we have a short time to live, but that we waste a lot of it.",
     "author": "Seneca, On the Shortness of Life (c. 49 AD)",
+    "person": "Seneca",
     "description": "The essay's central observation hasn't aged at all: people guard their money carefully and hand their time to whoever asks for it. Two thousand years later the only real change is that the interruptions arrive faster. His point is that we spend time as though the supply were unlimited, then call the result bad luck.",
     "image": null,
     "tags": ["time", "stoicism"]
@@ -481,6 +534,7 @@
     "date": "2026-09-02",
     "quote": "So also anybody can become angry — that is easy, and so it is to give and spend money; but to be angry with or give money to the right person, and to the right amount, and at the right time, and for the right purpose, and in the right way — this is not within everybody's power and is not easy.",
     "author": "Aristotle, Nicomachean Ethics 2.9 (trans. H. Rackham)",
+    "person": "Aristotle",
     "description": "The famous version of this stops at anger. Aristotle's actual sentence also covers giving and spending money, which changes the argument: the hard thing is proportion, not anger in particular. Anyone can feel the feeling or write the cheque. Getting the target, the amount, the timing and the reason right at once is what he calls rare, praiseworthy and noble.",
     "image": null,
     "tags": ["discipline", "character"]
@@ -490,6 +544,7 @@
     "date": "2026-09-03",
     "quote": "Anything that makes you weak physically, intellectually and spiritually, reject as poison.",
     "author": "Swami Vivekananda, \"My Plan of Campaign\", Lectures from Colombo to Almora (1904)",
+    "person": "Swami Vivekananda",
     "description": "As a filter for habits and inputs this works well. As a filter for ideas it turns into a trap, because a hard diagnosis makes you feel weak, and so does honest criticism, and neither one is poison. Vivekananda meant it as an idea-filter too. He calls it the test of truth in the same breath, and his target was the occultism and mysticism he thought were draining a nation already told it could do nothing. Read against that, the line lands. Read as a rule for dodging whatever stings, it just protects you from information.",
     "image": null,
     "tags": ["discipline", "knowledge"]
@@ -499,6 +554,7 @@
     "date": "2026-09-04",
     "quote": "Never give in, never give in, never, never, never, never — in nothing, great or small, large or petty — never give in except to convictions of honour and good sense. Never yield to force; never yield to the apparently overwhelming might of the enemy.",
     "author": "Winston Churchill, address at Harrow School, 29 October 1941",
+    "person": "Winston Churchill",
     "description": "The poster version is \"never, never, never give up,\" which drops the most important six words. Churchill built an exception into the sentence: give in when honour and good sense demand it. What he ruled out was yielding to force and to intimidation, not changing your mind when the evidence changes. That single clause is the difference between persistence and stubbornness, and it is the part almost nobody quotes.",
     "image": null,
     "tags": ["persistence", "courage"]
@@ -508,6 +564,7 @@
     "date": "2026-09-05",
     "quote": "All shall be well, and all shall be well, and all manner of thing shall be well.",
     "author": "Julian of Norwich, Revelations of Divine Love (visions of 1373)",
+    "person": "Julian of Norwich",
     "description": "This is easy to mistake for wishful thinking until you know who wrote it. Julian nearly died at thirty, lived through two waves of plague, and spent twenty years in a small cell working out what she had seen. Her own text rules out the soft reading. She records being told not that she would avoid storms or illness or hardship, but that she would not be overcome. The promise was never that nothing goes wrong.",
     "image": null,
     "tags": ["persistence", "courage"]
@@ -517,6 +574,7 @@
     "date": "2026-09-06",
     "quote": "When failure occurred, the leader of the organization owned that failure. When success came, he gave it to his team.",
     "author": "A.P.J. Abdul Kalam, on Prof. Satish Dhawan (Wharton India Economic Forum, 2008)",
+    "person": "A.P.J. Abdul Kalam",
     "description": "Kalam had overruled the computer himself. It flagged a fault, his experts said there was fuel in reserve, he went manual, and the rocket ended up in the Bay of Bengal. The failure was his, and Dhawan fronted the press conference anyway. A year later, after the successful launch, Dhawan sent Kalam out to face the cameras alone. Absorbing blame in public works only because the hard analysis happened in private, and the fault was fixed within twelve months.",
     "image": null,
     "tags": ["character", "humility"]
@@ -526,6 +584,7 @@
     "date": "2026-09-07",
     "quote": "The reason why we have two ears and only one mouth is that we may listen the more and talk the less.",
     "author": "Zeno of Citium, recorded in Diogenes Laertius, Lives of Eminent Philosophers, Book VII",
+    "person": "Zeno of Citium",
     "description": "This gets quoted as Epictetus almost everywhere, but it belongs to Zeno, who founded Stoicism more than three centuries before him. The setting is the part that gets lost: he said it to a young man who was talking nonsense. It was a rebuke, not a communication tip. The anatomy is just a joke carrying the real point, which is that most people treat conversation as waiting for their turn.",
     "image": null,
     "tags": ["humility", "attention"]
@@ -535,6 +594,7 @@
     "date": "2026-09-08",
     "quote": "Wealth without work. Pleasure without conscience. Knowledge without character. Commerce without morality. Science without humanity. Worship without sacrifice. Politics without principle.",
     "author": "The Seven Social Sins, published by Mahatma Gandhi in Young India, 22 October 1925 (originally preached by Frederick Lewis Donaldson at Westminster Abbey, March 1925)",
+    "person": "Frederick Lewis Donaldson",
     "description": "Gandhi never claimed to have written this. He printed it saying a friend had sent it, and his only comment was that the friend wanted readers to know these things through the heart rather than the intellect. Notice the shape of each line. Wealth, pleasure, knowledge and commerce are all good things. Each becomes a sin only when cut loose from the thing that was restraining it. The list reads best pointed inward.",
     "image": null,
     "tags": ["character", "kindness"]
@@ -544,6 +604,7 @@
     "date": "2026-09-09",
     "quote": "I've missed more than 9,000 shots in my career. I've lost almost 300 games. Twenty-six times I've been trusted to take the game-winning shot and missed. I've failed over and over and over again in my life. And that is why I succeed.",
     "author": "Michael Jordan, Nike \"Failure\" commercial (1997)",
+    "person": "Michael Jordan",
     "description": "This gets quoted from stages and in books as a private reflection. It was a shoe advertisement, narrated by Jordan over footage of himself walking into an arena, and the numbers are deliberately round. Worth knowing, because the last line claims more than the evidence carries. Plenty of players miss nine thousand shots and never become Jordan. What the figure really proves is that he kept being handed the ball, and you only reach that count by taking the shot on the nights you might miss.",
     "image": null,
     "tags": ["persistence", "courage"]
@@ -553,6 +614,7 @@
     "date": "2026-09-10",
     "quote": "In the 1,526 singles matches I played in my career, I won almost 80% of those matches. Now, what percentage of the points do you think I won? Only 54%. Even top-ranked tennis players win barely more than half the points they play.",
     "author": "Roger Federer, Dartmouth commencement address, June 2024",
+    "person": "Roger Federer",
     "description": "The number holds up against the record books, and it holds for the others too. Nadal and Djokovic each won about 54% of their points. Jimmy Connors won under half of his and still took four matches in five. What separates the best in the world from everyone else is roughly four points in a hundred, spread across twenty years. The margin is thinner than it looks from the stands, and it only shows up if you keep playing the next point.",
     "image": null,
     "tags": ["persistence", "attention"]
@@ -562,6 +624,7 @@
     "date": "2026-09-11",
     "quote": "I learned that courage was not the absence of fear, but the triumph over it. I felt fear more times than I can remember, but I hid it behind a mask of boldness. The brave man is not he who does not feel afraid, but he who conquers that fear.",
     "author": "Nelson Mandela, Long Walk to Freedom (1994)",
+    "person": "Nelson Mandela",
     "description": "The version that circulates drops the middle sentence, and it's the one that matters. He felt fear more times than he could remember and hid it behind a mask of boldness. He wasn't fearless. He was frightened and went anyway, performing a steadiness he didn't feel because millions of people were watching him for a signal. That mask made sense for a man in his position. It's a costly habit to carry into an ordinary life.",
     "image": null,
     "tags": ["courage", "character"]
@@ -571,6 +634,7 @@
     "date": "2026-09-12",
     "quote": "I am actually pleased that I share something very important with Sir Don. He was, primarily, like me, a No. 3 batsman. It is a tough, tough job. We're the ones who make life easier for the kings of batting, the middle order that follows us.",
     "author": "Rahul Dravid, Bradman Oration, Canberra, December 2011",
+    "person": "Rahul Dravid",
     "description": "Dravid batted at No. 3 for most of his career, which means walking in when an early wicket falls and taking the bowling at its freshest so the stroke-makers who follow can score freely. They called him The Wall. The job is essential and systematically under-credited, which is probably why he had to say this from a podium rather than have someone say it for him. Every team has one, and they are usually the last person thanked.",
     "image": null,
     "tags": ["humility", "character"]
@@ -580,6 +644,7 @@
     "date": "2026-09-13",
     "quote": "Life is what happens to us while we are making other plans.",
     "author": "Allen Saunders, Reader's Digest, January 1957",
+    "person": "Allen Saunders",
     "description": "The famous version comes from a John Lennon song in 1980, but he wasn't first. Allen Saunders, who wrote the Mary Worth comic strip, published this line in Reader's Digest in January 1957, when Lennon was sixteen. This isn't a case against planning. The warning is about attention, because the stretch between plans keeps getting treated as a waiting room, and that stretch turns out to have been the life.",
     "image": null,
     "tags": ["attention", "time"]
@@ -589,6 +654,7 @@
     "date": "2026-09-14",
     "quote": "The unexamined life is not worth living.",
     "author": "Socrates, in Plato's Apology 38a (399 BC)",
+    "person": "Socrates",
     "description": "The modern reading turns this into advice about journaling. Socrates meant something more public and more uncomfortable: elenchus, questioning people out loud until their beliefs contradicted themselves. He said it at his trial after conviction, when exile was still on the table if he agreed to go quiet. He refused, and drank hemlock, which tells you the line was not hyperbole.",
     "image": null,
     "tags": ["humility", "character"]
@@ -598,6 +664,7 @@
     "date": "2026-09-15",
     "quote": "All our dreams can come true if we have the courage to pursue them.",
     "author": "Attributed to Walt Disney (no primary source identified)",
+    "person": "Walt Disney",
     "description": "Disney is among the most quoted people online and among the least sourced. This line has no traceable origin, and the even more famous one about dreaming it and doing it was written for a theme park attraction that opened in 1983, seventeen years after his death. On the claim itself, courage isn't sufficient, and his own life is the evidence. He went bankrupt in 1923 and lost the rights to Oswald the Rabbit along with most of his animators in 1928. Courage got him back to the drawing board. It didn't guarantee what happened next.",
     "image": null,
     "tags": ["courage", "purpose"]
@@ -607,6 +674,7 @@
     "date": "2026-09-16",
     "quote": "The world breaks every one and afterward many are strong at the broken places. But those that will not break it kills.",
     "author": "Ernest Hemingway, A Farewell to Arms (1929), ch. 34",
+    "person": "Ernest Hemingway",
     "description": "Everyone stops the quote at the broken places. Hemingway doesn't. The next lines say those who refuse to break get killed instead, and that the world kills impartially, with no preference for the good or the brave. So this was never a promise that pain makes you stronger. Many are strong afterward. Many, not all, and the word is his.",
     "image": null,
     "tags": ["persistence", "character"]
@@ -616,6 +684,7 @@
     "date": "2026-09-17",
     "quote": "Be patient toward all that is unsolved in your heart and try to love the questions themselves… Do not now seek the answers, which cannot be given you because you would not be able to live them. Live the questions now.",
     "author": "Rainer Maria Rilke, Letters to a Young Poet, Letter Four, 16 July 1903",
+    "person": "Rainer Maria Rilke",
     "description": "Rilke wrote this to a nineteen-year-old cadet who had sent him poems and asked whether they were any good. He never answered the question. He told the young man to stop needing an answer yet. Some things genuinely cannot be worked out in advance, only lived into, and the instruction is not to stop moving while you wait. It's to stop demanding the destination before you're far enough along to recognise it.",
     "image": null,
     "tags": ["humility", "knowledge"]
@@ -625,6 +694,7 @@
     "date": "2026-09-18",
     "quote": "I do not pretend to understand the moral universe; the arc is a long one, my eye reaches but little ways; I cannot calculate the curve and complete the figure by the experience of sight; I can divine it by conscience. And from what I see I am sure it bends towards justice.",
     "author": "Theodore Parker, \"Of Justice and the Conscience,\" Ten Sermons of Religion (1853)",
+    "person": "Theodore Parker",
     "description": "The famous short version, about the arc of the moral universe bending toward justice, is a later condensation. Martin Luther King quoted it rather than wrote it, and put it in quotation marks when he did. Parker's original is the better sentence because it admits what it doesn't know first. He says plainly that he cannot see far enough to calculate the curve, and only then says what he believes and why. Faith stated with its limits attached is sturdier than a slogan.",
     "image": null,
     "tags": ["humility", "character"]
@@ -634,6 +704,7 @@
     "date": "2026-09-19",
     "quote": "We suffer more often in imagination than in reality.",
     "author": "Seneca, Letters to Lucilius 13.4",
+    "person": "Seneca",
     "description": "The ledger is lopsided. Fewer things crush you than frighten you, and you paid full price for both. Seneca isn't denying that bad things arrive, only pointing out how much of the suffering happened in advance, on scenarios that never came. Most of what you have already survived, you survived twice.",
     "image": null,
     "tags": ["stoicism", "courage"]
@@ -643,6 +714,7 @@
     "date": "2026-09-20",
     "quote": "Trust thyself: every heart vibrates to that iron string.",
     "author": "Ralph Waldo Emerson, \"Self-Reliance,\" Essays: First Series (1841)",
+    "person": "Ralph Waldo Emerson",
     "description": "The essay it comes from is one long argument against living on borrowed opinions. Emerson isn't promising you're always right. His point is narrower: imitation guarantees you'll be wrong in someone else's style, with none of the learning that comes from being wrong in your own. The iron string is his image for the note only you can sound.",
     "image": null,
     "tags": ["courage", "character"]
@@ -652,6 +724,7 @@
     "date": "2026-09-21",
     "quote": "When I walk along with two others, they may serve me as my teachers. I will select their good qualities and follow them, their bad qualities and avoid them.",
     "author": "Confucius, Analects 7.21 (trans. James Legge)",
+    "person": "Confucius",
     "description": "The famous half is the first line. The useful half is what follows: take what is good in them and copy it, notice what is bad and correct that in yourself. Both directions count as instruction. The person irritating you today is teaching you something, just not the lesson they intended.",
     "image": null,
     "tags": ["humility", "knowledge"]
@@ -661,6 +734,7 @@
     "date": "2026-09-22",
     "quote": "I maintain that Truth is a pathless land, and you cannot approach it by any path whatsoever, by any religion, by any sect.",
     "author": "J. Krishnamurti, dissolution of the Order of the Star, Ommen, 3 August 1929",
+    "person": "J. Krishnamurti",
     "description": "He said this while dissolving the organisation that had declared him a world teacher, standing in front of three thousand of its members. The speech opens with a joke about the devil watching a man pick up a piece of truth and saying, let him organise it. Then Krishnamurti returned the money and the property and spent the rest of his life refusing to be anyone's authority.",
     "image": null,
     "tags": ["knowledge", "courage"]
@@ -670,6 +744,7 @@
     "date": "2026-09-23",
     "quote": "Associate with those who will make a better man of you. Welcome those whom you yourself can improve.",
     "author": "Seneca, Letters to Lucilius 7",
+    "person": "Seneca",
     "description": "The letter is about crowds, and Seneca's complaint is that company works on you whether you agree to it or not. Spend an evening among people and you leave carrying some of what they carried in. The instruction has two halves and people quote only the first. Seek out those who improve you, and make yourself available to the ones you can improve.",
     "image": null,
     "tags": ["character", "kindness"]
@@ -679,6 +754,7 @@
     "date": "2026-09-24",
     "quote": "A foolish consistency is the hobgoblin of little minds.",
     "author": "Ralph Waldo Emerson, \"Self-Reliance,\" Essays: First Series (1841)",
+    "person": "Ralph Waldo Emerson",
     "description": "The line usually gets quoted with its first word missing, which turns it into a licence to abandon anything you committed to. Emerson wrote foolish consistency. His target is the person who holds a position only because they held it yesterday, in front of people who remember them holding it. Being seen to be steady is not the same as being right.",
     "image": null,
     "tags": ["humility", "knowledge"]
@@ -688,6 +764,7 @@
     "date": "2026-09-25",
     "quote": "To have faults and not to reform them — this, indeed, should be pronounced having faults.",
     "author": "Confucius, Analects 15.29 (trans. James Legge)",
+    "person": "Confucius",
     "description": "The sentence turns on a distinction most people skip past. Having faults is the ordinary condition and carries no verdict. What Confucius calls a fault in the real sense is knowing about one and leaving it where it is. By that measure the question was never whether you have them. It's how long each one has been sitting on the list.",
     "image": null,
     "tags": ["character", "action"]
@@ -697,6 +774,7 @@
     "date": "2026-09-26",
     "quote": "When pursuing our own self-interest we should be wise selfish and not foolish selfish. Being foolish selfish means pursuing our own interests in a narrow, shortsighted way. Being wise selfish means recognizing that our own long-term individual interest lies in the welfare of everyone.",
     "author": "14th Dalai Lama, Beyond Religion: Ethics for a Whole World (2011)",
+    "person": "14th Dalai Lama",
     "description": "Most arguments for compassion ask you to set your own interests aside. This one doesn't. He accepts self-interest as the starting point and argues that the narrow version simply miscalculates, because a life arranged around only yourself produces exactly the isolation that makes people miserable. Read that way it stops being a moral instruction and becomes an arithmetic correction.",
     "image": null,
     "tags": ["kindness", "knowledge"]
@@ -706,6 +784,7 @@
     "date": "2026-09-27",
     "quote": "With malice toward none, with charity for all, with firmness in the right as God gives us to see the right, let us strive on to finish the work we are in, to bind up the nation's wounds.",
     "author": "Abraham Lincoln, Second Inaugural Address, 4 March 1865",
+    "person": "Abraham Lincoln",
     "description": "He gave this with the war effectively won, which is the moment victors usually spend gloating. He spent it proposing to bind up the wounds instead. The clause people skip is the sharpest one: firmness in the right as God gives us to see the right. He committed to acting on his convictions while admitting his view of them might be partial. Holding both at once is the difficult part. He was killed six weeks later.",
     "image": null,
     "tags": ["kindness", "humility"]
@@ -715,6 +794,7 @@
     "date": "2026-09-28",
     "quote": "The greatest thing in the world is to know how to belong to oneself.",
     "author": "Michel de Montaigne, \"Of Solitude,\" Essays (1580, trans. Donald M. Frame)",
+    "person": "Michel de Montaigne",
     "description": "Montaigne left public office at thirty-eight, shut himself in a tower with a thousand books, and invented the essay by writing down what he actually thought rather than what was expected. He isn't recommending everyone find a tower. The argument is for keeping one room in yourself that other people's opinions haven't furnished, available whether you are alone or in a crowd. Most people rent out the whole house.",
     "image": null,
     "tags": ["character", "attention"]
@@ -724,6 +804,7 @@
     "date": "2026-09-29",
     "quote": "You gain strength, courage and confidence by every experience in which you really stop to look fear in the face… You must do the thing you think you cannot do.",
     "author": "Eleanor Roosevelt, You Learn by Living (1960)",
+    "person": "Eleanor Roosevelt",
     "description": "Her most famous line, about nobody making you feel inferior without your consent, isn't quite hers. It's a condensation that settled into its current form around 1940, built from a remark she made about snubs in 1935. This one is hers, from a chapter called Fear, the Great Enemy. The order is the useful part. You face the thing, you come through it, and the confidence shows up afterwards. It arrives last, which is why waiting for it first never works.",
     "image": null,
     "tags": ["courage", "action"]
@@ -733,6 +814,7 @@
     "date": "2026-09-30",
     "quote": "If there is no struggle, there is no progress. Those who profess to favor freedom, and yet depreciate agitation, are men who want crops without plowing up the ground.",
     "author": "Frederick Douglass, West India Emancipation address, 3 August 1857",
+    "person": "Frederick Douglass",
     "description": "Douglass escaped slavery at twenty, having taught himself to read in secret when teaching him would have been a crime. He gave this four years before the Civil War. The farming image is the part that travels. Wanting the outcome while objecting to the disruption that produces it is asking for a harvest without a season, and it is the most common way people avoid the thing they say they want.",
     "image": null,
     "tags": ["persistence", "courage"]
@@ -742,6 +824,7 @@
     "date": "2026-10-01",
     "quote": "Life can only be understood backwards; but it must be lived forwards.",
     "author": "Søren Kierkegaard, Journals (1843), popular rendering",
+    "person": "Søren Kierkegaard",
     "description": "Kierkegaard wrote this in a private notebook. The two halves are designed to pull against each other. Understanding only turns up afterwards, once the sequence is visible, but the decisions all have to be made before that. Every important choice gets made with less information than you will eventually have, and no amount of additional thinking closes the gap. The clarity you are waiting for belongs to the version of you who already acted.",
     "image": null,
     "tags": ["knowledge", "action"]
@@ -751,6 +834,7 @@
     "date": "2026-10-02",
     "quote": "Attention is the rarest and purest form of generosity.",
     "author": "Simone Weil, letter to Joë Bousquet, 13 April 1942",
+    "person": "Simone Weil",
     "description": "Weil wrote this to a poet left paralysed by a war wound, who had read some pages she sent him. The surrounding lines make it concrete. She doesn't claim the pages deserved his attention; she treats the attention itself as something he chose to give her. Money and advice cost less than people think. Undivided attention is the thing almost nobody has left to spare. She died the following year, at thirty-four.",
     "image": null,
     "tags": ["attention", "kindness"]
@@ -760,6 +844,7 @@
     "date": "2026-10-03",
     "quote": "People are illogical, unreasonable, and self-centered. Love them anyway.",
     "author": "Kent M. Keith, \"The Paradoxical Commandments\" (1968), long misattributed to Mother Teresa",
+    "person": "Kent M. Keith",
     "description": "Keith was nineteen when he wrote this, in a booklet for student council leaders. A version hung on the wall of her children's home in Calcutta, a 1995 book reprinted it with no author listed, and the world assigned it to her. Keith only found out weeks after she died, when a man at his Rotary Club stood up to read a poem she had supposedly written and Keith recognised his own sentences. The instruction holds either way. Anyway is the whole argument: you do the thing because it is right, not because the response will justify it.",
     "image": null,
     "tags": ["kindness", "character"]
@@ -769,6 +854,7 @@
     "date": "2026-10-04",
     "quote": "He who knows only his own side of the case knows little of that. His reasons may be good, and no one may have been able to refute them. But if he is equally unable to refute the reasons on the opposite side, if he does not so much as know what they are, he has no ground for preferring either opinion.",
     "author": "John Stuart Mill, On Liberty (1859), ch. 2",
+    "person": "John Stuart Mill",
     "description": "Mill sets a test you can actually fail. Not whether you disagree with the other side, but whether you could state its case well enough that someone who holds it would recognise their own view. He adds a condition most people skip: you have to hear those arguments from people who genuinely believe them, not summarised by your own side on the way to refuting them. Measured that way, most strong opinions are held on credit.",
     "image": null,
     "tags": ["knowledge", "humility"]
@@ -778,6 +864,7 @@
     "date": "2026-10-05",
     "quote": "You are young. Decide, what do you want to be remembered for?",
     "author": "A.P.J. Abdul Kalam, as recounted by his aide Srijan Pal Singh",
+    "person": "A.P.J. Abdul Kalam",
     "description": "Kalam asked his young aide this over and over, until the aide ran out of impressive answers and turned the question back on him. Kalam's own answer was teacher. Not Missile Man, not President of India. He was guest faculty at IIM Shillong, and on 27 July 2015 he collapsed five minutes into a lecture there and died at eighty-three. The question is sharper than most advice about legacy, partly because it demands something specific, and partly because his own answer was so small.",
     "image": null,
     "tags": ["purpose", "humility"]
@@ -787,6 +874,7 @@
     "date": "2026-10-06",
     "quote": "For a practitioner of love and compassion, an enemy is one of the most important teachers. Without an enemy you cannot practice tolerance, and without tolerance you cannot build a sound basis of compassion. So in order to practice compassion, you should have an enemy.",
     "author": "14th Dalai Lama, How to Practice: The Way to a Meaningful Life (2002)",
+    "person": "14th Dalai Lama",
     "description": "The claim here is about capacity, not courtesy. Patience is a skill, and skills need resistance to develop, so the person who provokes you is supplying something you cannot manufacture alone. The argument predates him. He is transmitting Shantideva, an eighth-century Indian monk whose treatise on patience he has taught for decades. And it does not mean tolerating harm. He has resisted the occupation of Tibet his entire life while holding this view.",
     "image": null,
     "tags": ["kindness", "discipline"]
@@ -796,6 +884,7 @@
     "date": "2026-10-07",
     "quote": "I don't believe in taking right decisions. I take decisions and then make them right.",
     "author": "Not Ratan Tata (he denied it on camera in 2022)",
+    "person": null,
     "description": "This is the most circulated Ratan Tata quote in India, and he spent years telling people it wasn't his. He denied it at an event in Paris in 2015 and again in a filmed interview in 2022. It still appears on quote sites, in tribute posts, in business case studies, and in school comprehension exercises asking students what he meant by it. No one has found an origin. Worth sitting with: a man can publicly disown a sentence and the internet will keep handing it back to him.",
     "image": null,
     "tags": ["action", "persistence"]
@@ -805,6 +894,7 @@
     "date": "2026-10-08",
     "quote": "Apart from values and ethics which I have tried to live by, the legacy I would like to leave behind is a very simple one — that I have always stood up for what I consider to be the right thing, and I have tried to be as fair and equitable as I could be.",
     "author": "Ratan Tata, interview, December 2012",
+    "person": "Ratan Tata",
     "description": "He said this as he was stepping down after twenty-one years running the Tata Group. Notice what he does not pick. No revenue figure, no acquisition, no car. He chooses a standard of conduct, which is the only part of a career anyone actually controls. Notice also how carefully it's worded: what I consider to be the right thing. He is claiming he acted on his judgment, not that his judgment was always correct.",
     "image": null,
     "tags": ["character", "humility"]
@@ -814,6 +904,7 @@
     "date": "2026-10-09",
     "quote": "The achievement we celebrate today is but a step, an opening of opportunity, to the greater triumphs and achievements that await us. Are we brave enough and wise enough to grasp this opportunity and accept the challenge of the future?",
     "author": "Jawaharlal Nehru, \"Tryst with Destiny,\" Constituent Assembly, midnight of 14–15 August 1947",
+    "person": "Jawaharlal Nehru",
     "description": "He said this at the moment you would expect unmixed celebration. The speech contains the celebration, and also a hedge almost nobody quotes: the pledge would be redeemed not wholly or in full measure. Partition violence had already started. So he called the achievement a step, then asked whether they were brave and wise enough for what came next, and it was a real question rather than a flourish.",
     "image": null,
     "tags": ["courage", "purpose"]
@@ -823,6 +914,7 @@
     "date": "2026-10-10",
     "quote": "I like to transmutate it in a way: when the crowd is chanting ‘Roger,’ I hear ‘Novak.’ It sounds silly, but it is like that. I try to convince myself that it’s like that.",
     "author": "Novak Djokovic, Wimbledon press conference, 14 July 2019",
+    "person": "Novak Djokovic",
     "description": "He said this after beating Federer in the longest final in Wimbledon history, having saved two championship points, with fourteen thousand people on Centre Court willing him to lose. Note the exact wording. He doesn't claim the crowd is on his side. He says he convinces himself of it, knowingly, for the length of a match. During the performance, what the room thinks of you is not information you can act on. Afterwards is when you listen to it.",
     "image": null,
     "tags": ["attention", "discipline"]
@@ -832,6 +924,7 @@
     "date": "2026-10-11",
     "quote": "Unlike any other creature on this planet, humans can learn and understand, without having experienced. They can think themselves into other people's places.",
     "author": "J.K. Rowling, Harvard commencement address, 5 June 2008",
+    "person": "J.K. Rowling",
     "description": "Before the books, Rowling worked at Amnesty International reading first-hand accounts from people who had been imprisoned and tortured, which is where this comes from. She is describing a capacity rather than a feeling. You do not have to have lived something to understand it, and that is unusual enough to be worth noticing. In the same speech she adds the part that rarely gets quoted: the identical ability can be used to manipulate, and most people simply decline to use it at all.",
     "image": null,
     "tags": ["kindness", "knowledge"]
@@ -841,6 +934,7 @@
     "date": "2026-10-12",
     "quote": "At the Melbourne World Cup in 2003 I stepped on his goggles — deliberately.",
     "author": "Bob Bowman, coach of Michael Phelps, speaking the day after Phelps won his eighth gold in Beijing, 2008",
+    "person": "Bob Bowman",
     "description": "Phelps swam the Beijing 200 butterfly blind. His goggles filled on the dive and he could not pull them off under two swim caps, so he counted strokes to find each wall, won gold and set a world record. Five years earlier Bowman had stepped on his goggles at a meet in Melbourne and made him swim anyway. That is the entire method. When the thing finally went wrong at the Olympics, it was not the first time.",
     "image": null,
     "tags": ["discipline", "persistence"]
@@ -850,6 +944,7 @@
     "date": "2026-10-13",
     "quote": "I claim not to have controlled events, but confess plainly that events have controlled me.",
     "author": "Abraham Lincoln, letter to Albert G. Hodges, 4 April 1864",
+    "person": "Abraham Lincoln",
     "description": "A wartime president with more power than almost anyone alive, writing three years into the war, says he did not steer it. Note that he added this line to the letter afterwards. It was not in the conversation it records, and he prefaces it by saying he intends no compliment to his own sagacity. He also notes that the state of the nation was what nobody on either side had planned or predicted. You choose what you do. You do not choose what arrives for you to do it about.",
     "image": null,
     "tags": ["humility", "action"]
@@ -859,6 +954,7 @@
     "date": "2026-10-14",
     "quote": "In all chaos there is a cosmos, in all disorder a secret order.",
     "author": "Carl Jung, \"Archetypes of the Collective Unconscious\" (1934), Collected Works 9i, §66",
+    "person": "Carl Jung",
     "description": "Jung wrote this about the unconscious rather than about life in general. He had just argued that the anima, and life itself, seem meaningless only because they offer no interpretation, and his claim is that what looks like chaos down there can in fact be read — the passage closes on what he calls the archetype of meaning. The scope matters. Dreams and symptoms usually do have a logic you can find. Random misfortune does not, and hunting for hidden meaning in it is its own kind of trap.",
     "image": null,
     "tags": ["knowledge", "humility"]
@@ -868,6 +964,7 @@
     "date": "2026-10-15",
     "quote": "What you're supposed to do when you don't like a thing is change it. If you can't change it, change the way you think about it. Don't complain.",
     "author": "Maya Angelou, recalling her grandmother's advice, Wouldn't Take Nothing for My Journey Now (1993)",
+    "person": "Maya Angelou",
     "description": "The popular version of this drops the last two words, which are the ones doing the work. The advice was her grandmother's: after a customer had whined in her store, Annie Henderson would call young Maya over and lay out a decision tree. If the thing can be changed, change it; if it cannot, change the way you think about it; either way, stop complaining. Angelou was not arguing against objecting to things. She spent her life objecting, loudly and in public. What she is targeting is the complaint that has quietly replaced the action.",
     "image": null,
     "tags": ["action", "character"]
@@ -877,6 +974,7 @@
     "date": "2026-10-16",
     "quote": "Let everyone sweep in front of his own door, and the whole world will be clean.",
     "author": "Johann Wolfgang von Goethe, \"Bürgerpflicht,\" Zahme Xenien IX (popular rendering)",
+    "person": "Johann Wolfgang von Goethe",
     "description": "This one is real Goethe, slightly inflated. It opens a four-line poem called \"Bürgerpflicht\" (Civic Duty), and what he promised was a clean city quarter, not a clean world. The second couplet adds that if everyone practises his own lesson, things will go well in the council. The same thought now circulates as a saying of Mother Teresa's. The idea works as far as it goes. It stops working on problems that are not the sum of individual doorsteps, which is most of the large ones.",
     "image": null,
     "tags": ["character", "humility"]
@@ -886,6 +984,7 @@
     "date": "2026-10-17",
     "quote": "Any solid achievement must, of necessity, take years of humble apprenticeship and estrangement from most of society.",
     "author": "Attributed to Gerald Sykes (no source earlier than Robin Sharma's The 5AM Club, 2018)",
+    "person": "Gerald Sykes",
     "description": "The first half is sound. Real skill takes years of unglamorous repetition that nobody watches. The second half is the romantic part and it deserves an argument. Deep work needs time away from distraction, not distance from people, and those two get confused constantly by people who pay for the confusion later.",
     "image": null,
     "tags": ["persistence", "discipline"]
@@ -895,6 +994,7 @@
     "date": "2026-10-18",
     "quote": "In the morning when thou risest unwillingly, let this thought be present — I am rising to the work of a human being. Why then am I dissatisfied if I am going to do the things for which I exist and for which I was brought into the world?",
     "author": "Marcus Aurelius, Meditations 5.1 (trans. George Long)",
+    "person": "Marcus Aurelius",
     "description": "Marcus ran an empire through war and plague and still had to talk himself out of bed, in a private notebook he never intended anyone to read. That is most of why the passage survives. Two things get lost when it becomes wake-up-early fuel. The work of a human being, in his ethics, meant acting decently toward other people rather than clearing a to-do list. And a few lines on he grants plainly that rest is necessary, arguing only that we overshoot on it and stop short on everything else.",
     "image": null,
     "tags": ["stoicism", "purpose"]

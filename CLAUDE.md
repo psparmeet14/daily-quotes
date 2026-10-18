@@ -35,6 +35,7 @@ A daily-quote website focused on life improvement, happiness, success, wealth, f
     "date": "2026-07-11",
     "quote": "The obstacle is the way.",
     "author": "Marcus Aurelius",
+    "person": "Marcus Aurelius",
     "description": "Optional 2–3 sentence reflection.",
     "image": "images/2026-07-11.jpg",
     "tags": ["stoicism", "mindset"]
@@ -46,6 +47,13 @@ A daily-quote website focused on life improvement, happiness, success, wealth, f
 - `tags` is a **controlled vocabulary** — exactly two per quote, drawn only from this set of 14:
   `stoicism` `discipline` `persistence` `purpose` `time` `wealth` `health` `knowledge` `humility` `courage` `kindness` `action` `attention` `character`
   These drive tag filtering on the site, so they must stay a small, shared vocabulary. Free-form tags were retired in Sept 2026: 118 one-off tags across 67 quotes meant 59% were used exactly once and filtering by them returned a single result. Do not invent a new tag to fit a quote — pick the two closest from the set. Adding a 15th theme is a deliberate decision, not a side effect of an add; `npm run check:dupes` fails on anything off-vocabulary.
+- `person` is **required** — the plain name of who said or wrote it, separate from the `author` citation shown on the page. It drives the archive's A–Z author filter (indexed by surname) and the `?author=<slug>` links. Rules:
+  - Reuse the exact spelling already in the file for a returning author ("J. Krishnamurti", "14th Dalai Lama", "Søren Kierkegaard"). `check:dupes` fails if one person appears under two spellings.
+  - "Attributed to X" → `person` is X; the citation keeps the caveat.
+  - Misattributed → the real author (Goldsmith, not Confucius), or `null` if unknown. Never the famous name the line was pinned on; `check:dupes` fails if the citation says "misattributed to" the same person.
+  - No known author (proverbs, debunked lines, paraphrases) → `null`, which lists it under "Unknown origin".
+  - Scripture → the speaker (the Golden Rule, Matthew 7:12, is "Jesus"). A line someone published but did not originate → the originator (Seven Social Sins → Frederick Lewis Donaldson).
+  - If a new name sorts wrongly under the last-word surname rule (titles, "of" names, Vietnamese/Chinese order), add it to `SORT_AS` in `js/app.js`.
 - Images live in `/images`, named by date, compressed to under ~200KB before commit.
 
 ## Repo structure
@@ -75,7 +83,7 @@ The owner adds a quote by telling Claude Code something like:
 > "Add today's quote: '<quote>' — <author>. Description: <text>. Image: <path or none>."
 
 Claude Code must then:
-1. Append the entry to `data/quotes.json` (validate JSON, ensure no duplicate date), then run `npm run check:dupes` to be sure the quote itself has not already been used. It catches punctuation and case variants, one quote contained in another, variant translations, and the same passage cited twice — none of which a date check would see. Treat DUPLICATE as blocking and SIMILAR as worth a look.
+1. Append the entry to `data/quotes.json` (validate JSON, ensure no duplicate date, set `person` per the rules above), then run `npm run check:dupes` to be sure the quote itself has not already been used. It catches punctuation and case variants, one quote contained in another, variant translations, and the same passage cited twice — none of which a date check would see. Treat DUPLICATE as blocking and SIMILAR as worth a look.
 2. If an image is provided, copy it to `/images/<date>.<ext>` and compress/resize if large.
 3. Regenerate any per-quote OG pages if that build step exists.
 4. Commit with message `Add quote for <date>` and push to `main`.
@@ -90,7 +98,7 @@ The owner may send several quotes at once to cover upcoming days. Append them al
 - **Phase 1 (MVP):** Repo + Pages deployment, today-view with date/time, quotes.json, daily add workflow, per-quote URLs, OG meta tags (at minimum site-wide card; per-quote cards if feasible).
 - **Phase 2:** Archive page, random button, image support polish, share button (copy link).
 - **Phase 3:** Supabase likes + analytics script.
-- **Phase 4 (later):** Tags/filtering, "most loved" section driven by like counts, RSS feed.
+- **Phase 4 (later):** Tags/filtering (done: themes and authors), "most loved" section driven by like counts, RSS feed. Per-author static pages (like `/t/`) are worth adding only for authors with 3+ quotes — one-quote pages read as thin content to search engines.
 
 ## Conventions
 - Conventional, readable commit messages.

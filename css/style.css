@@ -332,6 +332,104 @@ button { -webkit-tap-highlight-color: transparent; font-family: inherit; }
   border-color: var(--accent);
 }
 .tag-chip.active .n { color: var(--bg); opacity: .7; }
+.tag-chip .x { margin-left: 9px; font-size: 14px; line-height: 1; }
+
+/* Themes / Authors switch above the archive filters. Quieter than the main
+   nav: ink and a faint rule rather than the accent. */
+.filter-switch {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  margin: 0 0 20px;
+}
+.filter-switch button {
+  background: none;
+  border: none;
+  border-bottom: 1px solid transparent;
+  padding: 3px 0;
+  cursor: pointer;
+  font-size: 12px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  transition: color .3s, border-color .3s;
+}
+.filter-switch button:hover { color: var(--ink); }
+.filter-switch button.active { color: var(--ink); border-bottom-color: var(--faint); }
+
+/* Author index: A–Z by surname, set like the index at the back of a book. */
+.author-index { margin: 0 0 30px; }
+.letter-jump {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2px;
+  margin: 0 0 22px;
+}
+.letter-jump button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  min-width: 26px;
+  padding: 4px 2px;
+  font-size: 12px;
+  letter-spacing: .08em;
+  color: var(--muted);
+  transition: color .2s;
+}
+.letter-jump button:hover { color: var(--accent); }
+.author-columns {
+  columns: 4 140px;
+  column-gap: 28px;
+}
+.letter-group { break-inside: avoid; margin: 0 0 18px; }
+.letter {
+  margin: 0 0 6px;
+  font-size: 12px;
+  letter-spacing: .2em;
+  font-weight: 600;
+  color: var(--accent);
+  scroll-margin-top: 24px;
+}
+.author-link {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: 0;
+  padding: 3px 0;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1.35;
+  color: var(--ink);
+  transition: color .2s;
+}
+.author-link:hover { color: var(--accent); }
+.author-link .n {
+  margin-left: 7px;
+  font-size: 11px;
+  color: var(--faint);
+  font-variant-numeric: tabular-nums;
+}
+.author-current { display: flex; justify-content: center; }
+@media (max-width: 480px) {
+  .author-link { font-size: 14px; }
+}
+
+/* Byline on the quote page, linking to the author's other quotes. */
+.byline-link {
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  padding: 0;
+  cursor: pointer;
+  transition: color .2s, border-color .2s;
+}
+.byline-link:hover { color: var(--accent); border-color: var(--accent); }
 
 /* Themes shown under a quote, linking into the filtered archive. */
 .quote-tags {

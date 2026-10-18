@@ -17,6 +17,10 @@
  *   AUTHORS   (exit 0) — authors used more than once. Never a problem, just
  *                        useful to see the spread.
  *
+ * It also guards the two filter fields (exit 1): `tags` must come from the
+ * 14-theme vocabulary, and `person` must be present, spelled one way per
+ * person, and never name someone the citation says was misattributed.
+ *
  * Run before committing an add: `node scripts/check-duplicates.mjs`
  * Read-only, zero dependencies. Not wired into the deploy: a false positive
  * should never be able to block the daily release.
@@ -86,7 +90,7 @@ const quotes = JSON.parse(await readFile(path.join(ROOT, "data", "quotes.json"),
 const rows = quotes.map((q) => {
   const n = normalize(q.quote);
   const w = words(n);
-  return { id: q.id, quote: q.quote, author: q.author, n, w, bg: bigrams(w) };
+  return { id: q.id, quote: q.quote, author: q.author, person: q.person, n, w, bg: bigrams(w) };
 });
 
 // Theme vocabulary guard. Tags drive filtering on the site, so they have to
@@ -108,6 +112,47 @@ if (tagProblems.length) {
   console.log(`\nTHEME VOCABULARY — ${tagProblems.length} problem(s)\n`);
   tagProblems.forEach((p) => console.log(`   ${p}`));
   console.log(`\n   Allowed: ${THEMES.join(", ")}\n`);
+}
+
+// Author guard. `person` (the plain name, separate from the `author`
+// citation) drives the author filter. Every quote needs one — null for
+// unknown origin — and a person spelled two ways would split the filter in
+// two, so "Seneca" next to "Lucius Annaeus Seneca" is treated as an error.
+const personProblems = [];
+for (const q of quotes) {
+  if (!("person" in q)) { personProblems.push(`${q.id}  missing "person" (use null for unknown origin)`); continue; }
+  const p = q.person;
+  if (p === null) continue;
+  if (typeof p !== "string" || !p.trim() || p !== p.trim()) {
+    personProblems.push(`${q.id}  "person" must be a plain name or null`);
+    continue;
+  }
+  // A misattributed quote is listed under its real author, never the famous
+  // name it was pinned on — otherwise "Einstein" would list lines the site
+  // itself says he never wrote.
+  const mis = String(q.author).match(/(?:misattributed|falsely attributed) to ([^;,()]+)/i);
+  if (mis && normalize(p).includes(normalize(mis[1]))) {
+    personProblems.push(`${q.id}  "person" is ${p}, but the citation says it is misattributed to them`);
+  }
+}
+const spellings = [...new Set(quotes.map((q) => q.person).filter((p) => typeof p === "string"))];
+// Letters that are not accented forms of a Latin letter survive normalize()'s
+// accent stripping (ø is not o + a mark), so fold them first: Søren = Soren.
+const FOLD = { "ø": "o", "æ": "ae", "œ": "oe", "ß": "ss", "ł": "l", "đ": "d", "þ": "th" };
+const toks = (s) => words(normalize(String(s).toLowerCase().replace(/[øæœßłđþ]/g, (c) => FOLD[c])));
+for (let i = 0; i < spellings.length; i++) {
+  for (let j = i + 1; j < spellings.length; j++) {
+    const a = toks(spellings[i]), b = toks(spellings[j]);
+    const [s, l] = a.length <= b.length ? [a, b] : [b, a];
+    if (s.every((t) => l.includes(t))) {
+      personProblems.push(`"${spellings[i]}" and "${spellings[j]}" look like the same person — use one spelling`);
+    }
+  }
+}
+if (personProblems.length) {
+  console.log(`\nAUTHOR NAMES — ${personProblems.length} problem(s)\n`);
+  personProblems.forEach((p) => console.log(`   ${p}`));
+  console.log("");
 }
 
 const duplicates = [];
@@ -180,7 +225,8 @@ if (sourceRepeats.length) {
 
 const byAuthor = new Map();
 for (const r of rows) {
-  const key = String(r.author || "").split(",")[0].replace(/\s*\([^)]*\)\s*$/, "").trim();
+  const key = r.person === null ? "Unknown origin"
+    : r.person || String(r.author || "").split(",")[0].replace(/\s*\([^)]*\)\s*$/, "").trim();
   if (!byAuthor.has(key)) byAuthor.set(key, []);
   byAuthor.get(key).push(r.id);
 }
@@ -195,4 +241,4 @@ if (repeats.length) {
 
 if (!duplicates.length && !similar.length) console.log("No duplicates or near-duplicates found.\n");
 
-process.exit(duplicates.length || tagProblems.length ? 1 : 0);
+process.exit(duplicates.length || tagProblems.length || personProblems.length ? 1 : 0);

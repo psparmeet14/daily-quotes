@@ -32,7 +32,9 @@
     quotes: [],       // chronological (oldest -> newest)
     view: "today",   // 'today' | 'archive'
     tag: null,        // active theme filter in the archive, or null for all
-    idx: 0,           // index into state.quotes of the displayed quote
+    author: null,     // active author filter (slug), or null for all
+    filterBy: "theme", // which filter the archive shows: 'theme' | 'author'
+    idx: 0,          // index into state.quotes of the displayed quote
     now: new Date(),
     liked: {},        // id -> true (this browser has liked)
     counts: {},       // id -> global like count (backend mode)
@@ -182,10 +184,15 @@
   function readUrl() {
     var params = new URLSearchParams(location.search);
     var id = params.get("date") || (location.hash ? location.hash.slice(1) : "");
-    // ?tag=<theme> opens the archive filtered. The static /t/ pages land here.
+    // ?author=<slug> and ?tag=<theme> open the archive filtered. The static
+    // /t/ pages land on ?tag=.
+    var author = params.get("author");
+    if (author && personBySlug(author)) {
+      state.author = author; state.filterBy = "author"; state.view = "archive"; return;
+    }
     var tag = params.get("tag");
     if (tag && allTags().indexOf(tag) >= 0) {
-      state.tag = tag; state.view = "archive"; return;
+      state.tag = tag; state.filterBy = "theme"; state.view = "archive"; return;
     }
     if (params.get("view") === "archive") { state.view = "archive"; return; }
     if (id) {
@@ -198,7 +205,8 @@
     var url;
     if (state.view === "archive") {
       url = baseHref().replace(location.origin, "") +
-        (state.tag ? "?tag=" + encodeURIComponent(state.tag) : "?view=archive");
+        (state.author ? "?author=" + encodeURIComponent(state.author)
+          : state.tag ? "?tag=" + encodeURIComponent(state.tag) : "?view=archive");
     } else {
       url = baseHref().replace(location.origin, "") + "?date=" + state.quotes[state.idx].id;
     }
@@ -209,7 +217,9 @@
 
   function updateDocTitle() {
     if (state.view === "archive") {
-      document.title = (state.tag ? cap(state.tag) + " — Archive" : "Archive") + " — Daily Wisdom";
+      var p = state.author ? personBySlug(state.author) : null;
+      var label = p ? p.name : state.tag ? cap(state.tag) : "";
+      document.title = (label ? label + " — Archive" : "Archive") + " — Daily Wisdom";
     } else {
       var q = state.quotes[state.idx];
       document.title = "“" + q.quote + "” — " + q.author + " · Daily Wisdom";
@@ -247,7 +257,86 @@
     transitionTo(function () {
       state.view = "archive";
       state.tag = tag || null;
+      state.author = null;
+      state.filterBy = "theme";
     }, false);
+  }
+
+  /* ---------- authors ---------- */
+
+  // Authors come from each quote's `person` field — the plain name, separate
+  // from the `author` citation shown on the page. null means no known author.
+  // The index is by surname, like the back of a book: the last word of the
+  // name, except for the few names where that rule is wrong.
+  var SORT_AS = {
+    "Marcus Aurelius": "Marcus Aurelius",
+    "14th Dalai Lama": "Dalai Lama",
+    "Thich Nhat Hanh": "Nhat Hanh",
+    "Julian of Norwich": "Julian",
+    "Zeno of Citium": "Zeno"
+  };
+  var UNKNOWN = "unknown"; // slug for quotes of unknown origin
+
+  // Accent-free form for sorting and URLs. Letters like ø are not accented
+  // forms (no mark to strip), so they are folded by hand: Søren -> soren.
+  var FOLD = { "ø": "o", "Ø": "O", "æ": "ae", "Æ": "Ae", "œ": "oe", "ß": "ss", "ł": "l", "Ł": "L", "đ": "d", "þ": "th" };
+  function plain(s) {
+    return String(s).normalize("NFD").replace(/[̀-ͯ]/g, "")
+      .replace(/[øØæÆœßłŁđþ]/g, function (c) { return FOLD[c]; });
+  }
+  function slugify(name) {
+    return plain(name).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+  }
+  function sortKey(name) {
+    if (SORT_AS[name]) return SORT_AS[name];
+    var parts = name.split(" ");
+    return parts[parts.length - 1];
+  }
+  function personSlug(q) { return q.person ? slugify(q.person) : UNKNOWN; }
+
+  // Every author in the data with a count, in surname order; unknown last.
+  function allPeople() {
+    var map = {};
+    state.quotes.forEach(function (q) {
+      var s = personSlug(q);
+      if (!map[s]) map[s] = { slug: s, name: q.person || "Unknown origin", count: 0 };
+      map[s].count++;
+    });
+    return Object.keys(map).map(function (k) { return map[k]; }).sort(function (a, b) {
+      if (a.slug === UNKNOWN || b.slug === UNKNOWN) return a.slug === UNKNOWN ? 1 : -1;
+      return plain(sortKey(a.name)).localeCompare(plain(sortKey(b.name))) ||
+        plain(a.name).localeCompare(plain(b.name));
+    });
+  }
+
+  function personBySlug(slug) {
+    var people = allPeople();
+    for (var i = 0; i < people.length; i++) if (people[i].slug === slug) return people[i];
+    return null;
+  }
+
+  function setAuthor(slug) {
+    transitionTo(function () {
+      state.view = "archive";
+      state.author = slug || null;
+      state.tag = null;
+      state.filterBy = "author";
+    }, false);
+  }
+
+  // Themes or Authors. One filter at a time: switching drops whatever the
+  // other mode had selected rather than combining them, which at this archive
+  // size would mostly come back empty.
+  function setFilterBy(mode) {
+    if (mode === state.filterBy) return;
+    if (state.tag || state.author) {
+      transitionTo(function () {
+        state.filterBy = mode; state.tag = null; state.author = null;
+      }, false);
+    } else {
+      state.filterBy = mode;
+      renderFilters();
+    }
   }
 
   /* ---------- rendering ---------- */
@@ -278,7 +367,7 @@
 
     els.quoteNum.textContent = "Quote №" + num;
     els.quoteText.textContent = "“" + q.quote + "”";
-    els.quoteAuthor.textContent = "— " + q.author;
+    renderByline(q);
 
     if (q.description) {
       els.quoteDesc.textContent = q.description;
@@ -318,10 +407,30 @@
     els.likeBtn.classList.toggle("pop", state.justLiked);
   }
 
+  // The byline links to everything else by the same author, once there is
+  // anything else. Only the name is the link when the citation contains it
+  // ("Attributed to Helen Keller"); otherwise the whole citation is.
+  function renderByline(q) {
+    var el = els.quoteAuthor;
+    el.textContent = "— ";
+    var p = q.person ? personBySlug(personSlug(q)) : null;
+    if (!p || p.count < 2) { el.appendChild(document.createTextNode(q.author)); return; }
+    var at = q.author.indexOf(q.person);
+    if (at > 0) el.appendChild(document.createTextNode(q.author.slice(0, at)));
+    var b = document.createElement("button");
+    b.type = "button";
+    b.className = "byline-link";
+    b.textContent = at >= 0 ? q.person : q.author;
+    b.setAttribute("aria-label", "See all " + p.count + " quotes by " + p.name);
+    b.addEventListener("click", function () { setAuthor(p.slug); });
+    el.appendChild(b);
+    if (at >= 0) el.appendChild(document.createTextNode(q.author.slice(at + q.person.length)));
+  }
+
   function renderArchive() {
     var grid = els.archiveGrid;
     grid.innerHTML = "";
-    renderTagBar();
+    renderFilters();
     if (!state.quotes.length) {
       var empty = document.createElement("p");
       empty.className = "archive-empty";
@@ -329,19 +438,36 @@
       grid.appendChild(empty);
       return;
     }
-    // Newest first, filtered to the active theme when one is set.
+    // Newest first, filtered to the active theme or author when one is set.
     var shown = 0;
     for (var i = state.quotes.length - 1; i >= 0; i--) {
-      if (state.tag && (state.quotes[i].tags || []).indexOf(state.tag) < 0) continue;
+      var q = state.quotes[i];
+      if (state.tag && (q.tags || []).indexOf(state.tag) < 0) continue;
+      if (state.author && personSlug(q) !== state.author) continue;
       grid.appendChild(archiveCard(i));
       shown++;
     }
     if (!shown) {
       var none = document.createElement("p");
       none.className = "archive-empty";
-      none.textContent = "No quotes tagged “" + state.tag + "” yet.";
+      none.textContent = state.tag ? "No quotes tagged “" + state.tag + "” yet." : "No quotes here yet.";
       grid.appendChild(none);
     }
+  }
+
+  // Everything above the grid: the Themes/Authors switch, then whichever
+  // filter is selected.
+  function renderFilters() {
+    var byAuthor = state.filterBy === "author";
+    if (els.filterTheme && els.filterAuthor) {
+      els.filterTheme.classList.toggle("active", !byAuthor);
+      els.filterTheme.setAttribute("aria-pressed", byAuthor ? "false" : "true");
+      els.filterAuthor.classList.toggle("active", byAuthor);
+      els.filterAuthor.setAttribute("aria-pressed", byAuthor ? "true" : "false");
+    }
+    if (els.tagBar) els.tagBar.hidden = byAuthor;
+    if (els.authorIndex) els.authorIndex.hidden = !byAuthor;
+    if (byAuthor) renderAuthorIndex(); else renderTagBar();
   }
 
   // Filter chips above the grid: one per theme, with counts.
@@ -353,13 +479,89 @@
     var tags = allTags();
     if (!tags.length) return;
 
-    bar.appendChild(tagChip("All", state.quotes.length, !state.tag, null));
+    bar.appendChild(tagChip("All", state.quotes.length, !state.tag, function () { setTag(null); }));
     tags.forEach(function (t) {
-      bar.appendChild(tagChip(cap(t), counts[t], state.tag === t, t));
+      bar.appendChild(tagChip(cap(t), counts[t], state.tag === t, function () { setTag(t); }));
     });
   }
 
-  function tagChip(label, count, active, tag) {
+  // The author filter. There are far too many names for chips, and more every
+  // month, so it reads like a book index: A–Z by surname under letter
+  // headings, with a row of letters to jump by. Choosing a name collapses it
+  // to a single pill; the × on the pill brings the index back.
+  function renderAuthorIndex() {
+    var box = els.authorIndex;
+    if (!box) return;
+    box.innerHTML = "";
+
+    if (state.author) {
+      var p = personBySlug(state.author);
+      if (!p) return;
+      var current = document.createElement("div");
+      current.className = "author-current";
+      var pill = tagChip(p.name, p.count, true, function () { setAuthor(null); });
+      var x = document.createElement("span");
+      x.className = "x";
+      x.setAttribute("aria-hidden", "true");
+      x.textContent = "×";
+      pill.appendChild(x);
+      pill.setAttribute("aria-label", "Clear filter: " + p.name);
+      current.appendChild(pill);
+      box.appendChild(current);
+      return;
+    }
+
+    var letters = [], byLetter = {};
+    allPeople().forEach(function (person) {
+      var L = person.slug === UNKNOWN ? "—" : plain(sortKey(person.name)).charAt(0).toUpperCase();
+      if (!byLetter[L]) { byLetter[L] = []; letters.push(L); }
+      byLetter[L].push(person);
+    });
+
+    var jump = document.createElement("div");
+    jump.className = "letter-jump";
+    jump.setAttribute("aria-label", "Jump to letter");
+    letters.forEach(function (L) {
+      if (L === "—") return;
+      var b = document.createElement("button");
+      b.type = "button";
+      b.textContent = L;
+      b.addEventListener("click", function () {
+        var h = document.getElementById("letter-" + L);
+        if (h) h.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+      jump.appendChild(b);
+    });
+    box.appendChild(jump);
+
+    var cols = document.createElement("div");
+    cols.className = "author-columns";
+    letters.forEach(function (L) {
+      var group = document.createElement("div");
+      group.className = "letter-group";
+      var h = document.createElement("h3");
+      h.className = "letter";
+      h.id = "letter-" + (L === "—" ? "unknown" : L);
+      h.textContent = L;
+      group.appendChild(h);
+      byLetter[L].forEach(function (person) {
+        var b = document.createElement("button");
+        b.type = "button";
+        b.className = "author-link";
+        b.appendChild(document.createTextNode(person.name));
+        var n = document.createElement("span");
+        n.className = "n";
+        n.textContent = person.count;
+        b.appendChild(n);
+        b.addEventListener("click", function () { setAuthor(person.slug); });
+        group.appendChild(b);
+      });
+      cols.appendChild(group);
+    });
+    box.appendChild(cols);
+  }
+
+  function tagChip(label, count, active, onClick) {
     var b = document.createElement("button");
     b.type = "button";
     b.className = "tag-chip" + (active ? " active" : "");
@@ -370,7 +572,7 @@
     n.className = "n";
     n.textContent = count;
     b.appendChild(n);
-    b.addEventListener("click", function () { setTag(tag); });
+    b.addEventListener("click", onClick);
     return b;
   }
 
@@ -532,6 +734,9 @@
     els.shareBtn = document.getElementById("share-btn");
     els.quoteTags = document.getElementById("quote-tags");
     els.tagBar = document.getElementById("tag-bar");
+    els.filterTheme = document.getElementById("filter-theme");
+    els.filterAuthor = document.getElementById("filter-author");
+    els.authorIndex = document.getElementById("author-index");
     els.archiveGrid = document.getElementById("archive-grid");
     els.toast = document.getElementById("toast");
     els.sinceLabel = document.getElementById("since-label");
@@ -600,9 +805,11 @@
       transitionTo(function () { state.view = "today"; state.idx = defaultIdx(); }, false);
     });
     els.navArchive.addEventListener("click", function () {
-      transitionTo(function () { state.view = "archive"; state.tag = null; }, false);
+      transitionTo(function () { state.view = "archive"; state.tag = null; state.author = null; }, false);
     });
     els.navRandom.addEventListener("click", navRandom);
+    if (els.filterTheme) els.filterTheme.addEventListener("click", function () { setFilterBy("theme"); });
+    if (els.filterAuthor) els.filterAuthor.addEventListener("click", function () { setFilterBy("author"); });
     els.themeToggle.addEventListener("click", toggleTheme);
     els.likeBtn.addEventListener("click", toggleLike);
     els.shareBtn.addEventListener("click", share);
@@ -610,6 +817,7 @@
       var prevView = state.view;
       state.view = "today";
       state.tag = null;
+      state.author = null;
       readUrl();
       render();
       if (state.view !== prevView) updateDocTitle();

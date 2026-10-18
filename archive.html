@@ -74,7 +74,12 @@
 
       <section id="archive-view" class="archive-view" aria-label="Archive">
         <h2 class="archive-title">Archive</h2>
+        <div class="filter-switch" role="group" aria-label="Filter the archive by">
+          <button id="filter-theme" type="button" class="active" aria-pressed="true">Themes</button>
+          <button id="filter-author" type="button" aria-pressed="false">Authors</button>
+        </div>
         <div id="tag-bar" class="tag-bar"></div>
+        <div id="author-index" class="author-index" hidden></div>
         <div id="archive-grid" class="archive-grid"></div>
       </section>
     </main>
