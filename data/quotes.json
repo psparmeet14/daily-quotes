@@ -862,5 +862,41 @@
     "description": "Jung wrote this about the unconscious rather than about life in general. He had just argued that the anima, and life itself, seem meaningless only because they offer no interpretation, and his claim is that what looks like chaos down there can in fact be read — the passage closes on what he calls the archetype of meaning. The scope matters. Dreams and symptoms usually do have a logic you can find. Random misfortune does not, and hunting for hidden meaning in it is its own kind of trap.",
     "image": null,
     "tags": ["knowledge", "humility"]
+  },
+  {
+    "id": "2026-10-15",
+    "date": "2026-10-15",
+    "quote": "What you're supposed to do when you don't like a thing is change it. If you can't change it, change the way you think about it. Don't complain.",
+    "author": "Maya Angelou, recalling her grandmother's advice, Wouldn't Take Nothing for My Journey Now (1993)",
+    "description": "The popular version of this drops the last two words, which are the ones doing the work. The advice was her grandmother's: after a customer had whined in her store, Annie Henderson would call young Maya over and lay out a decision tree. If the thing can be changed, change it; if it cannot, change the way you think about it; either way, stop complaining. Angelou was not arguing against objecting to things. She spent her life objecting, loudly and in public. What she is targeting is the complaint that has quietly replaced the action.",
+    "image": null,
+    "tags": ["action", "character"]
+  },
+  {
+    "id": "2026-10-16",
+    "date": "2026-10-16",
+    "quote": "Let everyone sweep in front of his own door, and the whole world will be clean.",
+    "author": "Johann Wolfgang von Goethe, \"Bürgerpflicht,\" Zahme Xenien IX (popular rendering)",
+    "description": "This one is real Goethe, slightly inflated. It opens a four-line poem called \"Bürgerpflicht\" (Civic Duty), and what he promised was a clean city quarter, not a clean world. The second couplet adds that if everyone practises his own lesson, things will go well in the council. The same thought now circulates as a saying of Mother Teresa's. The idea works as far as it goes. It stops working on problems that are not the sum of individual doorsteps, which is most of the large ones.",
+    "image": null,
+    "tags": ["character", "humility"]
+  },
+  {
+    "id": "2026-10-17",
+    "date": "2026-10-17",
+    "quote": "Any solid achievement must, of necessity, take years of humble apprenticeship and estrangement from most of society.",
+    "author": "Attributed to Gerald Sykes (no source earlier than Robin Sharma's The 5AM Club, 2018)",
+    "description": "The first half is sound. Real skill takes years of unglamorous repetition that nobody watches. The second half is the romantic part and it deserves an argument. Deep work needs time away from distraction, not distance from people, and those two get confused constantly by people who pay for the confusion later.",
+    "image": null,
+    "tags": ["persistence", "discipline"]
+  },
+  {
+    "id": "2026-10-18",
+    "date": "2026-10-18",
+    "quote": "In the morning when thou risest unwillingly, let this thought be present — I am rising to the work of a human being. Why then am I dissatisfied if I am going to do the things for which I exist and for which I was brought into the world?",
+    "author": "Marcus Aurelius, Meditations 5.1 (trans. George Long)",
+    "description": "Marcus ran an empire through war and plague and still had to talk himself out of bed, in a private notebook he never intended anyone to read. That is most of why the passage survives. Two things get lost when it becomes wake-up-early fuel. The work of a human being, in his ethics, meant acting decently toward other people rather than clearing a to-do list. And a few lines on he grants plainly that rest is necessary, arguing only that we overshoot on it and stop short on everything else.",
+    "image": null,
+    "tags": ["stoicism", "purpose"]
   }
 ]
