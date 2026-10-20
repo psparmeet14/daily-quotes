@@ -1008,5 +1008,15 @@
     "description": "This is the idea Will Durant was condensing when he wrote that we are what we repeatedly do, the line the internet has credited to Aristotle ever since. Aristotle makes the case here and restates it three chapters later, in the passage Durant footnoted. The original says more. Aristotle notes the same repetition runs both ways, since you become a bad builder by building badly just as surely as a good one by building well. Nobody is practising nothing. The only question is what.",
     "image": null,
     "tags": ["action", "character"]
+  },
+  {
+    "id": "2026-10-20",
+    "date": "2026-10-20",
+    "quote": "In the happiness of his subjects lies his happiness; in their welfare his welfare; whatever pleases himself he shall not consider as good, but whatever pleases his subjects he shall consider as good.",
+    "author": "Kautilya (Chanakya), Arthashastra, Book I, Ch. 19 (trans. R. Shamasastry, 1915)",
+    "person": "Kautilya",
+    "description": "Chanakya is usually cast as the Indian Machiavelli, and the Arthashastra does cover espionage and assassination in some detail. Then it says this. The reasoning is partly self-interested, since a contented population is a stable one, which makes it leverage rather than sentiment. It still sets a test most people in charge of something would fail: does your welfare actually move with theirs, or only with your standing.",
+    "image": null,
+    "tags": ["humility", "character"]
   }
 ]
