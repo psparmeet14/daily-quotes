@@ -1028,5 +1028,82 @@
     "description": "The Buddha is probably the most misquoted figure online. The hot coal line about anger, for example, is a 1987 rewording of a simile from a Buddhist treatise written nearly a thousand years after he died. This verse is genuine, Pali text and all. Note the exact word. The original says non-hatred, not love. It doesn't ask you to feel warmly toward someone harming you. It asks you to stop being the next link in the chain.",
     "image": null,
     "tags": ["kindness", "character"]
+  },
+  {
+    "id": "2026-10-22",
+    "date": "2026-10-22",
+    "quote": "The cost of a thing is the amount of what I will call life which is required to be exchanged for it, immediately or in the long run.",
+    "author": "Henry David Thoreau, Walden (1854), \"Economy\"",
+    "person": "Henry David Thoreau",
+    "source": "https://www.gutenberg.org/cache/epub/205/pg205.txt",
+    "description": "Thoreau is doing arithmetic here. In the next sentence he works out that an average house near Concord cost about eight hundred dollars, and that saving it would take a labourer ten to fifteen years of his life. The point is less that houses are bad than that prices are quoted in the wrong currency. Count them in hours of your one life and some purchases still make sense. A good many stop looking like bargains.",
+    "image": null,
+    "tags": ["wealth", "time"]
+  },
+  {
+    "id": "2026-10-23",
+    "date": "2026-10-23",
+    "quote": "When pleasant words are easy, bitter words to use, is, leaving sweet ripe fruit, the sour unripe to choose.",
+    "author": "Thiruvalluvar, Tirukkural 100 (trans. G.U. Pope, 1886)",
+    "person": "Thiruvalluvar",
+    "source": "https://archive.org/details/tiruvalluvanayan00tiruuoft",
+    "description": "The Tirukkural gives ten couplets to pleasant speech, and this one closes the chapter. The image does the arguing: when a kind word is as easy to reach as a harsh one, choosing the harsh one is like passing over ripe fruit to eat it unripe. Note the condition. Valluvar is not asking anyone to sugar-coat a hard truth. He means the far more common case, where the kind version costs nothing and we reach for the other one anyway.",
+    "image": null,
+    "tags": ["kindness", "discipline"]
+  },
+  {
+    "id": "2026-10-24",
+    "date": "2026-10-24",
+    "quote": "For the mind does not require filling like a bottle, but rather, like wood, it only requires kindling to create in it an impulse to think independently and an ardent desire for the truth.",
+    "author": "Plutarch, On Listening to Lectures 18, Moralia 48C (trans. Frank Cole Babbitt, 1927)",
+    "person": "Plutarch",
+    "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Moralia/De_auditu*.html",
+    "description": "This is the source of the line about the mind being a fire to be kindled rather than a vessel to be filled, which has been tidied up so often that Plutarch's own image got lost. He compares the mind to wood, not fire, and the sentences just before make his point: a listener should take what a speaker says as a seed and develop it by their own efforts. A lecture, a book or a course does not do the thinking for you. At best it gets yours started.",
+    "image": null,
+    "tags": ["knowledge", "action"]
+  },
+  {
+    "id": "2026-10-25",
+    "date": "2026-10-25",
+    "quote": "Touch not at all the feet of those who call themselves gurus and pirs, and go begging. They who eat the fruit of their labour and bestow something, O Nanak, recognize the right way.",
+    "author": "Guru Nanak, Raag Saarang, Guru Granth Sahib 1245 (trans. M.A. Macauliffe, The Sikh Religion, vol. 1, 1909)",
+    "person": "Guru Nanak",
+    "source": "https://archive.org/details/sikhreligionitsg01unse",
+    "description": "Guru Nanak is speaking about men who had made a profession of holiness: the jogis with split ears, and the self-styled gurus and pirs who lived on what others gave them. Macauliffe heads the passage 'Better to live by honest labour than by begging.' The line has two halves and both are required: earn what you eat by your own work, and give part of it away. Sikh practice made each half a pillar of the faith, kirat karni and vand chhakna. Most money advice keeps only the first.",
+    "image": null,
+    "tags": ["wealth", "character"]
+  },
+  {
+    "id": "2026-10-26",
+    "date": "2026-10-26",
+    "quote": "All Adam's race are members of one frame; since all, at first, from the same essence came. When by hard fortune one limb is oppressed, the other members lose their wonted rest: if thou feel'st not for others' misery, a son of Adam is no name for thee.",
+    "author": "Saadi, Gulistan 1.10 (trans. Edward B. Eastwick, 1852)",
+    "person": "Saadi",
+    "source": "https://archive.org/details/dli.venugopal.811",
+    "description": "These lines are now quoted as a gentle statement of human kinship. In the Gulistan they are a rebuke. An Arab prince notorious for his injustice, praying at the tomb of John the Baptist in Damascus, asked Saadi to pray for him because he feared a powerful enemy. Saadi told him to show mercy to his weak subjects if he wanted no trouble from a strong foe, and a few lines later comes this verse. The kinship arrives with a demand attached, aimed at whoever holds the power.",
+    "image": null,
+    "tags": ["kindness", "humility"]
+  },
+  {
+    "id": "2026-10-27",
+    "date": "2026-10-27",
+    "quote": "The soul should take care of the body, just as a pilgrim on his way to Mecca takes care of his camel; but if the pilgrim spends his whole time in feeding and adorning his camel, the caravan will leave him behind, and he will perish in the desert.",
+    "author": "Al-Ghazali, The Alchemy of Happiness, ch. 3 (trans. Claud Field, 1910)",
+    "person": "Al-Ghazali",
+    "source": "https://archive.org/details/in.ernet.dli.2015.536237",
+    "description": "Al-Ghazali was the most celebrated teacher in Baghdad when, in 1095, a spiritual crisis led him to give up his post, and The Alchemy of Happiness is his guide for ordinary readers to the life he went looking for. The camel image is not a case against the body. The pilgrim is told to look after it. It is a case about proportion, and it describes a good deal of modern wellness culture, where feeding and adorning the camel has quietly become the whole journey.",
+    "image": null,
+    "tags": ["health", "purpose"]
+  },
+  {
+    "id": "2026-10-28",
+    "date": "2026-10-28",
+    "quote": "The Utopians wonder how any man should be so much taken with the glaring doubtful lustre of a jewel or a stone, that can look up to a star or to the sun himself.",
+    "author": "Thomas More, Utopia (1516), Book II, \"Of the Travelling of the Utopians\" (trans. Gilbert Burnet, 1684)",
+    "person": "Thomas More",
+    "source": "https://www.gutenberg.org/cache/epub/2130/pg2130.txt",
+    "description": "More's islanders make chamber pots out of gold and hand jewels to their children as toys, which the children throw away once they grow up. Just before this line, ambassadors arrive dressed in gold and gems, and Utopian children laugh at them as grown men still wearing playthings. Note 'doubtful lustre'. A jewel only sparkles with borrowed light, and the Utopians cannot see why anyone would prize that over the sun and the stars, which anyone can look at for nothing.",
+    "image": null,
+    "tags": ["humility", "attention"]
   }
 ]
