@@ -54,6 +54,7 @@ A daily-quote website focused on life improvement, happiness, success, wealth, f
   - No known author (proverbs, debunked lines, paraphrases) → `null`, which lists it under "Unknown origin".
   - Scripture → the speaker (the Golden Rule, Matthew 7:12, is "Jesus"). A line someone published but did not originate → the originator (Seven Social Sins → Frederick Lewis Donaldson).
   - If a new name sorts wrongly under the last-word surname rule (titles, "of" names, Vietnamese/Chinese order), add it to `SORT_AS` in `js/app.js`.
+- `source` is optional for hand-added quotes and **required** for weekly-batch quotes: the URL of the text the quote was matched against word for word. It shows in the review pull request so the owner can spot-check.
 - Images live in `/images`, named by date, compressed to under ~200KB before commit.
 
 ## Repo structure
@@ -66,10 +67,12 @@ daily-quotes/
 ├── css/style.css
 ├── js/app.js
 ├── data/quotes.json
+├── data/philosophers.json   # The 100 philosophers the weekly batch draws from
 ├── images/
 ├── package.json        # Build-time devDeps only (satori, resvg) — zero runtime deps
-├── scripts/            # Build scripts + fonts for OG pages and share cards
-└── .github/workflows/deploy.yml
+├── scripts/            # Build scripts, fonts, and the queue scripts (pick/schedule/check-batch/queue-status)
+├── .claude/skills/weekly-batch/SKILL.md   # The weekly batch procedure
+└── .github/workflows/  # deploy.yml, quote-batch.yml (checks + review PR), queue-alert.yml
 ```
 
 ## Open Graph share cards
@@ -93,6 +96,16 @@ Keep this workflow to a single message from the owner. Never require multiple ba
 
 ### Scheduling ahead (batch adds)
 The owner may send several quotes at once to cover upcoming days. Append them all to `data/quotes.json` with their future dates (same validation as a daily add), commit once as `Queue quotes for <first-date> to <last-date>`, and push. The deployed site never reveals a quote early: `scripts/filter-released.mjs` drops future-dated entries at build time (so they're absent from the served JSON, the archive, Random, and `/q/` OG pages), and a daily cron in `deploy.yml` (18:30 UTC = midnight IST) redeploys so each quote goes live on its own day. Local preview shows the full queue — it reads the unfiltered repo file.
+
+### Weekly batch (automated, philosophers only)
+From 22 Oct 2026 the remaining days of the cycle are filled by a weekly pipeline instead of hand-prepared quotes. The owner's only job is to review and merge a pull request.
+1. **Sunday, 10:00 IST** — a Claude cloud routine runs the `weekly-batch` skill (`.claude/skills/weekly-batch/SKILL.md`). It skips if a batch PR is still open or 8+ days are already queued.
+2. It picks 7 philosophers from `data/philosophers.json` (`scripts/pick-philosophers.mjs`: least-quoted first, random among equals, nobody within 21 days of their last quote), verifies one passage each **word for word against a fetched public-domain text**, writes descriptions in the house voice, and schedules them with `scripts/schedule-batch.mjs` (next empty dates, random order, no theme repeated on consecutive days).
+3. It pushes a branch with one commit, `Queue quotes for <first> to <last>`. The **Check queued quotes** workflow runs `check:dupes` and `scripts/check-batch.mjs` (only additions, contiguous dates, every quote has a source) and opens the PR with each quote, citation, source link and description laid out for phone review.
+4. The owner merges. The release filter and midnight cron publish one per day, as with any queued quote.
+5. **Queue alert** (`queue-alert.yml`, 09:00 IST daily) opens a GitHub issue — emailed to the owner — when fewer than 5 days are queued, and closes it once a batch lands.
+
+To change a quote in an open batch PR, edit `data/quotes.json` on that branch (keep the dates) and push; the workflow refreshes the PR description. Hand-added quotes (the daily workflow above) still work and simply take the next free date. New philosophers go in `data/philosophers.json`; if their name sorts wrongly by last word, add them to `SORT_AS` in `js/app.js` too.
 
 ## Build phases
 - **Phase 1 (MVP):** Repo + Pages deployment, today-view with date/time, quotes.json, daily add workflow, per-quote URLs, OG meta tags (at minimum site-wide card; per-quote cards if feasible).

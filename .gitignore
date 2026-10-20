@@ -11,3 +11,8 @@ node_modules/
 # Build output (per-quote OG pages and per-theme tag pages are generated in CI)
 /q/
 /t/
+
+# Claude Code local state (the skills folder is committed)
+.claude/worktrees/
+.claude/launch.json
+.claude/settings.local.json

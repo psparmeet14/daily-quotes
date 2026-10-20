@@ -1,0 +1,61 @@
+name: Queue alert
+
+# Daily check that the site will not run out of quotes. Opens an issue
+# (which GitHub emails to the owner) when fewer than 5 days are queued after
+# today, comments on it each day it stays low, and closes it once a batch is
+# merged. Goes quiet when the 365-day cycle is complete.
+
+on:
+  schedule:
+    # 03:30 UTC = 09:00 IST
+    - cron: "30 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  alert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Measure the queue
+        id: q
+        run: node scripts/queue-status.mjs >> "$GITHUB_OUTPUT"
+
+      - name: Open, update or close the low-queue issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DAYS: ${{ steps.q.outputs.days }}
+          LAST: ${{ steps.q.outputs.last }}
+          COMPLETE: ${{ steps.q.outputs.complete }}
+        run: |
+          title="Quote queue is running low"
+          open=$(gh issue list --state open --search "\"$title\" in:title" --json number --jq '.[0].number // empty')
+          if [ "$COMPLETE" = "true" ]; then
+            if [ -n "$open" ]; then gh issue close "$open" --comment "The 365-day cycle is complete."; fi
+            exit 0
+          fi
+          if [ "$DAYS" -lt 5 ]; then
+            if [ "$DAYS" -lt 0 ]; then
+              state="The queue ran out on $LAST, and the site has been showing that quote since."
+            else
+              state="Only $DAYS day(s) of quotes are queued after today (last: $LAST)."
+            fi
+            body="$state Merge the open batch pull request if there is one, or ask Claude in the DailyWisdom365 session to prepare the next batch."
+            if [ -z "$open" ]; then
+              gh issue create --title "$title" --body "$body"
+            else
+              gh issue comment "$open" --body "$body"
+            fi
+          elif [ -n "$open" ]; then
+            gh issue close "$open" --comment "Back to $DAYS days queued (through $LAST)."
+          fi

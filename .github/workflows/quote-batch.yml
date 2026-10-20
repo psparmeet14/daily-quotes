@@ -1,0 +1,68 @@
+name: Check queued quotes
+
+# Runs on any branch that changes quotes.json. Every such branch gets the
+# duplicate/theme/author-name check. A weekly batch branch (first commit
+# "Queue quotes for ...") also gets the batch rules, and a pull request is
+# opened (or its description refreshed) with the quotes laid out for review.
+
+on:
+  push:
+    branches-ignore: [main]
+    paths: [data/quotes.json]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Duplicates, themes and author names
+        run: node scripts/check-duplicates.mjs
+
+      - name: Is this a weekly batch?
+        id: kind
+        run: |
+          base=$(git merge-base origin/main HEAD)
+          echo "base=$base" >> "$GITHUB_OUTPUT"
+          first=$(git log --reverse --format=%s "$base"..HEAD | head -1)
+          case "$first" in
+            "Queue quotes for"*) echo "batch=true" >> "$GITHUB_OUTPUT" ;;
+            *) echo "batch=false" >> "$GITHUB_OUTPUT" ;;
+          esac
+
+      - name: Batch rules
+        if: steps.kind.outputs.batch == 'true'
+        run: |
+          status=0
+          node scripts/check-batch.mjs "${{ steps.kind.outputs.base }}" > batch-summary.md || status=$?
+          cat batch-summary.md >> "$GITHUB_STEP_SUMMARY"
+          exit $status
+
+      # Opening a PR with the workflow token needs "Allow GitHub Actions to
+      # create and approve pull requests" (Settings → Actions → General). If
+      # the batch run already opened one, this only refreshes its description.
+      - name: Open or refresh the review pull request
+        if: steps.kind.outputs.batch == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          branch="$GITHUB_REF_NAME"
+          pr=$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')
+          if [ -n "$pr" ]; then
+            gh pr edit "$pr" --body-file batch-summary.md
+          else
+            title=$(git log --reverse --format=%s "${{ steps.kind.outputs.base }}"..HEAD | head -1)
+            gh pr create --base main --head "$branch" --title "$title" --body-file batch-summary.md
+          fi

@@ -268,12 +268,25 @@
   // from the `author` citation shown on the page. null means no known author.
   // The index is by surname, like the back of a book: the last word of the
   // name, except for the few names where that rule is wrong.
+  // Includes names from data/philosophers.json not yet on the site, so the
+  // weekly batch never has to touch this file; keep the two in step.
   var SORT_AS = {
     "Marcus Aurelius": "Marcus Aurelius",
     "14th Dalai Lama": "Dalai Lama",
     "Thich Nhat Hanh": "Nhat Hanh",
     "Julian of Norwich": "Julian",
-    "Zeno of Citium": "Zeno"
+    "Zeno of Citium": "Zeno",
+    "Diogenes of Sinope": "Diogenes",
+    "Augustine of Hippo": "Augustine",
+    "François de La Rochefoucauld": "La Rochefoucauld",
+    "José Ortega y Gasset": "Ortega y Gasset",
+    "W.E.B. Du Bois": "Du Bois",
+    "Al-Ghazali": "Ghazali",
+    "Ibn Tufail": "Ibn Tufail",
+    "Ibn Rushd": "Ibn Rushd",
+    "Sun Tzu": "Sun Tzu",
+    "Wang Yangming": "Wang Yangming",
+    "Zhu Xi": "Zhu Xi"
   };
   var UNKNOWN = "unknown"; // slug for quotes of unknown origin
 
