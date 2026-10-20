@@ -30,14 +30,17 @@ worst outcome — worse than a short batch. When in doubt, leave it out.
 ## 1. Check whether a batch is needed
 
 ```bash
-git fetch origin main
+git fetch origin '+refs/heads/*:refs/remotes/origin/*'
+git checkout origin/main -- data/quotes.json   # measure the queue as main has it
 node scripts/queue-status.mjs
 curl -s "https://api.github.com/repos/psparmeet14/daily-quotes/pulls?state=open"
+git log --remotes=origin --not origin/main --format='%h %s (%D)' | grep 'Queue quotes for'
 ```
 
 Stop, and say why in one line, if any of these hold:
-- an open pull request's title starts with `Queue quotes for` — the owner
-  hasn't merged last week's batch, and a second one would claim the same dates;
+- an open pull request's title starts with `Queue quotes for`, or the last
+  command prints anything (a batch pushed but not yet merged) — a second
+  batch would claim the same dates;
 - `days` is 8 or more — the queue is healthy;
 - `complete=true` — the 365-day cycle is full.
 

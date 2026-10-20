@@ -64,7 +64,8 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           branch="${{ github.head_ref || github.ref_name }}"
-          pr=$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')
+          pr="${{ github.event.pull_request.number }}"
+          [ -n "$pr" ] || pr=$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')
           if [ -n "$pr" ]; then
             gh pr edit "$pr" --body-file batch-summary.md
             exit 0
