@@ -444,6 +444,7 @@
     var grid = els.archiveGrid;
     grid.innerHTML = "";
     renderFilters();
+    renderArchiveCount(0);
     if (!state.quotes.length) {
       var empty = document.createElement("p");
       empty.className = "archive-empty";
@@ -460,12 +461,29 @@
       grid.appendChild(archiveCard(i));
       shown++;
     }
+    renderArchiveCount(shown);
     if (!shown) {
       var none = document.createElement("p");
       none.className = "archive-empty";
       none.textContent = state.tag ? "No quotes tagged “" + state.tag + "” yet." : "No quotes here yet.";
       grid.appendChild(none);
     }
+  }
+
+  function quotesWord(n) { return n + (n === 1 ? " quote" : " quotes"); }
+
+  // The line under the Archive heading: the size of the collection, or how
+  // much of it the active filter shows. Counts released quotes only — the
+  // served JSON never contains queued ones.
+  function renderArchiveCount(shown) {
+    var el = els.archiveCount;
+    if (!el) return;
+    var total = state.quotes.length;
+    el.hidden = !total;
+    if (!total) return;
+    el.textContent = (state.tag || state.author)
+      ? shown + " of " + quotesWord(total)
+      : quotesWord(total) + " since " + fmtDate(state.quotes[0].id, { month: "long", year: "numeric" });
   }
 
   // Everything above the grid: the Themes/Authors switch, then whichever
@@ -753,6 +771,8 @@
     els.archiveGrid = document.getElementById("archive-grid");
     els.toast = document.getElementById("toast");
     els.sinceLabel = document.getElementById("since-label");
+    els.countLabel = document.getElementById("count-label");
+    els.archiveCount = document.getElementById("archive-count");
   }
 
   // Click/tap the quote image to enlarge it in a full-screen overlay.
@@ -849,6 +869,7 @@
   function setSinceLabel() {
     if (!els.sinceLabel || !state.quotes.length) return;
     els.sinceLabel.textContent = fmtDate(state.quotes[0].id, { month: "long", year: "numeric" });
+    if (els.countLabel) els.countLabel.textContent = " · " + state.quotes.length + " so far";
   }
 
   function boot() {

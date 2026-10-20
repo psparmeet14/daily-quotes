@@ -299,6 +299,15 @@ button { -webkit-tap-highlight-color: transparent; font-family: inherit; }
   font-weight: 600;
   color: var(--muted);
 }
+/* Collection size under the heading; pulled up to sit with it as one unit. */
+.archive-count {
+  margin: -16px 0 26px;
+  text-align: center;
+  font-size: 14px;
+  font-style: italic;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
 /* Theme filter bar above the archive grid. */
 .tag-bar {
   display: flex;
