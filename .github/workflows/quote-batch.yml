@@ -62,7 +62,15 @@ jobs:
           pr=$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')
           if [ -n "$pr" ]; then
             gh pr edit "$pr" --body-file batch-summary.md
-          else
-            title=$(git log --reverse --format=%s "${{ steps.kind.outputs.base }}"..HEAD | head -1)
-            gh pr create --base main --head "$branch" --title "$title" --body-file batch-summary.md
+            exit 0
+          fi
+          title=$(git log --reverse --format=%s "${{ steps.kind.outputs.base }}"..HEAD | head -1)
+          if ! gh pr create --base main --head "$branch" --title "$title" --body-file batch-summary.md; then
+            link="https://github.com/$GITHUB_REPOSITORY/compare/main...$branch?expand=1"
+            {
+              echo ""
+              echo "**GitHub Actions isn't allowed to open pull requests in this repo yet.**"
+              echo "Open it yourself: [$link]($link) — or allow it once under Settings → Actions → General → \"Allow GitHub Actions to create and approve pull requests\"."
+            } >> "$GITHUB_STEP_SUMMARY"
+            echo "::warning::Could not open the PR automatically. Open it here: $link"
           fi
