@@ -4,10 +4,14 @@ name: Check queued quotes
 # duplicate/theme/author-name check. A weekly batch branch (first commit
 # "Queue quotes for ...") also gets the batch rules, and a pull request is
 # opened (or its description refreshed) with the quotes laid out for review.
+# Also runs when a PR is opened by hand, so its description gets filled in.
 
 on:
   push:
     branches-ignore: [main]
+    paths: [data/quotes.json]
+  pull_request:
+    types: [opened, reopened]
     paths: [data/quotes.json]
 
 permissions:
@@ -21,6 +25,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
           fetch-depth: 0
 
       - name: Set up Node
@@ -58,7 +63,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          branch="$GITHUB_REF_NAME"
+          branch="${{ github.head_ref || github.ref_name }}"
           pr=$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')
           if [ -n "$pr" ]; then
             gh pr edit "$pr" --body-file batch-summary.md
