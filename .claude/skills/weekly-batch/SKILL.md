@@ -73,6 +73,11 @@ For each philosopher:
      suttacentral.net (API), accesstoinsight.org, api.banidb.com (Guru Granth Sahib page lookups).
    - **Blocked — don't use:** sacred-texts.com (Cloudflare challenge; get the
      same books from archive.org) and ctext.org (forbids automated access).
+     accesstoinsight.org is unreachable from the cloud environment; use
+     suttacentral.net for Buddhist texts.
+   - Sites sometimes fail on the first request (Gutenberg timing out,
+     Wikisource answering 429). Wait a few seconds and retry once before
+     treating a source as unavailable.
 2. **Choose a passage** that a reader looking to live better would value —
    character, work, time, wealth, health, courage, kindness, attention,
    purpose. It must make sense on its own, be 1–3 consecutive sentences, and
