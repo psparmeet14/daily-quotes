@@ -57,21 +57,33 @@ names yourself.
 
 For each philosopher:
 
-1. **Fetch the text.** Use a source from their entry (or another public-domain
-   edition of the same work): Project Gutenberg (`gutenberg.org/cache/epub/<id>/pg<id>.txt`),
-   Wikisource (its API: `action=parse`), classics.mit.edu (https),
-   suttacentral.net (API), accesstoinsight.org, sacred-texts.com,
-   archive.org. Do not use ctext.org (it forbids automated access).
+1. **Fetch the text** to a file outside the repo (`curl -sL -o /tmp/texts/<name>.txt <url>`).
+   Use a source from their entry, or another public-domain edition of the same work:
+   - Project Gutenberg: `https://www.gutenberg.org/cache/epub/<id>/pg<id>.txt`
+   - archive.org scans — find the item, then its OCR text:
+     `curl -s -G https://archive.org/advancedsearch.php --data-urlencode "q=title:(<title>) AND creator:(<translator>) AND mediatype:texts" --data-urlencode "fl[]=identifier" --data-urlencode "fl[]=year" --data-urlencode output=json`,
+     then the `*_djvu.txt` file listed by `https://archive.org/metadata/<identifier>/files`,
+     downloaded from `https://archive.org/download/<identifier>/<file>`. Check
+     the volume: multi-volume works are often mislabelled.
+   - Wikisource (API `action=parse`), classics.mit.edu (https only),
+     LacusCurtius (penelope.uchicago.edu — Loeb translations up to 1929),
+     suttacentral.net (API), accesstoinsight.org, api.banidb.com (Guru Granth Sahib page lookups).
+   - **Blocked — don't use:** sacred-texts.com (Cloudflare challenge; get the
+     same books from archive.org) and ctext.org (forbids automated access).
 2. **Choose a passage** that a reader looking to live better would value —
    character, work, time, wealth, health, courage, kindness, attention,
    purpose. It must make sense on its own, be 1–3 consecutive sentences, and
    ideally stay under 220 characters (hard limit 320; the share card shrinks
    the type beyond that). A strong lesser-known line beats a famous one; a
    famous one is fine if it is genuinely theirs. Nothing from their `beware` list.
-3. **Verify it.** Search the fetched text for the exact passage (normalise
-   only whitespace and straight/curly quotes). It must be found. Do not stitch
-   non-adjacent sentences; mark any cut inside a sentence with "…". Note the
-   book/chapter/section from the text itself, not from memory.
+3. **Verify it** with `node scripts/verify-quote.mjs /tmp/texts/<name>.txt "<quote>"`.
+   It must print FOUND. The only edits allowed to the source wording:
+   capitalise the first word, end at a semicolon or colon with a full stop,
+   and run verse lines together as prose (lower-casing line-initial
+   capitals). Never stitch non-adjacent sentences; mark any words cut from
+   inside a sentence with "…". Take the book/chapter/section from the text
+   itself, not from memory — and read the surrounding page, because the
+   context is what the description is built on.
 4. **Copyrighted works** (`copyrighted: true`): verify against a scan
    (archive.org full-text search, a publisher preview) and quote at most two
    sentences. If you cannot see the page, use an alternate.
