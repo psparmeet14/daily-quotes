@@ -1259,5 +1259,82 @@
     "description": "Hobbes is remembered for calling life without government solitary, poor, nasty, brutish and short, two chapters later. This is the psychology underneath that claim. Just before it he denies there is any utmost aim or greatest good of the kind the old moral philosophers described, and says a man whose desires are at an end can no more live than one whose senses have stopped. On this view happiness is not a place you reach and rest in. It is the movement itself, which is worth knowing before you finally get what you wanted.",
     "image": null,
     "tags": ["purpose", "action"]
+  },
+  {
+    "id": "2026-11-12",
+    "date": "2026-11-12",
+    "quote": "Thus, just as the body becomes exhausted from hard labor, and then by rest and refreshment recovers, so is it necessary for the mind to have relaxation by gazing upon pictures and other beautiful objects, that its weariness may be dispelled.",
+    "author": "Maimonides, The Eight Chapters on Ethics, ch. V (trans. Joseph I. Gorfinkle, 1912)",
+    "person": "Maimonides",
+    "source": "https://archive.org/details/eightchaptersofm00maim",
+    "description": "Maimonides wrote the Eight Chapters as a preface to his commentary on Abot, the Mishnah's tractate of ethical sayings. Chapter V is strict: every act, from eating to sleeping, should serve one goal, and even health is wanted only so the mind can acquire wisdom. That makes this passage the surprise. He quotes the Rabbis that a sage should have a pleasant dwelling, and adds that when they were exhausted from study they turned to entertaining conversation. In his scheme rest is part of the work, not a lapse from it.",
+    "image": null,
+    "tags": ["health", "attention"]
+  },
+  {
+    "id": "2026-11-13",
+    "date": "2026-11-13",
+    "quote": "An ounce of experience is better than a ton of theory simply because it is only in experience that any theory has vital and verifiable significance.",
+    "author": "John Dewey, Democracy and Education (1916), ch. 11, \"Experience and Thinking\"",
+    "person": "John Dewey",
+    "source": "https://www.gutenberg.org/cache/epub/852/pg852.txt",
+    "description": "Dewey wrote Democracy and Education in 1916, and this line sits in his chapter on experience and thinking. The sentence before it blames the assumption that the mind can grasp ideas simply by giving attention, which he says produces a deluge of half-observations and verbal ideas. The sentence after it is sharper: a theory apart from an experience cannot be definitely grasped even as theory. If you want to understand something, find a way to try it.",
+    "image": null,
+    "tags": ["knowledge", "action"]
+  },
+  {
+    "id": "2026-11-14",
+    "date": "2026-11-14",
+    "quote": "When one has experience in affairs, he is able to stand firmly. Whether at rest or occupied, his purpose is fixed.",
+    "author": "Wang Yangming, Instructions for Practical Life, Book I, Part II (trans. Frederick G. Henke, The Philosophy of Wang Yang-ming, 1916)",
+    "person": "Wang Yangming",
+    "source": "https://archive.org/details/thephilosophyofw00henkuoft",
+    "description": "In the conversations his pupils recorded, one of them tells Wang Yangming that when he is tranquil he is conscious of good ideas, but when he meets with events the situation is different. Wang's reply opens bluntly: you know how to cultivate tranquility but do not understand how to control yourself, and so you are prostrate whenever you meet with a difficulty. Calm that only survives in a quiet room is untested. Steadiness comes from handling affairs, not from avoiding them.",
+    "image": null,
+    "tags": ["discipline", "purpose"]
+  },
+  {
+    "id": "2026-11-15",
+    "date": "2026-11-15",
+    "quote": "Hence to persist long in something good until it is accomplished belongs to a special virtue.",
+    "author": "Thomas Aquinas, Summa Theologica II-II, Q. 137, Art. 1 (trans. Fathers of the English Dominican Province)",
+    "person": "Thomas Aquinas",
+    "source": "https://www.gutenberg.org/cache/epub/18755/pg18755.txt",
+    "description": "The Summa works through questions, each opened with objections Aquinas then answers, and this one asks whether perseverance is a virtue at all. Following Aristotle, he says virtue is about the difficult and the good, and that difficulty can come from the act itself or simply from the length of time it takes. In the next article he names what perseverance has to master: fear of weariness or failure on account of the delay. Most good projects are not defeated. They are abandoned somewhere in the middle.",
+    "image": null,
+    "tags": ["persistence", "character"]
+  },
+  {
+    "id": "2026-11-16",
+    "date": "2026-11-16",
+    "quote": "A spider conducts operations that resemble those of a weaver, and a bee puts to shame many an architect in the construction of her cells. But what distinguishes the worst architect from the best of bees is this, that the architect raises his structure in imagination before he erects it in reality.",
+    "author": "Karl Marx, Capital, Vol. I, ch. 7, sec. 1 (trans. Samuel Moore and Edward Aveling, 1887)",
+    "person": "Karl Marx",
+    "source": "https://archive.org/details/capitalcritique00marx",
+    "description": "In this chapter Marx sets the market aside for a few pages and describes labour in a form that stamps it as exclusively human. The line is often quoted. What follows it is not. Having imagined the result, he says, the worker must subordinate his will to that purpose for the whole operation, which means close attention, and the less he enjoys the work, the closer that attention is forced to be. Picturing the finished building is the easy part. Keeping your will on it through the dull stretches is the job.",
+    "image": null,
+    "tags": ["purpose", "attention"]
+  },
+  {
+    "id": "2026-11-17",
+    "date": "2026-11-17",
+    "quote": "Men require of their neighbours something sufficiently akin to be understood, something sufficiently different to provoke attention, and something great enough to command admiration. We must not expect, however, all the virtues. We should even be satisfied if there is something odd enough to be interesting.",
+    "author": "Alfred North Whitehead, Science and the Modern World (1925), ch. 13, \"Requisites for Social Progress\"",
+    "person": "Alfred North Whitehead",
+    "source": "https://archive.org/details/sciencemodernwor0000alfr_c3e9",
+    "description": "The book grew out of Lowell Lectures Whitehead gave in February 1925, and this comes from its last chapter, on the requisites for social progress. Just before it he argues that mankind has advanced by wandering, from habit of life to habit of life, and that other nations of different habits are not enemies: they are godsends. The list is modest on purpose. Close enough to understand, different enough to notice, great enough to admire, and if all else fails, odd enough to be interesting. Most people you meet clear that bar.",
+    "image": null,
+    "tags": ["kindness", "humility"]
+  },
+  {
+    "id": "2026-11-18",
+    "date": "2026-11-18",
+    "quote": "The real renunciation — for renunciation, sannyasa, there must be — is not the fleeing from works, but the slaying of ego and desire.",
+    "author": "Sri Aurobindo, Essays on the Gita, First Series, ch. 13, \"The Lord of the Sacrifice\" (Arya, 1916-18)",
+    "person": "Sri Aurobindo",
+    "source": "https://archive.org/details/in.ernet.dli.2015.505708",
+    "description": "Sri Aurobindo first published these essays in his journal Arya between 1916 and 1918. Here he takes up the Gita's two paths, knowledge and works. Taken by itself, he says, the way of knowledge would seem to lead to giving up action altogether, and that is impossible: so long as we remain in Nature, our workings in Nature must continue. The next sentence gives the alternative: abandon attachment to the fruit of works even while doing them. Letting go, on this account, happens inside the work rather than by leaving it.",
+    "image": null,
+    "tags": ["purpose", "action"]
   }
 ]
